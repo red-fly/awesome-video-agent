@@ -9,14 +9,14 @@ Generated from `data/papers.yaml` and `data/tools.yaml`.
 
 | Category | Count |
 |---|---:|
-| Multi-Agent Collaboration | 11 |
-| Video Editing and Compilation | 2 |
+| Multi-Agent Collaboration | 8 |
+| Video Editing and Compilation | 7 |
 | Long-Form Reasoning and Memory | 17 |
 | RL and Policy Tuning | 8 |
 | Evaluation and Self-Improvement | 2 |
-| Cinematic Expression and Domain Expertise | 10 |
+| Cinematic Expression and Domain Expertise | 6 |
 | Domain-Specific Video Editing | 3 |
-| World Models and Embodied Video Agents | 6 |
+| World Models and Embodied Video Agents | 8 |
 
 ## Papers by Year
 

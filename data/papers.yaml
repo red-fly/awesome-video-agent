@@ -39,6 +39,7 @@ papers:
     paper: https://arxiv.org/abs/2603.29664
     code: https://github.com/GVCLab/CutClaw
   categories:
+  - video-editing-compilation
   - long-form-reasoning-memory
   - multi-agent-collaboration
   - cinematic-expression-domain-expertise
@@ -116,6 +117,7 @@ papers:
   links:
     paper: https://arxiv.org/abs/2604.10456
   categories:
+  - video-editing-compilation
   - long-form-reasoning-memory
   - multi-agent-collaboration
   - cinematic-expression-domain-expertise
@@ -130,6 +132,7 @@ papers:
   links:
     project: https://kuaishou-gamemind.github.io/cutscene_agent/
   categories:
+  - video-editing-compilation
   - multi-agent-collaboration
   - cinematic-expression-domain-expertise
   task: Editable 3D cutscene generation
@@ -163,6 +166,7 @@ papers:
     code: https://github.com/yeates/Aurora
     project: https://yeates.github.io/Aurora-Page
   categories:
+  - video-editing-compilation
   - cinematic-expression-domain-expertise
   - multi-agent-collaboration
   task: Unified video editing
@@ -206,6 +210,7 @@ papers:
   links:
     paper: https://arxiv.org/abs/2603.02697
   categories:
+  - video-world-model-embodied
   - cinematic-expression-domain-expertise
   - multi-agent-collaboration
   task: Shared-world consistent video generation
@@ -250,6 +255,7 @@ papers:
     paper: https://aclanthology.org/2025.acl-demos.63/
     code: https://github.com/AIDC-AI/ComfyUI-Copilot
   categories:
+  - video-editing-compilation
   - cinematic-expression-domain-expertise
   task: AIGC workflow automation
   takeaway: Agentic workflow development and node documentation help bridge creative
@@ -594,6 +600,7 @@ papers:
   links:
     paper: https://arxiv.org/abs/2512.04221
   categories:
+  - video-world-model-embodied
   - cinematic-expression-domain-expertise
   - multi-agent-collaboration
   task: Physics-aware text-to-video synthesis
@@ -696,8 +703,8 @@ papers:
     pdf: https://openaccess.thecvf.com/content/ICCV2025/papers/Chen_LVAgent_Long_Video_Understanding_by_Multi-Round_Dynamical_Collaboration_of_MLLM_ICCV_2025_paper.pdf
     code: https://github.com/64327069/LVAgent
   categories:
-  - multi-agent-collaboration
   - long-form-reasoning-memory
+  - multi-agent-collaboration
   task: Collaborative long video understanding
   takeaway: Multiple MLLM agents are dynamically selected, retrieve key segments,
     debate answers, and reflect across rounds for long-video QA.
@@ -785,8 +792,8 @@ papers:
     project: https://schowdhury671.github.io/magnet_project/
     arxiv: https://arxiv.org/abs/2506.07016
   categories:
-  - multi-agent-collaboration
   - long-form-reasoning-memory
+  - multi-agent-collaboration
   task: Multi-video audio-visual retrieval and reasoning
   takeaway: Specialized agents reason across multiple videos to retrieve, link, and
     ground relevant audio-visual segments for complex QA.

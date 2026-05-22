@@ -45,6 +45,9 @@ The problem is **editable generation**: professional workflows need timelines, t
 **Representative systems**
 
 - **LongVideoAgent**: master agent gathers evidence by calling grounding and vision agents.
+- **LVAgent**: multi-round collaboration among MLLM agents for long-video understanding.
+- **MAGNET**: multi-agent audio-visual retrieval and reasoning across multiple videos.
+- **VideoAgent-ECCV2024 / VideoAgent-Memory**: LLM-agent and memory-augmented approaches to long-video understanding.
 - **OmniScript**: video-to-script for long cinematic video.
 - **VideoARM**: hierarchical multimodal memory with an observe-think-act-memorize loop.
 - **ProVCA**: progressive condensation for efficient long-video understanding.
@@ -108,6 +111,7 @@ The core problem is **domain-specific controllability**: letting agents communic
 
 - **ShareVerse**: shared-world consistent video generation.
 - **MultiWorld**: multi-agent multi-view video world modeling.
+- **MoReGen**: motion reasoning with physics simulation and rendering.
 - **Action Agent**: embodied navigation video generation with flow-constrained diffusion control.
 
 **Key bottleneck**
