@@ -18,6 +18,8 @@ Each paper entry uses:
 | `name` | Yes | Short display name used in README tables. |
 | `title` | Yes | Full paper title. |
 | `year` | Yes | Publication or preprint year. |
+| `date` | Yes | More specific publication, preprint, or version date, such as `2026-04` or `2026-04-28`. |
+| `venue` | Yes | Conference, journal, anthology, project page, or preprint source. |
 | `arxiv` | No | arXiv identifier without URL. |
 | `links` | Yes | Mapping of `paper`, `code`, `project`, or other useful links. |
 | `categories` | Yes | One or more category tags. The first tag is treated as the primary category. |
@@ -41,6 +43,8 @@ Example:
 - name: MovieAgent
   title: "Automated Movie Generation via Multi-Agent CoT Planning"
   year: 2025
+  date: "2025-03"
+  venue: "arXiv preprint"
   arxiv: "2503.07314"
   links:
     paper: "https://arxiv.org/abs/2503.07314"

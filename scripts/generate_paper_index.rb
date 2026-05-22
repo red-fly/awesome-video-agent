@@ -31,12 +31,12 @@ labels.each do |category, heading|
 
   lines << "## #{heading}"
   lines << ""
-  lines << "| Paper | Year | Task | Links |"
-  lines << "|---|---:|---|---|"
+  lines << "| Paper | Date | Source | Task | Links |"
+  lines << "|---|---|---|---|---|"
 
   entries.each do |paper|
     links = paper.fetch("links").map { |kind, url| "[#{kind.capitalize}](#{url})" }.join(" · ")
-    lines << "| **#{paper.fetch("name")}** | #{paper.fetch("year")} | #{paper.fetch("task")} | #{links} |"
+    lines << "| **#{paper.fetch("name")}** | #{paper.fetch("date")} | #{paper.fetch("venue")} | #{paper.fetch("task")} | #{links} |"
   end
 
   lines << ""

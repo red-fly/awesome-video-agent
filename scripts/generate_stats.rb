@@ -46,6 +46,15 @@ papers.group_by { |paper| paper.fetch("year") }.sort.each do |year, entries|
 end
 lines << ""
 
+lines << "## Papers by Source"
+lines << ""
+lines << "| Source | Count |"
+lines << "|---|---:|"
+papers.group_by { |paper| paper.fetch("venue") }.sort.each do |venue, entries|
+  lines << "| #{venue} | #{entries.length} |"
+end
+lines << ""
+
 lines << "## Tools by Type"
 lines << ""
 lines << "| Type | Count |"

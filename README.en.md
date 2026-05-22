@@ -1,22 +1,22 @@
 # Awsome Video Agent
 
 <p align="center">
-  <b>视频 Agent 论文、系统与技术路线整理：长视频生成、理解、编辑、编排与电影化表达。</b>
+  <b>A curated map of video agents for long-video generation, understanding, editing, and cinematic orchestration.</b>
 </p>
 
 <p align="center">
-  <a href="./README.en.md">English</a> ·
-  <a href="./docs/taxonomy.md">技术分类</a> ·
-  <a href="./docs/reading-roadmap.md">阅读路线</a> ·
-  <a href="./docs/paper-index.md">论文索引</a> ·
-  <a href="./docs/tool-index.md">工具索引</a> ·
-  <a href="./docs/schema.md">数据格式</a> ·
-  <a href="./docs/stats.md">统计</a> ·
-  <a href="./docs/notes.md">备注</a> ·
-  <a href="./docs/backlog.md">待核对</a> ·
-  <a href="./CONTRIBUTING.md">贡献指南</a> ·
-  <a href="./CHANGELOG.md">更新日志</a> ·
-  <a href="./data/papers.yaml">结构化数据</a>
+  <a href="./README.md">中文</a> ·
+  <a href="./docs/taxonomy.md">Taxonomy</a> ·
+  <a href="./docs/reading-roadmap.md">Reading Roadmap</a> ·
+  <a href="./docs/paper-index.md">Paper Index</a> ·
+  <a href="./docs/tool-index.md">Tool Index</a> ·
+  <a href="./docs/schema.md">Schema</a> ·
+  <a href="./docs/stats.md">Stats</a> ·
+  <a href="./docs/notes.md">Notes</a> ·
+  <a href="./docs/backlog.md">Backlog</a> ·
+  <a href="./CONTRIBUTING.md">Contributing</a> ·
+  <a href="./CHANGELOG.md">Changelog</a> ·
+  <a href="./data/papers.yaml">Paper Data</a>
 </p>
 
 <p align="center">
@@ -26,56 +26,56 @@
   <img alt="Status" src="https://img.shields.io/badge/status-curated-brightgreen">
 </p>
 
-## 项目简介
+## Overview
 
-视频 Agent 正在从“单条 prompt 生成几秒视频”走向“可规划、可记忆、可调用工具、可验证、可迭代”的生产系统。它们不只是让模型生成像素，而是让模型像一个小型剧组一样，完成剧本、分镜、运镜、剪辑、音画同步、反馈修正和资产交付。
+Video agents are moving beyond single-prompt clip generation. The new systems are closer to production crews: they plan stories, maintain memories, call tools, verify outputs, revise timelines, and expose cinematic controls.
 
 ```mermaid
 flowchart LR
-    U["用户意图"] --> P["规划器 / 导演"]
-    P --> M["记忆层<br/>镜头 · 场景 · 脚本 · 角色"]
-    M --> A["专家 Agent<br/>编剧 · 摄影 · 剪辑 · 验证"]
-    A --> T["工具层<br/>T2V · I2V · VLM · 编辑器 · 引擎"]
-    T --> V["评审 / 验证"]
-    V -->|修正| P
-    V --> O["输出<br/>视频 · 脚本 · 时间线 · 可编辑资产"]
+    U["User Intent"] --> P["Planner / Director"]
+    P --> M["Memory<br/>shots · scenes · scripts · characters"]
+    M --> A["Specialist Agents<br/>writer · camera · editor · verifier"]
+    A --> T["Tools<br/>T2V · I2V · VLM · editor · engine"]
+    T --> V["Critique / Verification"]
+    V -->|revise| P
+    V --> O["Outputs<br/>video · script · timeline · editable assets"]
 ```
 
-本项目按照六条技术路线整理近期视频 Agent 相关论文：
+This repository organizes recent work into six research routes:
 
-| 技术路线 | 核心问题 | 常见机制 |
+| Route | Core Question | Typical Mechanism |
 |---|---|---|
-| **多智能体角色化协作** | 如何像影视工业管线一样拆解复杂视频任务？ | 导演、编剧、分镜、摄影、剪辑、审稿/验证 Agent |
-| **长视频分层解构与记忆管理** | 如何理解几十分钟到数小时的视频？ | 镜头/场景/事件记忆、时间定位、叙事图谱、角色档案 |
-| **强化学习与策略优化** | Agent 如何学会何时搜索、调用工具、修正或停止？ | GRPO、在线策略蒸馏、稠密反馈、工具调用奖励 |
-| **电影语言与领域专长建模** | Agent 如何掌握运镜、节奏、文化、音乐、引擎资产等专业知识？ | 电影语言注入、音乐结构、文化知识、可编辑时间线 |
-| **评估与自我改进** | Agent 如何评价并迭代提升生成视频？ | VLM-as-judge、视觉问题、语义梯度、验证器循环 |
-| **世界模型与具身视频 Agent** | 视频 Agent 如何建模动态世界和具身控制？ | 多视角生成、场景图、导航控制、仿真器 |
+| **Multi-Agent Collaboration** | How can a video task be decomposed like a production pipeline? | Director, writer, storyboard, camera, editor, verifier agents |
+| **Long-form Reasoning & Memory** | How can agents reason over minutes or hours of video? | Shot / scene / event memory, temporal grounding, narrative graphs |
+| **RL & Policy Tuning** | How can agents learn when to search, call tools, revise, or stop? | GRPO, on-policy distillation, dense feedback, tool-use rewards |
+| **Cinematic Expression & Domain Expertise** | How can agents understand film grammar and vertical production rules? | Camera language, music structure, cultural knowledge, editable timelines |
+| **Evaluation & Self-Improvement** | How can agents critique and improve generated videos? | VLM-as-judge, visual questions, semantic gradients, verifier loops |
+| **World Models & Embodied Video Agents** | How can video agents model dynamic worlds and embodied control? | Multi-view generation, scene graphs, navigation control, simulators |
 
-## 收录范围
+## Coverage
 
-本项目结合了当前工作区里的论文解读稿，以及针对 arXiv、GitHub 和相关论文/项目页的一轮全网补检索。条目分成两层：
+The collection combines local paper summaries from this workspace with a web scan across arXiv, GitHub, and related paper/project pages. Entries are split into two layers:
 
-- **核心视频 Agent 论文**：直接面向视频 Agent、长视频理解、视频生成/编辑 Agent、电影剪辑编排、AIGC 视频工作流。
-- **相关 Agent 基础设施论文**：不一定直接做视频，但对构建视频 Agent 很关键，例如工具学习、记忆、环境训练、长期适应和编排范式。
+- **Core Video Agent Papers**: directly about video agents, long-video agents, video generation/editing agents, cinematic compilation, or agentic video workflow.
+- **Related Agent Foundations**: not always video-specific, but important for building video agents: tool learning, memory, environment synthesis, orchestration, and long-horizon adaptation.
 
-当前版本共收录：**32 个核心视频 Agent 条目 + 10 个相关基础设施条目 = 42 篇论文**，另有 **6 个开源系统/工具**。
+Current coverage: **32 core video-agent papers/systems + 10 related foundations = 42 papers**, plus **6 open-source systems/tools**.
 
-## 目录
+## Contents
 
-- [核心视频 Agent 论文](#核心视频-agent-论文)
-- [相关 Agent 基础设施](#相关-agent-基础设施)
-- [开源系统与工具](#开源系统与工具)
-- [关键技术模式](#关键技术模式)
-- [开放问题](#开放问题)
-- [项目结构](#项目结构)
-- [维护方式](#维护方式)
+- [Core Video Agent Papers](#core-video-agent-papers)
+- [Related Agent Foundations](#related-agent-foundations)
+- [Open-Source Systems and Tools](#open-source-systems-and-tools)
+- [Technical Patterns](#technical-patterns)
+- [Open Problems](#open-problems)
+- [Repository Structure](#repository-structure)
+- [Maintenance](#maintenance)
 
-## 核心视频 Agent 论文
+## Core Video Agent Papers
 
-### 多智能体视频生成
+### Multi-Agent Video Generation
 
-| 论文 / 系统 | 时间 | 来源 | 任务 | 核心思想 | 链接 |
+| Paper / System | Date | Source | Task | Core Idea | Links |
 |---|---|---|---|---|---|
 | **FILMAGENT** | 2025-01 | arXiv preprint | End-to-end virtual film automation | Specialized film-crew agents collaborate through critique, correction, verification, debate, and judging. | [Paper](https://arxiv.org/abs/2501.12909) |
 | **Mora** | 2024-03 | arXiv preprint | Generalist video generation | An early multi-agent visual generation framework for Sora-like generalist video capabilities. | [Paper](https://arxiv.org/abs/2403.13248) · [Code](https://github.com/lichao-sun/Mora) |
@@ -88,9 +88,9 @@ flowchart LR
 | **Co-Director** | 2026-04 | arXiv preprint | Agentic generative video storytelling | Global narrative optimization and local multimodal self-optimization reduce semantic drift in generative video stories. | [Paper](https://arxiv.org/abs/2604.24842) · [Project](https://co-director-agent.github.io/) |
 | **LASEV** | 2026-02 | arXiv preprint | Educational video generation | Semantic, rule-based, and tool-based critique loops make educational videos more publishable. | [Paper](https://arxiv.org/abs/2602.11790) · [Project](https://robitsg.github.io/LASEV) |
 
-### 视频编辑、剪辑编排与生产资产
+### Video Editing, Compilation, and Production Assets
 
-| 论文 / 系统 | 时间 | 来源 | 任务 | 核心思想 | 链接 |
+| Paper / System | Date | Source | Task | Core Idea | Links |
 |---|---|---|---|---|---|
 | **CutClaw** | 2026-03-31 | arXiv preprint | Hours-long video editing | Bottom-up multimodal decomposition turns raw footage and music into searchable editing units. | [Paper](https://arxiv.org/abs/2603.29664) · [Code](https://github.com/GVCLab/CutClaw) |
 | **CineAgents** | 2026-04-12 | arXiv preprint | Instruction-driven cinematic video compilation | Design-and-compose replaces retrieve-and-rank for movie and series compilation. | [Paper](https://arxiv.org/abs/2604.10456) |
@@ -100,9 +100,9 @@ flowchart LR
 | **Sima 1.0** | 2026-04 | arXiv preprint | Documentary video production | A collaborative multi-agent workflow targets documentary production rather than short clip generation. | [Paper](https://arxiv.org/abs/2604.07721) |
 | **ComfyUI-Copilot** | 2025 | ACL 2025 System Demonstrations | AIGC workflow automation | Agentic workflow development and node documentation help bridge creative intent and executable media pipelines. | [Paper](https://aclanthology.org/2025.acl-demos.63/) · [Code](https://github.com/AIDC-AI/ComfyUI-Copilot) |
 
-### 长视频理解与记忆
+### Long-Video Understanding and Memory
 
-| 论文 / 系统 | 时间 | 来源 | 任务 | 核心思想 | 链接 |
+| Paper / System | Date | Source | Task | Core Idea | Links |
 |---|---|---|---|---|---|
 | **LongVideoAgent** | 2025-12-23 | arXiv preprint | Long-video question answering | A master agent gathers evidence through grounding and vision agents instead of compressing the whole video at once. | [Paper](https://arxiv.org/abs/2512.20618) · [Project](https://longvideoagent.github.io/) |
 | **OmniScript** | 2026-04-13 | arXiv preprint | Audio-visual script generation | Long-form scripts become a bridge between narrative, scene structure, audio, subtitles, and cinematic video. | [Paper](https://arxiv.org/abs/2604.11102) · [Code](https://github.com/TencentARC/OmniScript) · [Project](https://arcomniscript.github.io) |
@@ -112,15 +112,15 @@ flowchart LR
 | **MMProLong** | 2026-05 | arXiv preprint | Long-context VLM training | Long-context VLM recipes are infrastructure for long-video agent memory and reasoning. | [Paper](https://arxiv.org/abs/2605.13831) |
 | **UniVA** | 2025-11 | arXiv preprint | Interactive video agent memory | Global, task, and user memories support consistency across sustained video interactions. | [Paper](https://arxiv.org/abs/2511.08521) · [Code](https://github.com/univa-agent/univa) · [Project](https://univa.online/) |
 
-### 评估与自我改进
+### Evaluation and Self-Improvement
 
-| 论文 / 系统 | 时间 | 来源 | 任务 | 核心思想 | 链接 |
+| Paper / System | Date | Source | Task | Core Idea | Links |
 |---|---|---|---|---|---|
 | **VQQA** | 2026-03 | arXiv preprint | Video generation evaluation and improvement | Visual question generation and VLM critique can act as semantic gradients for iterative video improvement. | [Paper](https://arxiv.org/abs/2603.12310) |
 
-### 世界、文化与故事一致性
+### World, Culture, and Story Consistency
 
-| 论文 / 系统 | 时间 | 来源 | 任务 | 核心思想 | 链接 |
+| Paper / System | Date | Source | Task | Core Idea | Links |
 |---|---|---|---|---|---|
 | **MAVEN** | 2026-05 | arXiv preprint | Multicultural text-to-video generation | Agents add cultural relevance checks and domain knowledge to text-to-video generation. | [Paper](https://arxiv.org/abs/2605.16716) · [Code](https://github.com/AIM-SCU/CRAFT) |
 | **ShareVerse** | 2026-03-03 | arXiv preprint | Shared-world consistent video generation | Multi-agent coordination targets consistency across a shared video world. | [Paper](https://arxiv.org/abs/2603.02697) |
@@ -130,9 +130,9 @@ flowchart LR
 | **MoReGen** | 2025-12 | arXiv preprint | Physics-aware text-to-video synthesis | Multi-agent reasoning, physics simulation, and rendering help model physically plausible motion in T2V generation. | [Paper](https://arxiv.org/abs/2512.04221) |
 | **DreamStory** | 2024-07 / 2025-08 version | arXiv preprint | Story visualization | LLM-guided diffusion maintains multiple subjects across open-domain visual stories. | [Paper](https://arxiv.org/abs/2407.12899) · [Project](https://dream-xyz.github.io/dreamstory) |
 
-## 相关 Agent 基础设施
+## Related Agent Foundations
 
-| 论文 / 系统 | 时间 | 来源 | 对视频 Agent 的意义 | 链接 |
+| Paper / System | Date | Source | Why It Matters for Video Agents | Links |
 |---|---|---|---|---|
 | **Vibe AIGC** | 2026-02-06 | arXiv preprint | Complex media generation should be orchestrated by a meta-planner, specialist agents, tools, and human feedback. | [Paper](https://arxiv.org/abs/2602.04575) |
 | **ToolRL** | 2025-04-16 | NeurIPS 2025 Poster / arXiv preprint | Fine-grained rewards can teach reliable tool-use behavior beyond pure SFT imitation. | [Paper](https://arxiv.org/abs/2504.13958) · [Code](https://github.com/qiancheng0/ToolRL) |
@@ -145,69 +145,69 @@ flowchart LR
 | **Agent-World** | 2026-04-20 | arXiv preprint | Executable environments and verifiable tasks can become scalable training grounds for agent evolution. | [Paper](https://arxiv.org/abs/2604.18292) |
 | **FutureSim** | 2026-05 | arXiv preprint | Long-horizon event replay is a useful evaluation idea for agents that must adapt over time. | [Paper](https://arxiv.org/abs/2605.15188) · [Project](https://futuresim.github.io) · [Code](https://github.com/futuresim/futuresim) |
 
-## 开源系统与工具
+## Open-Source Systems and Tools
 
-| 系统 | 类型 | 价值 | 链接 |
+| System | Type | Why It Is Useful | Links |
 |---|---|---|---|
-| **OpenMontage** | Agentic video production system | 多 pipeline、多工具、多 agent skill 的开源视频生产系统。 | [Code](https://github.com/calesthio/OpenMontage) |
-| **video-use** | Coding-agent video editing tool | 让 coding agents 通过程序化工具链编辑视频。 | [Code](https://github.com/browser-use/video-use) |
-| **ViMax** | Agentic video generation framework | 包含导演、编剧、制片、视频生成角色的一体化工作流。 | [Code](https://github.com/HKUDS/ViMax) |
-| **HKUDS VideoAgent** | All-in-one video agent | 面向视频理解、编辑、重制的一体化框架；注意与其他 VideoAgent 论文区分。 | [Code](https://github.com/HKUDS/VideoAgent) · [Paper](https://openreview.net/forum?id=cTqGsLYkRl) |
-| **Frame.AI** | Shorts / reels segmentation agent | 把长视频切成短视频片段的工程项目。 | [Code](https://github.com/dyingpotato890/frame-ai) |
-| **veo3-workflow-agents** | Video workflow agents | 围绕 Veo3 风格 API 的 prompt 增强与生成编排。 | [Code](https://github.com/nabobery/veo3-workflow-agents) |
+| **OpenMontage** | Agentic video production system | Multi-pipeline engineering system with many tools and agent skills for production workflows. | [Code](https://github.com/calesthio/OpenMontage) |
+| **video-use** | Coding-agent video editing tool | Lets coding agents edit videos through a programmatic toolchain. | [Code](https://github.com/browser-use/video-use) |
+| **ViMax** | Agentic video generation framework | All-in-one workflow with director, screenwriter, producer, and generator roles. | [Code](https://github.com/HKUDS/ViMax) |
+| **HKUDS VideoAgent** | All-in-one video agent | Broad framework for video understanding, editing, and remaking; disambiguate from other VideoAgent papers. | [Code](https://github.com/HKUDS/VideoAgent) · [Paper](https://openreview.net/forum?id=cTqGsLYkRl) |
+| **Frame.AI** | Shorts / reels segmentation agent | Engineering project for turning long videos into short-form clips. | [Code](https://github.com/dyingpotato890/frame-ai) |
+| **veo3-workflow-agents** | Video workflow agents | Prompt enhancement and orchestration around Veo3-style APIs. | [Code](https://github.com/nabobery/veo3-workflow-agents) |
 
-## 关键技术模式
+## Technical Patterns
 
-### 1. 剧组式角色分工
+### 1. Crew-Like Role Decomposition
 
-常见角色包括：
+Video agents often copy the division of labor in film and media production:
 
-- **导演 / 总规划器**：将用户意图转为可执行生产计划。
-- **编剧 / 脚本 Agent**：生成剧情、对白、字幕、旁白和场景结构。
-- **分镜 / 镜头 Agent**：把场景转成 shot-level 视觉计划。
-- **摄影 / 运镜 Agent**：控制景别、镜头运动、构图、光照、焦段。
-- **剪辑 / 编排 Agent**：检索、排序、拼接视频片段。
-- **审稿 / 验证 Agent**：检查叙事逻辑、时序一致性、视觉质量、节奏和指令遵循。
+- **Director / meta-planner**: turns user intent into a production plan.
+- **Screenwriter / script agent**: writes dialogue, scene structure, subtitles, and narration.
+- **Storyboard / shot agent**: converts scenes into shot-level visual plans.
+- **Cinematographer / camera agent**: controls framing, lens, movement, lighting, and composition.
+- **Editor / compiler**: retrieves, arranges, and stitches video segments.
+- **Reviewer / verifier**: checks narrative logic, temporal consistency, visual quality, rhythm, and instruction following.
 
-### 2. 分层视频记忆
+### 2. Hierarchical Video Memory
 
-长视频 Agent 越来越依赖结构化记忆：
+Long-video systems increasingly convert pixels into structured memory:
 
-- 帧/片段观察
-- 镜头级 caption 和时间戳
-- 场景级摘要
-- 事件时间线
-- 角色档案和关系图谱
-- 全局、任务、用户三层记忆
+- frame / clip observations
+- shot-level captions and timestamps
+- scene-level summaries
+- event timelines
+- character profiles and relationship graphs
+- global, task, and user memories
 
-### 3. 面向 Agent 策略的稠密反馈
+### 3. Dense Feedback for Video-Agent Policies
 
-视频任务的最终奖励通常稀疏、昂贵且主观，因此需要更细粒度的训练信号：
+Video tasks suffer from sparse, expensive, and subjective final rewards. Useful signals include:
 
-- token 级教师反馈
+- token-level teacher feedback
 - on-policy distillation
-- 工具调用效率奖励
-- verifier 引导的修正
-- 来自引擎、编辑器、工作流工具的执行反馈
+- tool-call efficiency rewards
+- verifier-guided revision
+- execution feedback from engines, editors, or workflow tools
 
-### 4. 电影化控制接口
+### 4. Cinematic Control Interfaces
 
-成熟系统不会让 LLM 直接输出低层像素或 3D 坐标，而是提供专业语义接口：
+Strong systems expose professional controls instead of asking LLMs to directly produce low-level pixels or geometry:
 
-- 景别、机位、运镜、焦段、构图、光照
-- 节拍、主歌、副歌、字幕、唇形同步时间
-- 可编辑引擎轨道和时间线资产
-- T2V / I2V / 视频编辑 / Video DiT 的结构化条件
+- shot type, camera movement, lens, framing, lighting
+- beat, verse, chorus, subtitle, lip-sync timing
+- editable engine tracks and timeline assets
+- structured conditions for T2V, I2V, video editing, and video DiT models
 
-## 开放问题
+## Open Problems
 
-- **意图-执行鸿沟**：如何让抽象创作意图稳定落到剧本、镜头、模型条件和后期编辑。
-- **长期一致性**：如何在多镜头、多场景中保持角色、空间、风格和叙事状态。
-- **奖励设计**：如何训练视频 Agent，因为最终视频质量昂贵、主观、延迟且多维。
-- **可编辑生成**：如何输出脚本、时间线、场景图、引擎资产和工作流，而不只是黑盒视频。
-- **评估体系**：如何衡量叙事连贯性、电影语言、文化准确性、节奏和生产可编辑性。
+- **Intent-to-execution gap**: preserving high-level creative intent through planning, generation, verification, and editing.
+- **Long-term consistency**: maintaining characters, spaces, styles, story state, and visual identity across many shots.
+- **Reward design**: training agents when video quality is delayed, costly, subjective, and multi-dimensional.
+- **Editable generation**: outputting scripts, timelines, scene graphs, engine assets, and workflows instead of opaque videos.
+- **Evaluation**: measuring narrative coherence, cinematic language, cultural fidelity, rhythm, and production editability.
 
-## 项目结构
+## Repository Structure
 
 ```text
 awsome-video-agent/
@@ -241,15 +241,15 @@ awsome-video-agent/
     └── validate_data.rb
 ```
 
-## 维护方式
+## Maintenance
 
-新增或修改结构化数据后，可以运行：
+Validate the structured data after edits:
 
 ```bash
 ruby scripts/validate_data.rb
 ```
 
-也可以直接用：
+Or use:
 
 ```bash
 make validate
@@ -257,20 +257,35 @@ make generate
 make all
 ```
 
-修改 `data/papers.yaml` 后，可以重新生成论文索引：
+Regenerate the paper index after changing `data/papers.yaml`:
 
 ```bash
 ruby scripts/generate_paper_index.rb
 ```
 
-修改 `data/tools.yaml` 后，可以重新生成工具索引：
+Regenerate the tool index after changing `data/tools.yaml`:
 
 ```bash
 ruby scripts/generate_tool_index.rb
 ```
 
-重新生成统计页：
+Regenerate collection statistics:
 
 ```bash
 ruby scripts/generate_stats.rb
 ```
+
+## Contributing
+
+Please add new papers to [`data/papers.yaml`](./data/papers.yaml) and place each entry under one or more routes:
+
+- `multi-agent-collaboration`
+- `video-editing-compilation`
+- `long-form-reasoning-memory`
+- `rl-policy-tuning`
+- `video-evaluation-self-improvement`
+- `cinematic-expression-domain-expertise`
+- `domain-specific-video-editing`
+- `video-world-model-embodied`
+
+For each paper, include title, year, task, links, and a one-line takeaway.

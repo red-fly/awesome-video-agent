@@ -19,7 +19,7 @@ def require_fields!(items, fields, label)
   end
 end
 
-require_fields!(papers, %w[name title year links categories task takeaway], "papers")
+require_fields!(papers, %w[name title year date venue links categories task takeaway], "papers")
 require_fields!(tools, %w[name type links takeaway], "tools")
 
 paper_names = papers.map { |paper| paper["name"] }

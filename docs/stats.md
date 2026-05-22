@@ -26,6 +26,16 @@ Generated from `data/papers.yaml` and `data/tools.yaml`.
 | 2025 | 16 |
 | 2026 | 23 |
 
+## Papers by Source
+
+| Source | Count |
+|---|---:|
+| ACL 2025 System Demonstrations | 1 |
+| NeurIPS 2025 Poster / arXiv preprint | 1 |
+| arXiv preprint | 38 |
+| arXiv preprint / ICLR 2026 Oral (project page) | 1 |
+| arXiv preprint / project page | 1 |
+
 ## Tools by Type
 
 | Type | Count |

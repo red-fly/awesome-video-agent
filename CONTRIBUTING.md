@@ -24,6 +24,8 @@ Good entries usually satisfy at least one of these:
 - name: Short Name
   title: "Full Paper Title"
   year: 2026
+  date: "2026-01"
+  venue: "arXiv preprint"
   arxiv: "2601.00000"
   links:
     paper: "https://arxiv.org/abs/2601.00000"

@@ -11,6 +11,8 @@ assignees: ""
 - Name:
 - Title:
 - Year:
+- Date:
+- Venue / Source:
 - Paper link:
 - Code link:
 - Project link:
