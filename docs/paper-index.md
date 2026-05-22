@@ -14,7 +14,9 @@ Generated from `data/papers.yaml`. A paper may have multiple category tags, but 
 | **Co-Director** | 2026-04 | arXiv preprint | Agentic generative video storytelling | [Paper](https://arxiv.org/abs/2604.24842) · [Project](https://co-director-agent.github.io/) |
 | **Mora** | 2024-03 | arXiv preprint | Generalist video generation | [Paper](https://arxiv.org/abs/2403.13248) · [Code](https://github.com/lichao-sun/Mora) |
 | **StoryAgent** | 2024-11 | arXiv preprint | Customized storytelling video generation | [Paper](https://arxiv.org/abs/2411.04925) |
-| **GenMAC** | 2024-12 | arXiv preprint | Compositional text-to-video generation | [Paper](https://arxiv.org/abs/2412.04440) |
+| **GenMAC** | 2026-03-14 | AAAI 2026 | Compositional text-to-video generation | [Paper](https://ojs.aaai.org/index.php/AAAI/article/view/37418) · [Arxiv](https://arxiv.org/abs/2412.04440) |
+| **LVAgent** | 2025-10 | ICCV 2025 | Collaborative long video understanding | [Paper](https://openaccess.thecvf.com/content/ICCV2025/html/Chen_LVAgent_Long_Video_Understanding_by_Multi-Round_Dynamical_Collaboration_of_MLLM_ICCV_2025_paper.html) · [Pdf](https://openaccess.thecvf.com/content/ICCV2025/papers/Chen_LVAgent_Long_Video_Understanding_by_Multi-Round_Dynamical_Collaboration_of_MLLM_ICCV_2025_paper.pdf) · [Code](https://github.com/64327069/LVAgent) |
+| **MAGNET** | 2025-09-18 | NeurIPS 2025 | Multi-video audio-visual retrieval and reasoning | [Paper](https://openreview.net/forum?id=CwXyUdqFqW) · [Project](https://schowdhury671.github.io/magnet_project/) · [Arxiv](https://arxiv.org/abs/2506.07016) |
 
 ## Video Editing and Compilation
 
@@ -38,24 +40,32 @@ Generated from `data/papers.yaml`. A paper may have multiple category tags, but 
 | **FutureSim** | 2026-05 | arXiv preprint | Long-horizon adaptive-agent evaluation | [Paper](https://arxiv.org/abs/2605.15188) · [Project](https://futuresim.github.io) · [Code](https://github.com/futuresim/futuresim) |
 | **VideoARM** | 2025-12 | arXiv preprint | Long-video understanding with hierarchical memory | [Paper](https://arxiv.org/abs/2512.12360) |
 | **ProVCA** | 2026-04 | arXiv preprint | Efficient long-video understanding | [Paper](https://arxiv.org/abs/2604.02891) |
+| **VideoAgent-ECCV2024** | 2024-09 | ECCV 2024 | Long-form video question answering | [Paper](https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/10325_ECCV_2024_paper.php) · [Pdf](https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/10325.pdf) · [Project](https://wxh1996.github.io/VideoAgent-Website/) |
+| **VideoAgent-Memory** | 2024-09 | ECCV 2024 | Memory-augmented video understanding | [Paper](https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/3241_ECCV_2024_paper.php) · [Pdf](https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/03241.pdf) · [Project](https://videoagent.github.io) |
+| **OmAgent** | 2024-11 | EMNLP 2024 | Complex video understanding | [Paper](https://aclanthology.org/2024.emnlp-main.559/) · [Pdf](https://aclanthology.org/2024.emnlp-main.559.pdf) |
+| **DrVideo** | 2025-06 | CVPR 2025 | Document-retrieval long video understanding | [Paper](https://openaccess.thecvf.com/content/CVPR2025/html/Ma_DrVideo_Document_Retrieval_Based_Long_Video_Understanding_CVPR_2025_paper.html) · [Pdf](https://openaccess.thecvf.com/content/CVPR2025/papers/Ma_DrVideo_Document_Retrieval_Based_Long_Video_Understanding_CVPR_2025_paper.pdf) |
+| **VCA** | 2025-10 | ICCV 2025 | Curiosity-driven long video understanding | [Paper](https://openaccess.thecvf.com/content/ICCV2025/html/Yang_VCA_Video_Curious_Agent_for_Long_Video_Understanding_ICCV_2025_paper.html) · [Pdf](https://openaccess.thecvf.com/content/ICCV2025/papers/Yang_VCA_Video_Curious_Agent_for_Long_Video_Understanding_ICCV_2025_paper.pdf) |
+| **VideoChat-A1** | 2026-03-14 | AAAI 2026 | Chain-of-shot long video reasoning | [Paper](https://ojs.aaai.org/index.php/AAAI/article/view/38018) · [Pdf](https://ojs.aaai.org/index.php/AAAI/article/download/38018/41980) · [Arxiv](https://arxiv.org/abs/2506.06097) |
 
 ## RL and Policy Tuning
 
 | Paper | Date | Source | Task | Links |
 |---|---|---|---|---|
 | **Video-OPD** | 2026-02 | arXiv preprint | Temporal video grounding | [Paper](https://arxiv.org/abs/2602.02994) |
-| **ToolRL** | 2025-04-16 | NeurIPS 2025 Poster / arXiv preprint | Tool-use policy learning | [Paper](https://arxiv.org/abs/2504.13958) · [Code](https://github.com/qiancheng0/ToolRL) |
+| **ToolRL** | 2025-04-16 | NeurIPS 2025 | Tool-use policy learning | [Paper](https://papers.nips.cc/paper_files/paper/2025/hash/97c5b2707228e7e3fb67e4ecc2e0e607-Abstract-Conference.html) · [Arxiv](https://arxiv.org/abs/2504.13958) · [Code](https://github.com/qiancheng0/ToolRL) |
 | **ToRL** | 2025-03-30 | arXiv preprint | Tool-integrated reasoning | [Paper](https://arxiv.org/abs/2503.23383) |
 | **OpenClaw-RL** | 2026-03 | arXiv preprint | General agent RL from interactions | [Paper](https://arxiv.org/abs/2603.10165) |
 | **ARTIST** | 2025-05 | arXiv preprint | Reasoning and function calling | [Paper](https://arxiv.org/abs/2505.01441) |
 | **Agent-World** | 2026-04-20 | arXiv preprint | Environment synthesis and agent training | [Paper](https://arxiv.org/abs/2604.18292) |
-| **AgentFlow** | 2025-10 | arXiv preprint / ICLR 2026 Oral (project page) | Planner optimization for multi-step agents | [Paper](https://arxiv.org/abs/2510.05592) |
+| **AgentFlow** | 2026-01-26 | ICLR 2026 Oral | Planner optimization for multi-step agents | [Paper](https://openreview.net/forum?id=Mf5AleTUVK) · [Arxiv](https://arxiv.org/abs/2510.05592) |
+| **ReAgent-V** | 2025-09-18 | NeurIPS 2025 | Reward-driven video understanding | [Paper](https://openreview.net/forum?id=D1Iw4Unvfc) · [Arxiv](https://arxiv.org/abs/2506.01300) |
 
 ## Evaluation and Self-Improvement
 
 | Paper | Date | Source | Task | Links |
 |---|---|---|---|---|
 | **VQQA** | 2026-03 | arXiv preprint | Video generation evaluation and improvement | [Paper](https://arxiv.org/abs/2603.12310) |
+| **VideoWebArena** | 2025-01-22 | ICLR 2025 | Video-based web-agent evaluation | [Paper](https://openreview.net/forum?id=unDQOUah0F) · [Project](https://videowebarena.github.io/) |
 
 ## Cinematic Expression and Domain Expertise
 
@@ -70,12 +80,15 @@ Generated from `data/papers.yaml`. A paper may have multiple category tags, but 
 | **ComfyUI-Copilot** | 2025 | ACL 2025 System Demonstrations | AIGC workflow automation | [Paper](https://aclanthology.org/2025.acl-demos.63/) · [Code](https://github.com/AIDC-AI/ComfyUI-Copilot) |
 | **Vibe AIGC** | 2026-02-06 | arXiv preprint | Agentic content generation orchestration | [Paper](https://arxiv.org/abs/2602.04575) |
 | **MoReGen** | 2025-12 | arXiv preprint | Physics-aware text-to-video synthesis | [Paper](https://arxiv.org/abs/2512.04221) |
+| **MotionAgent** | 2025-10 | ICCV 2025 | Fine-grained controllable video generation | [Paper](https://openaccess.thecvf.com/content/ICCV2025/html/Liao_MotionAgent_Fine-grained_Controllable_Video_Generation_via_Motion_Field_Agent_ICCV_2025_paper.html) · [Pdf](https://openaccess.thecvf.com/content/ICCV2025/papers/Liao_MotionAgent_Fine-grained_Controllable_Video_Generation_via_Motion_Field_Agent_ICCV_2025_paper.pdf) |
 
 ## Domain-Specific Video Editing
 
 | Paper | Date | Source | Task | Links |
 |---|---|---|---|---|
 | **LangDriveCTRL** | 2025-12 | arXiv preprint | Language-controllable driving scene editing | [Paper](https://arxiv.org/abs/2512.17445) · [Project](https://yunhe24.github.io/langdrivectrl/) |
+| **TheoremExplainAgent** | 2025-07 | ACL 2025 | Long-form theorem explanation video generation | [Paper](https://aclanthology.org/2025.acl-long.332/) · [Pdf](https://aclanthology.org/2025.acl-long.332.pdf) |
+| **AutoMV-RealEstate** | 2025-04-11 | AAAI 2025 Demonstration Track | Real estate marketing video generation | [Paper](https://ojs.aaai.org/index.php/AAAI/article/view/35377) · [Pdf](https://ojs.aaai.org/index.php/AAAI/article/download/35377/37532) |
 
 ## World Models and Embodied Video Agents
 
@@ -83,3 +96,7 @@ Generated from `data/papers.yaml`. A paper may have multiple category tags, but 
 |---|---|---|---|---|
 | **Action Agent** | 2026-05 | arXiv preprint | Embodied navigation video generation | [Paper](https://arxiv.org/abs/2605.01477) |
 | **MultiWorld** | 2026-04 | arXiv preprint | Multi-agent multi-view video world modeling | [Paper](https://arxiv.org/abs/2604.18564) · [Project](https://multi-world.github.io/) |
+| **Embodied VideoAgent** | 2025-10 | ICCV 2025 | Embodied dynamic scene understanding | [Paper](https://openaccess.thecvf.com/content/ICCV2025/html/Fan_Embodied_VideoAgent_Persistent_Memory_from_Egocentric_Videos_and_Embodied_Sensors_ICCV_2025_paper.html) · [Pdf](https://openaccess.thecvf.com/content/ICCV2025/papers/Fan_Embodied_VideoAgent_Persistent_Memory_from_Egocentric_Videos_and_Embodied_Sensors_ICCV_2025_paper.pdf) |
+| **GROOT** | 2024-01-16 | ICLR 2024 Spotlight | Learning agents from gameplay videos | [Paper](https://openreview.net/forum?id=uleDLeiaT3) |
+| **FantasyHSI** | 2026-03-14 | AAAI 2026 | 4D human-scene interaction synthesis | [Paper](https://ojs.aaai.org/index.php/AAAI/article/view/37758) |
+| **MuMA-ToM** | 2025-04-11 | AAAI 2025 | Multimodal multi-agent theory-of-mind reasoning | [Paper](https://ojs.aaai.org/index.php/AAAI/article/view/32142) |

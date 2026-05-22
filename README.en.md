@@ -9,6 +9,7 @@
   <a href="./docs/taxonomy.md">Taxonomy</a> ·
   <a href="./docs/reading-roadmap.md">Reading Roadmap</a> ·
   <a href="./docs/paper-index.md">Paper Index</a> ·
+  <a href="./docs/proceedings-scan.md">Proceedings Scan</a> ·
   <a href="./docs/tool-index.md">Tool Index</a> ·
   <a href="./docs/schema.md">Schema</a> ·
   <a href="./docs/stats.md">Stats</a> ·
@@ -20,7 +21,7 @@
 </p>
 
 <p align="center">
-  <img alt="Papers" src="https://img.shields.io/badge/papers-42-blue">
+  <img alt="Papers" src="https://img.shields.io/badge/papers-59-blue">
   <img alt="Tools" src="https://img.shields.io/badge/tools-6-orange">
   <img alt="Topic" src="https://img.shields.io/badge/topic-video--agents-purple">
   <img alt="Status" src="https://img.shields.io/badge/status-curated-brightgreen">
@@ -59,7 +60,9 @@ The collection combines local paper summaries from this workspace with a web sca
 - **Core Video Agent Papers**: directly about video agents, long-video agents, video generation/editing agents, cinematic compilation, or agentic video workflow.
 - **Related Agent Foundations**: not always video-specific, but important for building video agents: tool learning, memory, environment synthesis, orchestration, and long-horizon adaptation.
 
-Current coverage: **32 core video-agent papers/systems + 10 related foundations = 42 papers**, plus **6 open-source systems/tools**.
+Current coverage: **49 core video-agent papers/systems + 10 related foundations = 59 papers**, plus **6 open-source systems/tools**.
+
+This update adds a proceedings-focused pass over the last three years, prioritizing **ECCV 2024, EMNLP 2024, ICLR 2024/2025/2026, AAAI 2025/2026, CVPR 2025, ICCV 2025, ACL 2025, and NeurIPS 2025**. Newly added or venue-normalized entries include VideoAgent-ECCV2024, VideoAgent-Memory, OmAgent, DrVideo, VCA, LVAgent, Embodied VideoAgent, MotionAgent, VideoWebArena, GROOT, ReAgent-V, MAGNET, TheoremExplainAgent, AutoMV-RealEstate, FantasyHSI, VideoChat-A1, MuMA-ToM, plus formal venue updates for GenMAC, ToolRL, and AgentFlow. See the [Paper Index](./docs/paper-index.md), [Proceedings Scan](./docs/proceedings-scan.md), and [Stats](./docs/stats.md) for the full structured list.
 
 ## Contents
 
@@ -80,7 +83,7 @@ Current coverage: **32 core video-agent papers/systems + 10 related foundations 
 | **FILMAGENT** | 2025-01 | arXiv preprint | End-to-end virtual film automation | Specialized film-crew agents collaborate through critique, correction, verification, debate, and judging. | [Paper](https://arxiv.org/abs/2501.12909) |
 | **Mora** | 2024-03 | arXiv preprint | Generalist video generation | An early multi-agent visual generation framework for Sora-like generalist video capabilities. | [Paper](https://arxiv.org/abs/2403.13248) · [Code](https://github.com/lichao-sun/Mora) |
 | **StoryAgent** | 2024-11 | arXiv preprint | Customized storytelling video generation | Multi-agent collaboration improves customized story generation and protagonist consistency. | [Paper](https://arxiv.org/abs/2411.04925) |
-| **GenMAC** | 2024-12 | arXiv preprint | Compositional text-to-video generation | Design, generation, and redesign agents refine compositional prompts for controllable T2V generation. | [Paper](https://arxiv.org/abs/2412.04440) |
+| **GenMAC** | 2026-03-14 | AAAI 2026 | Compositional text-to-video generation | Design, generation, and redesign agents refine compositional prompts for controllable T2V generation. | [Paper](https://ojs.aaai.org/index.php/AAAI/article/view/37418) · [Arxiv](https://arxiv.org/abs/2412.04440) |
 | **MovieAgent** | 2025-03 | arXiv preprint | Automated movie generation | Hierarchical CoT planning decomposes a synopsis into scenes, shots, subtitles, audio, and generated videos. | [Paper](https://arxiv.org/abs/2503.07314) · [Code](https://github.com/showlab/MovieAgent) · [Project](https://weijiawu.github.io/MovieAgent/) |
 | **MAViS** | 2025-08 | arXiv preprint | Long-sequence video storytelling | Multi-agent storytelling connects narrative planning with T2I, I2V, LoRA, and audio generation. | [Paper](https://arxiv.org/abs/2508.08487) |
 | **Camera Artist** | 2026-04 | arXiv preprint | Cinematic storytelling video generation | Recursive shot generation and cinematic language injection make shot planning more film-like. | [Paper](https://arxiv.org/abs/2604.09195) |
@@ -135,11 +138,11 @@ Current coverage: **32 core video-agent papers/systems + 10 related foundations 
 | Paper / System | Date | Source | Why It Matters for Video Agents | Links |
 |---|---|---|---|---|
 | **Vibe AIGC** | 2026-02-06 | arXiv preprint | Complex media generation should be orchestrated by a meta-planner, specialist agents, tools, and human feedback. | [Paper](https://arxiv.org/abs/2602.04575) |
-| **ToolRL** | 2025-04-16 | NeurIPS 2025 Poster / arXiv preprint | Fine-grained rewards can teach reliable tool-use behavior beyond pure SFT imitation. | [Paper](https://arxiv.org/abs/2504.13958) · [Code](https://github.com/qiancheng0/ToolRL) |
+| **ToolRL** | 2025-04-16 | NeurIPS 2025 | Fine-grained rewards can teach reliable tool-use behavior beyond pure SFT imitation. | [Paper](https://papers.nips.cc/paper_files/paper/2025/hash/97c5b2707228e7e3fb67e4ecc2e0e607-Abstract-Conference.html) · [Arxiv](https://arxiv.org/abs/2504.13958) · [Code](https://github.com/qiancheng0/ToolRL) |
 | **ToRL** | 2025-03-30 | arXiv preprint | Agents need to learn when to reason internally and when to call external tools. | [Paper](https://arxiv.org/abs/2503.23383) |
 | **OpenClaw-RL** | 2026-03 | arXiv preprint | Real interaction processes can become training signals for agentic tool-use and planning. | [Paper](https://arxiv.org/abs/2603.10165) |
 | **ARTIST** | 2025-05 | arXiv preprint | RL can train agents to choose between internal reasoning and external function calls. | [Paper](https://arxiv.org/abs/2505.01441) |
-| **AgentFlow** | 2025-10 | arXiv preprint / ICLR 2026 Oral (project page) | Optimizing planner behavior inside the execution flow is relevant to video agents that coordinate many tools. | [Paper](https://arxiv.org/abs/2510.05592) |
+| **AgentFlow** | 2026-01-26 | ICLR 2026 Oral | Optimizing planner behavior inside the execution flow is relevant to video agents that coordinate many tools. | [Paper](https://openreview.net/forum?id=Mf5AleTUVK) · [Arxiv](https://arxiv.org/abs/2510.05592) |
 | **AgentKB** | 2025-07 | arXiv preprint | Reusable experience banks can help agents plan and revise across tasks and domains. | [Paper](https://arxiv.org/abs/2507.06229) |
 | **LLM Agent Memory Survey** | 2026-05 | arXiv preprint | Memory mechanisms are evolving from passive storage toward reusable, experiential agent infrastructure. | [Paper](https://arxiv.org/abs/2605.06716) |
 | **Agent-World** | 2026-04-20 | arXiv preprint | Executable environments and verifiable tasks can become scalable training grounds for agent evolution. | [Paper](https://arxiv.org/abs/2604.18292) |
@@ -227,6 +230,7 @@ awesome-video-agent/
 │   └── tools.yaml
 ├── docs/
 │   ├── paper-index.md
+│   ├── proceedings-scan.md
 │   ├── backlog.md
 │   ├── notes.md
 │   ├── reading-roadmap.md

@@ -2,38 +2,48 @@
 
 Generated from `data/papers.yaml` and `data/tools.yaml`.
 
-- Papers: **42**
+- Papers: **59**
 - Tools: **6**
 
 ## Papers by Primary Category
 
 | Category | Count |
 |---|---:|
-| Multi-Agent Collaboration | 9 |
+| Multi-Agent Collaboration | 11 |
 | Video Editing and Compilation | 2 |
-| Long-Form Reasoning and Memory | 11 |
-| RL and Policy Tuning | 7 |
-| Evaluation and Self-Improvement | 1 |
-| Cinematic Expression and Domain Expertise | 9 |
-| Domain-Specific Video Editing | 1 |
-| World Models and Embodied Video Agents | 2 |
+| Long-Form Reasoning and Memory | 17 |
+| RL and Policy Tuning | 8 |
+| Evaluation and Self-Improvement | 2 |
+| Cinematic Expression and Domain Expertise | 10 |
+| Domain-Specific Video Editing | 3 |
+| World Models and Embodied Video Agents | 6 |
 
 ## Papers by Year
 
 | Year | Count |
 |---:|---:|
-| 2024 | 3 |
-| 2025 | 16 |
-| 2026 | 23 |
+| 2024 | 7 |
+| 2025 | 27 |
+| 2026 | 25 |
 
 ## Papers by Source
 
 | Source | Count |
 |---|---:|
+| AAAI 2025 | 1 |
+| AAAI 2025 Demonstration Track | 1 |
+| AAAI 2026 | 3 |
+| ACL 2025 | 1 |
 | ACL 2025 System Demonstrations | 1 |
-| NeurIPS 2025 Poster / arXiv preprint | 1 |
-| arXiv preprint | 38 |
-| arXiv preprint / ICLR 2026 Oral (project page) | 1 |
+| CVPR 2025 | 1 |
+| ECCV 2024 | 2 |
+| EMNLP 2024 | 1 |
+| ICCV 2025 | 4 |
+| ICLR 2024 Spotlight | 1 |
+| ICLR 2025 | 1 |
+| ICLR 2026 Oral | 1 |
+| NeurIPS 2025 | 3 |
+| arXiv preprint | 37 |
 | arXiv preprint / project page | 1 |
 
 ## Tools by Type

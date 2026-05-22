@@ -2,6 +2,9 @@
 
 ## 2026-05-22
 
+- Expanded the structured collection from **42 papers** to **59 papers** with a proceedings-focused pass over recent top conferences.
+- Added video-agent related papers from ECCV 2024, EMNLP 2024, ICLR 2024/2025/2026, AAAI 2025/2026, CVPR 2025, ICCV 2025, ACL 2025, and NeurIPS 2025.
+- Updated GenMAC, ToolRL, and AgentFlow from preprint-style venue metadata to formal conference metadata.
 - Expanded the collection from 29 entries to **42 papers** and **6 tools** after a web scan across arXiv, GitHub, and Papers with Code-style queries.
 - Added priority candidates from the global scan:
   - DIRECT

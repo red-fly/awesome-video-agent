@@ -1,7 +1,8 @@
 ---
 papers:
 - name: FILMAGENT
-  title: 'FILMAGENT: A Multi-Agent Framework for End-to-End Film Automation in Virtual 3D Spaces'
+  title: 'FILMAGENT: A Multi-Agent Framework for End-to-End Film Automation in Virtual
+    3D Spaces'
   year: 2025
   arxiv: '2501.12909'
   links:
@@ -10,7 +11,8 @@ papers:
   - multi-agent-collaboration
   - cinematic-expression-domain-expertise
   task: End-to-end virtual film automation
-  takeaway: Specialized film-crew agents collaborate through critique, correction, verification, debate, and judging.
+  takeaway: Specialized film-crew agents collaborate through critique, correction,
+    verification, debate, and judging.
   date: 2025-01
   venue: arXiv preprint
 - name: MovieAgent
@@ -25,7 +27,8 @@ papers:
   - multi-agent-collaboration
   - cinematic-expression-domain-expertise
   task: Automated movie generation
-  takeaway: Hierarchical CoT planning decomposes a synopsis into scenes, shots, subtitles, audio, and generated videos.
+  takeaway: Hierarchical CoT planning decomposes a synopsis into scenes, shots, subtitles,
+    audio, and generated videos.
   date: 2025-03
   venue: arXiv preprint
 - name: CutClaw
@@ -40,7 +43,8 @@ papers:
   - multi-agent-collaboration
   - cinematic-expression-domain-expertise
   task: Hours-long video editing
-  takeaway: Bottom-up multimodal decomposition turns raw footage and music into searchable editing units.
+  takeaway: Bottom-up multimodal decomposition turns raw footage and music into searchable
+    editing units.
   date: '2026-03-31'
   venue: arXiv preprint
 - name: LongVideoAgent
@@ -54,11 +58,13 @@ papers:
   - long-form-reasoning-memory
   - rl-policy-tuning
   task: Long-video question answering
-  takeaway: A master agent gathers evidence through grounding and vision agents instead of compressing the whole video at once.
+  takeaway: A master agent gathers evidence through grounding and vision agents instead
+    of compressing the whole video at once.
   date: '2025-12-23'
   venue: arXiv preprint
 - name: Video-OPD
-  title: 'Video-OPD: Efficient Post-Training of Multimodal Large Language Models for Temporal Video Grounding via On-Policy Distillation'
+  title: 'Video-OPD: Efficient Post-Training of Multimodal Large Language Models for
+    Temporal Video Grounding via On-Policy Distillation'
   year: 2026
   arxiv: '2602.02994'
   links:
@@ -67,11 +73,13 @@ papers:
   - rl-policy-tuning
   - long-form-reasoning-memory
   task: Temporal video grounding
-  takeaway: On-policy distillation provides dense token-level feedback and reduces the sparse-reward cost of GRPO-style training.
+  takeaway: On-policy distillation provides dense token-level feedback and reduces
+    the sparse-reward cost of GRPO-style training.
   date: 2026-02
   venue: arXiv preprint
 - name: Camera Artist
-  title: 'Camera Artist: A Multi-Agent Framework for Cinematic Language Storytelling Video Generation'
+  title: 'Camera Artist: A Multi-Agent Framework for Cinematic Language Storytelling
+    Video Generation'
   year: 2026
   arxiv: '2604.09195'
   links:
@@ -80,7 +88,8 @@ papers:
   - cinematic-expression-domain-expertise
   - multi-agent-collaboration
   task: Cinematic storytelling video generation
-  takeaway: Recursive shot generation and cinematic language injection make shot planning more film-like.
+  takeaway: Recursive shot generation and cinematic language injection make shot planning
+    more film-like.
   date: 2026-04
   venue: arXiv preprint
 - name: AutoMV
@@ -95,11 +104,13 @@ papers:
   - cinematic-expression-domain-expertise
   - multi-agent-collaboration
   task: Music video generation
-  takeaway: Music structure, lyrics, beat alignment, character consistency, and verifier agents are combined into a full MV pipeline.
+  takeaway: Music structure, lyrics, beat alignment, character consistency, and verifier
+    agents are combined into a full MV pipeline.
   date: 2025-12
   venue: arXiv preprint
 - name: CineAgents
-  title: A Benchmark and Multi-Agent System for Instruction-driven Cinematic Video Compilation
+  title: A Benchmark and Multi-Agent System for Instruction-driven Cinematic Video
+    Compilation
   year: 2026
   arxiv: '2604.10456'
   links:
@@ -122,11 +133,13 @@ papers:
   - multi-agent-collaboration
   - cinematic-expression-domain-expertise
   task: Editable 3D cutscene generation
-  takeaway: Agents control Unreal Engine through MCP tools and output editable Level Sequence assets.
+  takeaway: Agents control Unreal Engine through MCP tools and output editable Level
+    Sequence assets.
   date: '2026-04-28'
   venue: arXiv preprint / project page
 - name: OmniScript
-  title: 'OmniScript: Towards Audio-Visual Script Generation for Long-Form Cinematic Video'
+  title: 'OmniScript: Towards Audio-Visual Script Generation for Long-Form Cinematic
+    Video'
   year: 2026
   arxiv: '2604.11102'
   links:
@@ -137,7 +150,8 @@ papers:
   - long-form-reasoning-memory
   - cinematic-expression-domain-expertise
   task: Audio-visual script generation
-  takeaway: Long-form scripts become a bridge between narrative, scene structure, audio, subtitles, and cinematic video.
+  takeaway: Long-form scripts become a bridge between narrative, scene structure,
+    audio, subtitles, and cinematic video.
   date: '2026-04-13'
   venue: arXiv preprint
 - name: Aurora
@@ -152,7 +166,8 @@ papers:
   - cinematic-expression-domain-expertise
   - multi-agent-collaboration
   task: Unified video editing
-  takeaway: A VLM agent translates underspecified user edits into structured plans and reference conditions.
+  takeaway: A VLM agent translates underspecified user edits into structured plans
+    and reference conditions.
   date: '2026-05-18'
   venue: arXiv preprint
 - name: MAViS
@@ -165,7 +180,8 @@ papers:
   - multi-agent-collaboration
   - cinematic-expression-domain-expertise
   task: Long-sequence video storytelling
-  takeaway: Multi-agent storytelling connects narrative planning with T2I, I2V, LoRA, and audio generation.
+  takeaway: Multi-agent storytelling connects narrative planning with T2I, I2V, LoRA,
+    and audio generation.
   date: 2025-08
   venue: arXiv preprint
 - name: MAVEN
@@ -179,7 +195,8 @@ papers:
   - cinematic-expression-domain-expertise
   - multi-agent-collaboration
   task: Multicultural text-to-video generation
-  takeaway: Agents add cultural relevance checks and domain knowledge to text-to-video generation.
+  takeaway: Agents add cultural relevance checks and domain knowledge to text-to-video
+    generation.
   date: 2026-05
   venue: arXiv preprint
 - name: ShareVerse
@@ -196,7 +213,8 @@ papers:
   date: '2026-03-03'
   venue: arXiv preprint
 - name: DreamStory
-  title: 'DreamStory: Open-Domain Story Visualization by LLM-Guided Multi-Subject Consistent Diffusion'
+  title: 'DreamStory: Open-Domain Story Visualization by LLM-Guided Multi-Subject
+    Consistent Diffusion'
   year: 2025
   arxiv: '2407.12899'
   links:
@@ -205,11 +223,13 @@ papers:
   categories:
   - cinematic-expression-domain-expertise
   task: Story visualization
-  takeaway: LLM-guided diffusion maintains multiple subjects across open-domain visual stories.
+  takeaway: LLM-guided diffusion maintains multiple subjects across open-domain visual
+    stories.
   date: 2024-07 / 2025-08 version
   venue: arXiv preprint
 - name: LASEV
-  title: 'Beyond End-to-End Video Models: An LLM-Based Multi-Agent System for Educational Video Generation'
+  title: 'Beyond End-to-End Video Models: An LLM-Based Multi-Agent System for Educational
+    Video Generation'
   year: 2026
   arxiv: '2602.11790'
   links:
@@ -219,7 +239,8 @@ papers:
   - multi-agent-collaboration
   - cinematic-expression-domain-expertise
   task: Educational video generation
-  takeaway: Semantic, rule-based, and tool-based critique loops make educational videos more publishable.
+  takeaway: Semantic, rule-based, and tool-based critique loops make educational videos
+    more publishable.
   date: 2026-02
   venue: arXiv preprint
 - name: ComfyUI-Copilot
@@ -231,11 +252,13 @@ papers:
   categories:
   - cinematic-expression-domain-expertise
   task: AIGC workflow automation
-  takeaway: Agentic workflow development and node documentation help bridge creative intent and executable media pipelines.
+  takeaway: Agentic workflow development and node documentation help bridge creative
+    intent and executable media pipelines.
   date: '2025'
   venue: ACL 2025 System Demonstrations
 - name: MMProLong
-  title: Training Long-Context Vision-Language Models Effectively with Generalization Beyond 128K Context
+  title: Training Long-Context Vision-Language Models Effectively with Generalization
+    Beyond 128K Context
   year: 2026
   arxiv: '2605.13831'
   links:
@@ -243,7 +266,8 @@ papers:
   categories:
   - long-form-reasoning-memory
   task: Long-context VLM training
-  takeaway: Long-context VLM recipes are infrastructure for long-video agent memory and reasoning.
+  takeaway: Long-context VLM recipes are infrastructure for long-video agent memory
+    and reasoning.
   date: 2026-05
   venue: arXiv preprint
 - name: UniVA
@@ -257,7 +281,8 @@ papers:
   categories:
   - long-form-reasoning-memory
   task: Interactive video agent memory
-  takeaway: Global, task, and user memories support consistency across sustained video interactions.
+  takeaway: Global, task, and user memories support consistency across sustained video
+    interactions.
   date: 2025-11
   venue: arXiv preprint
 - name: Vibe AIGC
@@ -270,7 +295,8 @@ papers:
   - cinematic-expression-domain-expertise
   - multi-agent-collaboration
   task: Agentic content generation orchestration
-  takeaway: Complex media generation should be orchestrated by a meta-planner, specialist agents, tools, and human feedback.
+  takeaway: Complex media generation should be orchestrated by a meta-planner, specialist
+    agents, tools, and human feedback.
   date: '2026-02-06'
   venue: arXiv preprint
 - name: ToolRL
@@ -278,14 +304,16 @@ papers:
   year: 2025
   arxiv: '2504.13958'
   links:
-    paper: https://arxiv.org/abs/2504.13958
+    paper: https://papers.nips.cc/paper_files/paper/2025/hash/97c5b2707228e7e3fb67e4ecc2e0e607-Abstract-Conference.html
+    arxiv: https://arxiv.org/abs/2504.13958
     code: https://github.com/qiancheng0/ToolRL
   categories:
   - rl-policy-tuning
   task: Tool-use policy learning
-  takeaway: Fine-grained rewards can teach reliable tool-use behavior beyond pure SFT imitation.
+  takeaway: Fine-grained rewards can teach reliable tool-use behavior beyond pure
+    SFT imitation.
   date: '2025-04-16'
-  venue: NeurIPS 2025 Poster / arXiv preprint
+  venue: NeurIPS 2025
 - name: ToRL
   title: 'ToRL: Tool-Integrated Reasoning for LLM Agents'
   year: 2025
@@ -295,7 +323,8 @@ papers:
   categories:
   - rl-policy-tuning
   task: Tool-integrated reasoning
-  takeaway: Agents need to learn when to reason internally and when to call external tools.
+  takeaway: Agents need to learn when to reason internally and when to call external
+    tools.
   date: '2025-03-30'
   venue: arXiv preprint
 - name: OpenClaw-RL
@@ -307,7 +336,8 @@ papers:
   categories:
   - rl-policy-tuning
   task: General agent RL from interactions
-  takeaway: Real interaction processes can become training signals for agentic tool-use and planning.
+  takeaway: Real interaction processes can become training signals for agentic tool-use
+    and planning.
   date: 2026-03
   venue: arXiv preprint
 - name: ARTIST
@@ -319,7 +349,8 @@ papers:
   categories:
   - rl-policy-tuning
   task: Reasoning and function calling
-  takeaway: RL can train agents to choose between internal reasoning and external function calls.
+  takeaway: RL can train agents to choose between internal reasoning and external
+    function calls.
   date: 2025-05
   venue: arXiv preprint
 - name: AgentKB
@@ -331,11 +362,13 @@ papers:
   categories:
   - long-form-reasoning-memory
   task: Cross-domain agent experience memory
-  takeaway: Reusable experience banks can help agents plan and revise across tasks and domains.
+  takeaway: Reusable experience banks can help agents plan and revise across tasks
+    and domains.
   date: 2025-07
   venue: arXiv preprint
 - name: LLM Agent Memory Survey
-  title: 'From Storage to Experience: A Survey on the Evolution of LLM Agent Memory Mechanisms'
+  title: 'From Storage to Experience: A Survey on the Evolution of LLM Agent Memory
+    Mechanisms'
   year: 2026
   arxiv: '2605.06716'
   links:
@@ -343,11 +376,13 @@ papers:
   categories:
   - long-form-reasoning-memory
   task: Agent memory survey
-  takeaway: Memory mechanisms are evolving from passive storage toward reusable, experiential agent infrastructure.
+  takeaway: Memory mechanisms are evolving from passive storage toward reusable, experiential
+    agent infrastructure.
   date: 2026-05
   venue: arXiv preprint
 - name: Agent-World
-  title: 'Agent-World: Scaling Real-World Environment Synthesis for Evolving General Agent Intelligence'
+  title: 'Agent-World: Scaling Real-World Environment Synthesis for Evolving General
+    Agent Intelligence'
   year: 2026
   arxiv: '2604.18292'
   links:
@@ -356,7 +391,8 @@ papers:
   - rl-policy-tuning
   - long-form-reasoning-memory
   task: Environment synthesis and agent training
-  takeaway: Executable environments and verifiable tasks can become scalable training grounds for agent evolution.
+  takeaway: Executable environments and verifiable tasks can become scalable training
+    grounds for agent evolution.
   date: '2026-04-20'
   venue: arXiv preprint
 - name: AgentFlow
@@ -364,13 +400,15 @@ papers:
   year: 2025
   arxiv: '2510.05592'
   links:
-    paper: https://arxiv.org/abs/2510.05592
+    paper: https://openreview.net/forum?id=Mf5AleTUVK
+    arxiv: https://arxiv.org/abs/2510.05592
   categories:
   - rl-policy-tuning
   task: Planner optimization for multi-step agents
-  takeaway: Optimizing planner behavior inside the execution flow is relevant to video agents that coordinate many tools.
-  date: 2025-10
-  venue: arXiv preprint / ICLR 2026 Oral (project page)
+  takeaway: Optimizing planner behavior inside the execution flow is relevant to video
+    agents that coordinate many tools.
+  date: '2026-01-26'
+  venue: ICLR 2026 Oral
 - name: FutureSim
   title: 'FutureSim: Replaying World Events to Evaluate Adaptive Agents'
   year: 2026
@@ -382,7 +420,8 @@ papers:
   categories:
   - long-form-reasoning-memory
   task: Long-horizon adaptive-agent evaluation
-  takeaway: Long-horizon event replay is a useful evaluation idea for agents that must adapt over time.
+  takeaway: Long-horizon event replay is a useful evaluation idea for agents that
+    must adapt over time.
   date: 2026-05
   venue: arXiv preprint
 - name: DIRECT
@@ -396,7 +435,8 @@ papers:
   - video-editing-compilation
   - multi-agent-collaboration
   task: Agentic video mashup and trailer editing
-  takeaway: Multi-agent editing improves cross-level audio-visual consistency for video mashups and cinematic trailers.
+  takeaway: Multi-agent editing improves cross-level audio-visual consistency for
+    video mashups and cinematic trailers.
   date: 2026-04
   venue: arXiv preprint
 - name: Co-Director
@@ -410,7 +450,8 @@ papers:
   - multi-agent-collaboration
   - cinematic-expression-domain-expertise
   task: Agentic generative video storytelling
-  takeaway: Global narrative optimization and local multimodal self-optimization reduce semantic drift in generative video stories.
+  takeaway: Global narrative optimization and local multimodal self-optimization reduce
+    semantic drift in generative video stories.
   date: 2026-04
   venue: arXiv preprint
 - name: VideoARM
@@ -422,11 +463,13 @@ papers:
   categories:
   - long-form-reasoning-memory
   task: Long-video understanding with hierarchical memory
-  takeaway: An observe-think-act-memorize loop reasons over hierarchical multimodal memories for long videos.
+  takeaway: An observe-think-act-memorize loop reasons over hierarchical multimodal
+    memories for long videos.
   date: 2025-12
   venue: arXiv preprint
 - name: VQQA
-  title: 'VQQA: An Agentic Approach to Automated Video Quality Assessment, Critique, and Improvement'
+  title: 'VQQA: An Agentic Approach to Automated Video Quality Assessment, Critique,
+    and Improvement'
   year: 2026
   arxiv: '2603.12310'
   links:
@@ -435,7 +478,8 @@ papers:
   - video-evaluation-self-improvement
   - rl-policy-tuning
   task: Video generation evaluation and improvement
-  takeaway: Visual question generation and VLM critique can act as semantic gradients for iterative video improvement.
+  takeaway: Visual question generation and VLM critique can act as semantic gradients
+    for iterative video improvement.
   date: 2026-03
   venue: arXiv preprint
 - name: Mora
@@ -449,7 +493,8 @@ papers:
   - multi-agent-collaboration
   - cinematic-expression-domain-expertise
   task: Generalist video generation
-  takeaway: An early multi-agent visual generation framework for Sora-like generalist video capabilities.
+  takeaway: An early multi-agent visual generation framework for Sora-like generalist
+    video capabilities.
   date: 2024-03
   venue: arXiv preprint
 - name: StoryAgent
@@ -462,7 +507,8 @@ papers:
   - multi-agent-collaboration
   - cinematic-expression-domain-expertise
   task: Customized storytelling video generation
-  takeaway: Multi-agent collaboration improves customized story generation and protagonist consistency.
+  takeaway: Multi-agent collaboration improves customized story generation and protagonist
+    consistency.
   date: 2024-11
   venue: arXiv preprint
 - name: GenMAC
@@ -470,14 +516,16 @@ papers:
   year: 2024
   arxiv: '2412.04440'
   links:
-    paper: https://arxiv.org/abs/2412.04440
+    paper: https://ojs.aaai.org/index.php/AAAI/article/view/37418
+    arxiv: https://arxiv.org/abs/2412.04440
   categories:
   - multi-agent-collaboration
   - cinematic-expression-domain-expertise
   task: Compositional text-to-video generation
-  takeaway: Design, generation, and redesign agents refine compositional prompts for controllable T2V generation.
-  date: 2024-12
-  venue: arXiv preprint
+  takeaway: Design, generation, and redesign agents refine compositional prompts for
+    controllable T2V generation.
+  date: '2026-03-14'
+  venue: AAAI 2026
 - name: Sima 1.0
   title: 'Sima 1.0: A Collaborative Multi-agent Framework for Documentary Video Production'
   year: 2026
@@ -488,11 +536,13 @@ papers:
   - video-editing-compilation
   - multi-agent-collaboration
   task: Documentary video production
-  takeaway: A collaborative multi-agent workflow targets documentary production rather than short clip generation.
+  takeaway: A collaborative multi-agent workflow targets documentary production rather
+    than short clip generation.
   date: 2026-04
   venue: arXiv preprint
 - name: LangDriveCTRL
-  title: 'LangDriveCTRL: Natural Language Controllable Driving Scene Editing with Multimodal Agents'
+  title: 'LangDriveCTRL: Natural Language Controllable Driving Scene Editing with
+    Multimodal Agents'
   year: 2025
   arxiv: '2512.17445'
   links:
@@ -502,11 +552,13 @@ papers:
   - domain-specific-video-editing
   - cinematic-expression-domain-expertise
   task: Language-controllable driving scene editing
-  takeaway: Multimodal agents translate natural language into scene-graph edits for controllable driving video scenarios.
+  takeaway: Multimodal agents translate natural language into scene-graph edits for
+    controllable driving video scenarios.
   date: 2025-12
   venue: arXiv preprint
 - name: Action Agent
-  title: 'Action Agent: Agentic Video Generation Meets Flow-Constrained Diffusion Control for Embodied Navigation'
+  title: 'Action Agent: Agentic Video Generation Meets Flow-Constrained Diffusion
+    Control for Embodied Navigation'
   year: 2026
   arxiv: '2605.01477'
   links:
@@ -515,11 +567,13 @@ papers:
   - video-world-model-embodied
   - cinematic-expression-domain-expertise
   task: Embodied navigation video generation
-  takeaway: Agentic navigation video generation is combined with flow-constrained diffusion control.
+  takeaway: Agentic navigation video generation is combined with flow-constrained
+    diffusion control.
   date: 2026-05
   venue: arXiv preprint
 - name: MultiWorld
-  title: 'MultiWorld: A Multi-Agent Multi-View Video Generation Framework for World Model'
+  title: 'MultiWorld: A Multi-Agent Multi-View Video Generation Framework for World
+    Model'
   year: 2026
   arxiv: '2604.18564'
   links:
@@ -529,7 +583,8 @@ papers:
   - video-world-model-embodied
   - cinematic-expression-domain-expertise
   task: Multi-agent multi-view video world modeling
-  takeaway: Multi-agent, multi-view video generation supports consistent visual world modeling.
+  takeaway: Multi-agent, multi-view video generation supports consistent visual world
+    modeling.
   date: 2026-04
   venue: arXiv preprint
 - name: MoReGen
@@ -542,7 +597,8 @@ papers:
   - cinematic-expression-domain-expertise
   - multi-agent-collaboration
   task: Physics-aware text-to-video synthesis
-  takeaway: Multi-agent reasoning, physics simulation, and rendering help model physically plausible motion in T2V generation.
+  takeaway: Multi-agent reasoning, physics simulation, and rendering help model physically
+    plausible motion in T2V generation.
   date: 2025-12
   venue: arXiv preprint
 - name: ProVCA
@@ -554,6 +610,254 @@ papers:
   categories:
   - long-form-reasoning-memory
   task: Efficient long-video understanding
-  takeaway: Progressive video condensation helps agents reason over long videos under limited context budgets.
+  takeaway: Progressive video condensation helps agents reason over long videos under
+    limited context budgets.
   date: 2026-04
   venue: arXiv preprint
+- name: VideoAgent-ECCV2024
+  title: 'VideoAgent: Long-form Video Understanding with Large Language Model as Agent'
+  year: 2024
+  date: 2024-09
+  venue: ECCV 2024
+  links:
+    paper: https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/10325_ECCV_2024_paper.php
+    pdf: https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/10325.pdf
+    project: https://wxh1996.github.io/VideoAgent-Website/
+  categories:
+  - long-form-reasoning-memory
+  task: Long-form video question answering
+  takeaway: An LLM agent iteratively identifies and gathers key visual evidence with
+    VLM tools, reducing the need to process every frame.
+- name: VideoAgent-Memory
+  title: 'VideoAgent: A Memory-augmented Multimodal Agent for Video Understanding'
+  year: 2024
+  date: 2024-09
+  venue: ECCV 2024
+  links:
+    paper: https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/3241_ECCV_2024_paper.php
+    pdf: https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/03241.pdf
+    project: https://videoagent.github.io
+  categories:
+  - long-form-reasoning-memory
+  task: Memory-augmented video understanding
+  takeaway: Structured temporal and object-centric memories let an LLM agent query
+    localization and object tools for long-horizon video reasoning.
+- name: OmAgent
+  title: 'OmAgent: A Multi-modal Agent Framework for Complex Video Understanding with
+    Task Divide-and-Conquer'
+  year: 2024
+  date: 2024-11
+  venue: EMNLP 2024
+  links:
+    paper: https://aclanthology.org/2024.emnlp-main.559/
+    pdf: https://aclanthology.org/2024.emnlp-main.559.pdf
+  categories:
+  - long-form-reasoning-memory
+  - multi-agent-collaboration
+  task: Complex video understanding
+  takeaway: A divide-and-conquer loop stores and retrieves relevant frames, then dynamically
+    invokes APIs and tools for complex video queries.
+- name: DrVideo
+  title: 'DrVideo: Document Retrieval Based Long Video Understanding'
+  year: 2025
+  date: 2025-06
+  venue: CVPR 2025
+  links:
+    paper: https://openaccess.thecvf.com/content/CVPR2025/html/Ma_DrVideo_Document_Retrieval_Based_Long_Video_Understanding_CVPR_2025_paper.html
+    pdf: https://openaccess.thecvf.com/content/CVPR2025/papers/Ma_DrVideo_Document_Retrieval_Based_Long_Video_Understanding_CVPR_2025_paper.pdf
+  categories:
+  - long-form-reasoning-memory
+  task: Document-retrieval long video understanding
+  takeaway: Long videos are converted into coarse text documents and refined through
+    an agent-based retrieval loop that searches for missing evidence.
+- name: VCA
+  title: 'VCA: Video Curious Agent for Long Video Understanding'
+  year: 2025
+  date: 2025-10
+  venue: ICCV 2025
+  links:
+    paper: https://openaccess.thecvf.com/content/ICCV2025/html/Yang_VCA_Video_Curious_Agent_for_Long_Video_Understanding_ICCV_2025_paper.html
+    pdf: https://openaccess.thecvf.com/content/ICCV2025/papers/Yang_VCA_Video_Curious_Agent_for_Long_Video_Understanding_ICCV_2025_paper.pdf
+  categories:
+  - long-form-reasoning-memory
+  - rl-policy-tuning
+  task: Curiosity-driven long video understanding
+  takeaway: A VLM-based agent explores video segments with tree search and self-generated
+    intrinsic rewards to gather the most useful frames.
+- name: LVAgent
+  title: 'LVAgent: Long Video Understanding by Multi-Round Dynamical Collaboration
+    of MLLM Agents'
+  year: 2025
+  date: 2025-10
+  venue: ICCV 2025
+  arxiv: '2503.10200'
+  links:
+    paper: https://openaccess.thecvf.com/content/ICCV2025/html/Chen_LVAgent_Long_Video_Understanding_by_Multi-Round_Dynamical_Collaboration_of_MLLM_ICCV_2025_paper.html
+    pdf: https://openaccess.thecvf.com/content/ICCV2025/papers/Chen_LVAgent_Long_Video_Understanding_by_Multi-Round_Dynamical_Collaboration_of_MLLM_ICCV_2025_paper.pdf
+    code: https://github.com/64327069/LVAgent
+  categories:
+  - multi-agent-collaboration
+  - long-form-reasoning-memory
+  task: Collaborative long video understanding
+  takeaway: Multiple MLLM agents are dynamically selected, retrieve key segments,
+    debate answers, and reflect across rounds for long-video QA.
+- name: Embodied VideoAgent
+  title: 'Embodied VideoAgent: Persistent Memory from Egocentric Videos and Embodied
+    Sensors Enables Dynamic Scene Understanding'
+  year: 2025
+  date: 2025-10
+  venue: ICCV 2025
+  links:
+    paper: https://openaccess.thecvf.com/content/ICCV2025/html/Fan_Embodied_VideoAgent_Persistent_Memory_from_Egocentric_Videos_and_Embodied_Sensors_ICCV_2025_paper.html
+    pdf: https://openaccess.thecvf.com/content/ICCV2025/papers/Fan_Embodied_VideoAgent_Persistent_Memory_from_Egocentric_Videos_and_Embodied_Sensors_ICCV_2025_paper.pdf
+  categories:
+  - video-world-model-embodied
+  - long-form-reasoning-memory
+  task: Embodied dynamic scene understanding
+  takeaway: Egocentric videos, depth, and pose are fused into persistent scene memory
+    for embodied reasoning, planning, and manipulation tasks.
+- name: MotionAgent
+  title: 'MotionAgent: Fine-grained Controllable Video Generation via Motion Field
+    Agent'
+  year: 2025
+  date: 2025-10
+  venue: ICCV 2025
+  links:
+    paper: https://openaccess.thecvf.com/content/ICCV2025/html/Liao_MotionAgent_Fine-grained_Controllable_Video_Generation_via_Motion_Field_Agent_ICCV_2025_paper.html
+    pdf: https://openaccess.thecvf.com/content/ICCV2025/papers/Liao_MotionAgent_Fine-grained_Controllable_Video_Generation_via_Motion_Field_Agent_ICCV_2025_paper.pdf
+  categories:
+  - cinematic-expression-domain-expertise
+  task: Fine-grained controllable video generation
+  takeaway: A motion field agent parses text into object trajectories and camera extrinsics,
+    then controls image-to-video diffusion with explicit flow.
+- name: VideoWebArena
+  title: 'VideoWebArena: Evaluating Long Context Multimodal Agents with Video Understanding
+    Web Tasks'
+  year: 2025
+  date: '2025-01-22'
+  venue: ICLR 2025
+  links:
+    paper: https://openreview.net/forum?id=unDQOUah0F
+    project: https://videowebarena.github.io/
+  categories:
+  - video-evaluation-self-improvement
+  - long-form-reasoning-memory
+  task: Video-based web-agent evaluation
+  takeaway: A benchmark of web-agent tasks grounded in video tutorials tests whether
+    agents can retain skills and facts from long-context video.
+- name: GROOT
+  title: 'GROOT: Learning to Follow Instructions by Watching Gameplay Videos'
+  year: 2024
+  date: '2024-01-16'
+  venue: ICLR 2024 Spotlight
+  links:
+    paper: https://openreview.net/forum?id=uleDLeiaT3
+  categories:
+  - video-world-model-embodied
+  - rl-policy-tuning
+  task: Learning agents from gameplay videos
+  takeaway: Reference gameplay videos become goal specifications for an instruction-following
+    agent in open-world environments.
+- name: ReAgent-V
+  title: 'ReAgent-V: A Reward-Driven Multi-Agent Framework for Video Understanding'
+  year: 2025
+  date: '2025-09-18'
+  venue: NeurIPS 2025
+  arxiv: '2506.01300'
+  links:
+    paper: https://openreview.net/forum?id=D1Iw4Unvfc
+    arxiv: https://arxiv.org/abs/2506.01300
+  categories:
+  - rl-policy-tuning
+  - long-form-reasoning-memory
+  task: Reward-driven video understanding
+  takeaway: Real-time reward generation guides frame selection, multi-perspective
+    reflection, and preference/RL-style tuning for video reasoning.
+- name: MAGNET
+  title: 'MAGNET: A Multi-agent Framework for Finding Audio-Visual Needles by Reasoning
+    over Multi-Video Haystacks'
+  year: 2025
+  date: '2025-09-18'
+  venue: NeurIPS 2025
+  arxiv: '2506.07016'
+  links:
+    paper: https://openreview.net/forum?id=CwXyUdqFqW
+    project: https://schowdhury671.github.io/magnet_project/
+    arxiv: https://arxiv.org/abs/2506.07016
+  categories:
+  - multi-agent-collaboration
+  - long-form-reasoning-memory
+  task: Multi-video audio-visual retrieval and reasoning
+  takeaway: Specialized agents reason across multiple videos to retrieve, link, and
+    ground relevant audio-visual segments for complex QA.
+- name: TheoremExplainAgent
+  title: 'TheoremExplainAgent: Towards Video-based Multimodal Explanations for LLM
+    Theorem Understanding'
+  year: 2025
+  date: 2025-07
+  venue: ACL 2025
+  links:
+    paper: https://aclanthology.org/2025.acl-long.332/
+    pdf: https://aclanthology.org/2025.acl-long.332.pdf
+  categories:
+  - domain-specific-video-editing
+  - multi-agent-collaboration
+  task: Long-form theorem explanation video generation
+  takeaway: Agentic planning generates multi-minute Manim explanation videos and exposes
+    reasoning flaws that text-only explanations can hide.
+- name: AutoMV-RealEstate
+  title: 'AutoMV: An Autonomous Agent Framework for Real Estate Marketing Video Generation'
+  year: 2025
+  date: '2025-04-11'
+  venue: AAAI 2025 Demonstration Track
+  links:
+    paper: https://ojs.aaai.org/index.php/AAAI/article/view/35377
+    pdf: https://ojs.aaai.org/index.php/AAAI/article/download/35377/37532
+  categories:
+  - domain-specific-video-editing
+  - cinematic-expression-domain-expertise
+  task: Real estate marketing video generation
+  takeaway: An autonomous agent selects tools, writes story directives, and plans
+    camera trajectories to turn property images into marketing videos.
+- name: FantasyHSI
+  title: 'FantasyHSI: Video-Generation-Centric 4D Human Synthesis in Any Scene Through
+    a Graph-Based Multi-Agent Framework'
+  year: 2026
+  date: '2026-03-14'
+  venue: AAAI 2026
+  links:
+    paper: https://ojs.aaai.org/index.php/AAAI/article/view/37758
+  categories:
+  - video-world-model-embodied
+  - multi-agent-collaboration
+  task: 4D human-scene interaction synthesis
+  takeaway: A graph-based multi-agent system coordinates scene navigation and action
+    planning for long-horizon human-scene interaction video synthesis.
+- name: VideoChat-A1
+  title: 'VideoChat-A1: Thinking with Long Videos by Chain-of-Shot Reasoning'
+  year: 2026
+  date: '2026-03-14'
+  venue: AAAI 2026
+  arxiv: '2506.06097'
+  links:
+    paper: https://ojs.aaai.org/index.php/AAAI/article/view/38018
+    pdf: https://ojs.aaai.org/index.php/AAAI/article/download/38018/41980
+    arxiv: https://arxiv.org/abs/2506.06097
+  categories:
+  - long-form-reasoning-memory
+  task: Chain-of-shot long video reasoning
+  takeaway: An MLLM agent progressively selects relevant shots, splits them into subshots,
+    and reasons coarse-to-fine over long videos.
+- name: MuMA-ToM
+  title: 'MuMA-ToM: Multi-modal Multi-Agent Theory of Mind'
+  year: 2025
+  date: '2025-04-11'
+  venue: AAAI 2025
+  links:
+    paper: https://ojs.aaai.org/index.php/AAAI/article/view/32142
+  categories:
+  - video-world-model-embodied
+  - long-form-reasoning-memory
+  task: Multimodal multi-agent theory-of-mind reasoning
+  takeaway: Video and text descriptions of embodied multi-agent interactions support
+    reasoning about goals, beliefs, and nested beliefs.

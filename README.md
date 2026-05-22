@@ -9,6 +9,7 @@
   <a href="./docs/taxonomy.md">技术分类</a> ·
   <a href="./docs/reading-roadmap.md">阅读路线</a> ·
   <a href="./docs/paper-index.md">论文索引</a> ·
+  <a href="./docs/proceedings-scan.md">会议检索</a> ·
   <a href="./docs/tool-index.md">工具索引</a> ·
   <a href="./docs/schema.md">数据格式</a> ·
   <a href="./docs/stats.md">统计</a> ·
@@ -20,7 +21,7 @@
 </p>
 
 <p align="center">
-  <img alt="Papers" src="https://img.shields.io/badge/papers-42-blue">
+  <img alt="Papers" src="https://img.shields.io/badge/papers-59-blue">
   <img alt="Tools" src="https://img.shields.io/badge/tools-6-orange">
   <img alt="Topic" src="https://img.shields.io/badge/topic-video--agents-purple">
   <img alt="Status" src="https://img.shields.io/badge/status-curated-brightgreen">
@@ -59,7 +60,9 @@ flowchart LR
 - **核心视频 Agent 论文**：直接面向视频 Agent、长视频理解、视频生成/编辑 Agent、电影剪辑编排、AIGC 视频工作流。
 - **相关 Agent 基础设施论文**：不一定直接做视频，但对构建视频 Agent 很关键，例如工具学习、记忆、环境训练、长期适应和编排范式。
 
-当前版本共收录：**32 个核心视频 Agent 条目 + 10 个相关基础设施条目 = 42 篇论文**，另有 **6 个开源系统/工具**。
+当前版本共收录：**49 个核心视频 Agent 条目 + 10 个相关基础设施条目 = 59 篇论文**，另有 **6 个开源系统/工具**。
+
+本轮额外补充了近三年正式会议/论文集条目，优先来自 **ECCV 2024、EMNLP 2024、ICLR 2024/2025/2026、AAAI 2025/2026、CVPR 2025、ICCV 2025、ACL 2025、NeurIPS 2025**。新增或转正的代表条目包括：VideoAgent-ECCV2024、VideoAgent-Memory、OmAgent、DrVideo、VCA、LVAgent、Embodied VideoAgent、MotionAgent、VideoWebArena、GROOT、ReAgent-V、MAGNET、TheoremExplainAgent、AutoMV-RealEstate、FantasyHSI、VideoChat-A1、MuMA-ToM，以及 GenMAC、ToolRL、AgentFlow 的正式会议来源修正。完整列表见 [论文索引](./docs/paper-index.md)、[会议检索记录](./docs/proceedings-scan.md) 和 [统计页](./docs/stats.md)。
 
 ## 目录
 
@@ -80,7 +83,7 @@ flowchart LR
 | **FILMAGENT** | 2025-01 | arXiv preprint | 端到端虚拟电影自动化 | 将导演、编剧、演员、摄影等角色拆成专业 Agent，并通过批评、修正、验证、辩论和裁决降低生成错误。 | [Paper](https://arxiv.org/abs/2501.12909) |
 | **Mora** | 2024-03 | arXiv preprint | 通用视频生成 | 较早用多智能体框架探索 Sora 式通用视频生成能力。 | [Paper](https://arxiv.org/abs/2403.13248) · [Code](https://github.com/lichao-sun/Mora) |
 | **StoryAgent** | 2024-11 | arXiv preprint | 定制化故事视频生成 | 通过多智能体协作提升定制故事生成质量，并保持主角一致性。 | [Paper](https://arxiv.org/abs/2411.04925) |
-| **GenMAC** | 2024-12 | arXiv preprint | 组合式文本到视频生成 | 用设计、生成和再设计 Agent 迭代优化组合式提示词，提高文本到视频的可控性。 | [Paper](https://arxiv.org/abs/2412.04440) |
+| **GenMAC** | 2026-03-14 | AAAI 2026 | 组合式文本到视频生成 | 用设计、生成和再设计 Agent 迭代优化组合式提示词，提高文本到视频的可控性。 | [Paper](https://ojs.aaai.org/index.php/AAAI/article/view/37418) · [Arxiv](https://arxiv.org/abs/2412.04440) |
 | **MovieAgent** | 2025-03 | arXiv preprint | 自动电影生成 | 用层次化 CoT 规划把故事梗概拆解为场景、镜头、字幕、音频和视频生成任务。 | [Paper](https://arxiv.org/abs/2503.07314) · [Code](https://github.com/showlab/MovieAgent) · [Project](https://weijiawu.github.io/MovieAgent/) |
 | **MAViS** | 2025-08 | arXiv preprint | 长序列视频叙事 | 把叙事规划与 T2I、I2V、LoRA 和音频生成串成多智能体故事生产流程。 | [Paper](https://arxiv.org/abs/2508.08487) |
 | **Camera Artist** | 2026-04 | arXiv preprint | 电影化叙事视频生成 | 通过递归镜头生成和电影语言注入，让分镜规划更接近专业影视表达。 | [Paper](https://arxiv.org/abs/2604.09195) |
@@ -135,11 +138,11 @@ flowchart LR
 | 论文 / 系统 | 时间 | 来源 | 对视频 Agent 的意义 | 链接 |
 |---|---|---|---|---|
 | **Vibe AIGC** | 2026-02-06 | arXiv preprint | 复杂媒体生成应由元规划器、专家 Agent、工具和人类反馈共同编排，而不是依赖一次性 prompt。 | [Paper](https://arxiv.org/abs/2602.04575) |
-| **ToolRL** | 2025-04-16 | NeurIPS 2025 Poster / arXiv preprint | 细粒度奖励能训练更可靠的工具调用行为，超越单纯 SFT 模仿。 | [Paper](https://arxiv.org/abs/2504.13958) · [Code](https://github.com/qiancheng0/ToolRL) |
+| **ToolRL** | 2025-04-16 | NeurIPS 2025 | 细粒度奖励能训练更可靠的工具调用行为，超越单纯 SFT 模仿。 | [Paper](https://papers.nips.cc/paper_files/paper/2025/hash/97c5b2707228e7e3fb67e4ecc2e0e607-Abstract-Conference.html) · [Arxiv](https://arxiv.org/abs/2504.13958) · [Code](https://github.com/qiancheng0/ToolRL) |
 | **ToRL** | 2025-03-30 | arXiv preprint | Agent 需要学会何时内部推理、何时调用外部工具。 | [Paper](https://arxiv.org/abs/2503.23383) |
 | **OpenClaw-RL** | 2026-03 | arXiv preprint | 真实交互过程可以转化为智能体工具使用和规划训练信号。 | [Paper](https://arxiv.org/abs/2603.10165) |
 | **ARTIST** | 2025-05 | arXiv preprint | 强化学习可以训练 Agent 在内部推理和外部函数调用之间做选择。 | [Paper](https://arxiv.org/abs/2505.01441) |
-| **AgentFlow** | 2025-10 | arXiv preprint / ICLR 2026 Oral (project page) | 在执行流中优化规划器行为，对协调多种视频工具的 Agent 很有参考价值。 | [Paper](https://arxiv.org/abs/2510.05592) |
+| **AgentFlow** | 2026-01-26 | ICLR 2026 Oral | 在执行流中优化规划器行为，对协调多种视频工具的 Agent 很有参考价值。 | [Paper](https://openreview.net/forum?id=Mf5AleTUVK) · [Arxiv](https://arxiv.org/abs/2510.05592) |
 | **AgentKB** | 2025-07 | arXiv preprint | 可复用经验库能帮助 Agent 跨任务、跨领域进行规划和修正。 | [Paper](https://arxiv.org/abs/2507.06229) |
 | **LLM Agent Memory Survey** | 2026-05 | arXiv preprint | Agent 记忆机制正从被动存储走向可复用的经验型基础设施。 | [Paper](https://arxiv.org/abs/2605.06716) |
 | **Agent-World** | 2026-04-20 | arXiv preprint | 可执行环境和可验证任务可以成为 Agent 演化训练的可扩展场地。 | [Paper](https://arxiv.org/abs/2604.18292) |
@@ -227,6 +230,7 @@ awesome-video-agent/
 │   └── tools.yaml
 ├── docs/
 │   ├── paper-index.md
+│   ├── proceedings-scan.md
 │   ├── backlog.md
 │   ├── notes.md
 │   ├── reading-roadmap.md
