@@ -1,9 +1,9 @@
 cff-version: 1.2.0
-title: "Awsome Video Agent"
+title: "Awesome Video Agent"
 message: "If this curated list helps your research, please cite or link to the repository."
 type: dataset
 authors:
-  - name: "Awsome Video Agent contributors"
+  - name: "Awesome Video Agent contributors"
 year: 2026
 keywords:
   - video agents

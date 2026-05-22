@@ -1,4 +1,4 @@
-# Awsome Video Agent
+# Awesome Video Agent
 
 <p align="center">
   <b>视频 Agent 论文、系统与技术路线整理：长视频生成、理解、编辑、编排与电影化表达。</b>
@@ -210,7 +210,7 @@ flowchart LR
 ## 项目结构
 
 ```text
-awsome-video-agent/
+awesome-video-agent/
 ├── README.md
 ├── README.en.md
 ├── CONTRIBUTING.md

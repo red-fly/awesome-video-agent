@@ -15,7 +15,7 @@ Entries here look relevant, but need more disambiguation or source checking befo
 | Current Name | Check |
 |---|---|
 | **LASEV** | Local write-up uses `LASEV`; web snippets may use `LAVES`. Verify against PDF before changing. |
-| **Awsome Video Agent** | Repository name intentionally follows the requested spelling. Consider aliasing as `awesome-video-agent` when publishing. |
+| **Awesome Video Agent** | Repository name has been normalized to the correct spelling: `awesome-video-agent`. |
 
 ## Search Threads to Revisit
 

@@ -1,4 +1,4 @@
-# Awsome Video Agent
+# Awesome Video Agent
 
 <p align="center">
   <b>A curated map of video agents for long-video generation, understanding, editing, and cinematic orchestration.</b>
@@ -210,7 +210,7 @@ Strong systems expose professional controls instead of asking LLMs to directly p
 ## Repository Structure
 
 ```text
-awsome-video-agent/
+awesome-video-agent/
 ├── README.md
 ├── README.en.md
 ├── CONTRIBUTING.md

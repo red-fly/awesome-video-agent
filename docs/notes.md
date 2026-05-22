@@ -2,7 +2,7 @@
 
 ## Project Name
 
-The repository name is intentionally kept as `awsome-video-agent` because that was the requested project name. If publishing broadly, consider adding `awesome-video-agent` as an alias in the repository description or topics.
+The repository name is normalized to the correct spelling: `awesome-video-agent`.
 
 ## `VideoAgent` Name Collision
 

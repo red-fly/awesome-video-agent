@@ -30,6 +30,6 @@
 
 ## 2026-05-21
 
-- Created the initial `awsome-video-agent` project.
+- Created the initial `awesome-video-agent` project.
 - Added bilingual README files.
 - Added initial taxonomy and structured paper data.

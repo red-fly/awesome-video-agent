@@ -1,6 +1,6 @@
 # Contributing
 
-Thanks for helping improve Awsome Video Agent.
+Thanks for helping improve Awesome Video Agent.
 
 ## What to Add
 
