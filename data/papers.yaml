@@ -55,6 +55,7 @@ papers:
   links:
     paper: https://arxiv.org/abs/2512.20618
     project: https://longvideoagent.github.io/
+    code: https://github.com/longvideoagent/LongVideoAgent
   categories:
   - long-form-reasoning-memory
   - rl-policy-tuning
@@ -62,7 +63,7 @@ papers:
   takeaway: A master agent gathers evidence through grounding and vision agents instead
     of compressing the whole video at once.
   date: '2025-12-23'
-  venue: arXiv preprint
+  venue: ACL 2026
 - name: Video-OPD
   title: 'Video-OPD: Efficient Post-Training of Multimodal Large Language Models for
     Temporal Video Grounding via On-Policy Distillation'
@@ -188,6 +189,24 @@ papers:
     and audio generation.
   date: 2025-08
   venue: arXiv preprint
+- name: AniMaker
+  title: 'AniMaker: Automated Multi-Agent Animated Storytelling with MCTS-Driven
+    Clip Generation'
+  year: 2025
+  arxiv: '2506.10540'
+  links:
+    paper: https://arxiv.org/abs/2506.10540
+    project: https://animaker-dev.github.io/
+    code: https://github.com/HITsz-TMG/Anim-Director/tree/main/AniMaker
+  categories:
+  - multi-agent-collaboration
+  - cinematic-expression-domain-expertise
+  - video-editing-compilation
+  task: Multi-agent animated storytelling
+  takeaway: Director, photography, reviewer, and post-production agents use MCTS-guided
+    clip selection to build coherent long-form animations.
+  date: '2025-06-12'
+  venue: SIGGRAPH Asia 2025
 - name: MAVEN
   title: 'MAVEN: A Multi-Agent Framework for Multicultural Text-to-Video Generation'
   year: 2026
@@ -232,6 +251,22 @@ papers:
     stories.
   date: 2024-07 / 2025-08 version
   venue: arXiv preprint
+- name: Anim-Director
+  title: 'Anim-Director: A Large Multimodal Model Powered Agent for Controllable
+    Animation Video Generation'
+  year: 2024
+  arxiv: '2408.09787'
+  links:
+    paper: https://arxiv.org/abs/2408.09787
+    code: https://github.com/HITsz-TMG/Anim-Director
+  categories:
+  - cinematic-expression-domain-expertise
+  - multi-agent-collaboration
+  task: Controllable animation video generation
+  takeaway: An LMM-powered animation-making agent turns concise narratives into scripts,
+    consistent scene images, video prompts, and selected animated clips.
+  date: '2024-08-19'
+  venue: SIGGRAPH Asia 2024
 - name: LASEV
   title: 'Beyond End-to-End Video Models: An LLM-Based Multi-Agent System for Educational
     Video Generation'

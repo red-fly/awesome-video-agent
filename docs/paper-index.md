@@ -10,6 +10,7 @@ Generated from `data/papers.yaml`. A paper may have multiple category tags, but 
 | **GenMAC** | 2026-03-14 | AAAI 2026 | Compositional text-to-video generation | [Paper](https://ojs.aaai.org/index.php/AAAI/article/view/37418) · [Arxiv](https://arxiv.org/abs/2412.04440) |
 | **LASEV** | 2026-02 | arXiv preprint | Educational video generation | [Paper](https://arxiv.org/abs/2602.11790) · [Project](https://robitsg.github.io/LASEV) |
 | **MAViS** | 2025-08 | arXiv preprint | Long-sequence video storytelling | [Paper](https://arxiv.org/abs/2508.08487) |
+| **AniMaker** | 2025-06-12 | SIGGRAPH Asia 2025 | Multi-agent animated storytelling | [Paper](https://arxiv.org/abs/2506.10540) · [Project](https://animaker-dev.github.io/) · [Code](https://github.com/HITsz-TMG/Anim-Director/tree/main/AniMaker) |
 | **MovieAgent** | 2025-03 | arXiv preprint | Automated movie generation | [Paper](https://arxiv.org/abs/2503.07314) · [Code](https://github.com/showlab/MovieAgent) · [Project](https://weijiawu.github.io/MovieAgent/) |
 | **FILMAGENT** | 2025-01 | arXiv preprint | End-to-end virtual film automation | [Paper](https://arxiv.org/abs/2501.12909) |
 | **StoryAgent** | 2024-11 | arXiv preprint | Customized storytelling video generation | [Paper](https://arxiv.org/abs/2411.04925) |
@@ -37,7 +38,7 @@ Generated from `data/papers.yaml`. A paper may have multiple category tags, but 
 | **OmniScript** | 2026-04-13 | arXiv preprint | Audio-visual script generation | [Paper](https://arxiv.org/abs/2604.11102) · [Code](https://github.com/TencentARC/OmniScript) · [Project](https://arcomniscript.github.io) |
 | **ProVCA** | 2026-04 | arXiv preprint | Efficient long-video understanding | [Paper](https://arxiv.org/abs/2604.02891) |
 | **VideoChat-A1** | 2026-03-14 | AAAI 2026 | Chain-of-shot long video reasoning | [Paper](https://ojs.aaai.org/index.php/AAAI/article/view/38018) · [Pdf](https://ojs.aaai.org/index.php/AAAI/article/download/38018/41980) · [Arxiv](https://arxiv.org/abs/2506.06097) |
-| **LongVideoAgent** | 2025-12-23 | arXiv preprint | Long-video question answering | [Paper](https://arxiv.org/abs/2512.20618) · [Project](https://longvideoagent.github.io/) |
+| **LongVideoAgent** | 2025-12-23 | ACL 2026 | Long-video question answering | [Paper](https://arxiv.org/abs/2512.20618) · [Project](https://longvideoagent.github.io/) · [Code](https://github.com/longvideoagent/LongVideoAgent) |
 | **VideoARM** | 2025-12 | arXiv preprint | Long-video understanding with hierarchical memory | [Paper](https://arxiv.org/abs/2512.12360) |
 | **UniVA** | 2025-11 | arXiv preprint | Interactive video agent memory | [Paper](https://arxiv.org/abs/2511.08521) · [Code](https://github.com/univa-agent/univa) · [Project](https://univa.online/) |
 | **VCA** | 2025-10 | ICCV 2025 | Curiosity-driven long video understanding | [Paper](https://openaccess.thecvf.com/content/ICCV2025/html/Yang_VCA_Video_Curious_Agent_for_Long_Video_Understanding_ICCV_2025_paper.html) · [Pdf](https://openaccess.thecvf.com/content/ICCV2025/papers/Yang_VCA_Video_Curious_Agent_for_Long_Video_Understanding_ICCV_2025_paper.pdf) |
@@ -81,6 +82,7 @@ Generated from `data/papers.yaml`. A paper may have multiple category tags, but 
 | **MotionAgent** | 2025-10 | ICCV 2025 | Fine-grained controllable video generation | [Paper](https://openaccess.thecvf.com/content/ICCV2025/html/Liao_MotionAgent_Fine-grained_Controllable_Video_Generation_via_Motion_Field_Agent_ICCV_2025_paper.html) · [Pdf](https://openaccess.thecvf.com/content/ICCV2025/papers/Liao_MotionAgent_Fine-grained_Controllable_Video_Generation_via_Motion_Field_Agent_ICCV_2025_paper.pdf) |
 | **TheoremExplainAgent** | 2025-07 | ACL 2025 | Long-form theorem explanation video generation | [Paper](https://aclanthology.org/2025.acl-long.332/) · [Pdf](https://aclanthology.org/2025.acl-long.332.pdf) |
 | **AutoMV-RealEstate** | 2025-04-11 | AAAI 2025 Demonstration Track | Real estate marketing video generation | [Paper](https://ojs.aaai.org/index.php/AAAI/article/view/35377) · [Pdf](https://ojs.aaai.org/index.php/AAAI/article/download/35377/37532) |
+| **Anim-Director** | 2024-08-19 | SIGGRAPH Asia 2024 | Controllable animation video generation | [Paper](https://arxiv.org/abs/2408.09787) · [Code](https://github.com/HITsz-TMG/Anim-Director) |
 | **DreamStory** | 2024-07 / 2025-08 version | arXiv preprint | Story visualization | [Paper](https://arxiv.org/abs/2407.12899) · [Project](https://dream-xyz.github.io/dreamstory) |
 
 ## World Models and Embodied Video Agents
