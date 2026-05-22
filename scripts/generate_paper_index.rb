@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 
 require "yaml"
+require "date"
 
 root = File.expand_path("..", __dir__)
 papers_path = File.join(root, "data", "papers.yaml")
@@ -26,7 +27,19 @@ lines << "Generated from `data/papers.yaml`. A paper may have multiple category 
 lines << ""
 
 labels.each do |category, heading|
-  entries = papers.select { |paper| paper.fetch("categories").first == category }
+  entries = papers.select { |paper| paper.fetch("categories").first == category }.sort_by do |paper|
+    date = paper.fetch("date").to_s
+    case date
+    when /(\d{4})-(\d{2})-(\d{2})/
+      Date.new($1.to_i, $2.to_i, $3.to_i)
+    when /(\d{4})-(\d{2})/
+      Date.new($1.to_i, $2.to_i, 1)
+    when /(\d{4})/
+      Date.new($1.to_i, 1, 1)
+    else
+      Date.new(0, 1, 1)
+    end
+  end.reverse
   next if entries.empty?
 
   lines << "## #{heading}"
