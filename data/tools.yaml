@@ -1,0 +1,37 @@
+tools:
+  - name: OpenMontage
+    type: "agentic video production system"
+    links:
+      code: "https://github.com/calesthio/OpenMontage"
+    takeaway: "Open-source system with multiple pipelines, tools, and agent skills for video production."
+
+  - name: video-use
+    type: "coding-agent video editing tool"
+    links:
+      code: "https://github.com/browser-use/video-use"
+    takeaway: "A toolchain that lets coding agents edit videos."
+
+  - name: ViMax
+    type: "agentic video generation framework"
+    links:
+      code: "https://github.com/HKUDS/ViMax"
+    takeaway: "All-in-one video generation workflow with director, screenwriter, producer, and generator roles."
+
+  - name: HKUDS VideoAgent
+    type: "all-in-one video understanding, editing, and remaking agent"
+    links:
+      code: "https://github.com/HKUDS/VideoAgent"
+      paper: "https://openreview.net/forum?id=cTqGsLYkRl"
+    takeaway: "A broad agentic framework for video understanding, editing, and remaking; name should be disambiguated from other VideoAgent papers."
+
+  - name: Frame.AI
+    type: "shorts/reels segmentation agent"
+    links:
+      code: "https://github.com/dyingpotato890/frame-ai"
+    takeaway: "Engineering project for turning long videos into short-form clips."
+
+  - name: veo3-workflow-agents
+    type: "Veo3 prompt and workflow agents"
+    links:
+      code: "https://github.com/nabobery/veo3-workflow-agents"
+    takeaway: "Workflow agents for prompt enhancement and video generation orchestration around Veo3-style APIs."

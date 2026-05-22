@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+title: "Awsome Video Agent"
+message: "If this curated list helps your research, please cite or link to the repository."
+type: dataset
+authors:
+  - name: "Awsome Video Agent contributors"
+year: 2026
+keywords:
+  - video agents
+  - multi-agent systems
+  - long-video understanding
+  - video generation
+  - video editing
+  - cinematic AI
+license: MIT
