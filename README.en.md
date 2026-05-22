@@ -49,7 +49,7 @@ This repository organizes recent work into six research routes:
 | **Multi-Agent Collaboration** | How can a video task be decomposed like a production pipeline? | Director, writer, storyboard, camera, editor, verifier agents |
 | **Long-form Reasoning & Memory** | How can agents reason over minutes or hours of video? | Shot / scene / event memory, temporal grounding, narrative graphs |
 | **RL & Policy Tuning** | How can agents learn when to search, call tools, revise, or stop? | GRPO, on-policy distillation, dense feedback, tool-use rewards |
-| **Cinematic Expression & Domain Expertise** | How can agents understand film grammar and vertical production rules? | Camera language, music structure, cultural knowledge, editable timelines |
+| **Cinematic Expression, Domain Expertise & Vertical Editing** | How can agents understand film grammar and vertical production rules? | Camera language, music structure, cultural knowledge, editable timelines, scene-graph edits |
 | **Evaluation & Self-Improvement** | How can agents critique and improve generated videos? | VLM-as-judge, visual questions, semantic gradients, verifier loops |
 | **World Models & Embodied Video Agents** | How can video agents model dynamic worlds and embodied control? | Multi-view generation, scene graphs, navigation control, simulators |
 
@@ -134,23 +134,18 @@ This update adds a proceedings-focused pass over the last three years, prioritiz
 | **VQQA** | 2026-03 | arXiv preprint | Video generation evaluation and improvement | Visual question generation and VLM critique can act as semantic gradients for iterative video improvement. | [Paper](https://arxiv.org/abs/2603.12310) |
 | **VideoWebArena** | 2025-01-22 | ICLR 2025 | Video-based web-agent evaluation | A benchmark of web-agent tasks grounded in video tutorials tests whether agents can retain skills and facts from long-context video. | [Paper](https://openreview.net/forum?id=unDQOUah0F) · [Project](https://videowebarena.github.io/) |
 
-### Cinematic Expression and Domain Expertise
+### Cinematic Expression, Domain Expertise, and Vertical Video Editing
 
 | Paper / System | Date | Source | Task | Core Idea | Links |
 |---|---|---|---|---|---|
 | **MAVEN** | 2026-05 | arXiv preprint | Multicultural text-to-video generation | Agents add cultural relevance checks and domain knowledge to text-to-video generation. | [Paper](https://arxiv.org/abs/2605.16716) · [Code](https://github.com/AIM-SCU/CRAFT) |
 | **Camera Artist** | 2026-04 | arXiv preprint | Cinematic storytelling video generation | Recursive shot generation and cinematic language injection make shot planning more film-like. | [Paper](https://arxiv.org/abs/2604.09195) |
+| **LangDriveCTRL** | 2025-12 | arXiv preprint | Language-controllable driving scene editing | Multimodal agents translate natural language into scene-graph edits for controllable driving video scenarios. | [Paper](https://arxiv.org/abs/2512.17445) · [Project](https://yunhe24.github.io/langdrivectrl/) |
 | **AutoMV** | 2025-12 | arXiv preprint | Music video generation | Music structure, lyrics, beat alignment, character consistency, and verifier agents are combined into a full MV pipeline. | [Paper](https://arxiv.org/abs/2512.12196) · [Code](https://github.com/multimodal-art-projection/AutoMV) · [Project](https://m-a-p.ai/AutoMV/) |
 | **MotionAgent** | 2025-10 | ICCV 2025 | Fine-grained controllable video generation | A motion field agent parses text into object trajectories and camera extrinsics, then controls image-to-video diffusion with explicit flow. | [Paper](https://openaccess.thecvf.com/content/ICCV2025/html/Liao_MotionAgent_Fine-grained_Controllable_Video_Generation_via_Motion_Field_Agent_ICCV_2025_paper.html) · [PDF](https://openaccess.thecvf.com/content/ICCV2025/papers/Liao_MotionAgent_Fine-grained_Controllable_Video_Generation_via_Motion_Field_Agent_ICCV_2025_paper.pdf) |
-| **DreamStory** | 2024-07 / 2025-08 version | arXiv preprint | Story visualization | LLM-guided diffusion maintains multiple subjects across open-domain visual stories. | [Paper](https://arxiv.org/abs/2407.12899) · [Project](https://dream-xyz.github.io/dreamstory) |
-
-### Domain-Specific Video Editing
-
-| Paper / System | Date | Source | Task | Core Idea | Links |
-|---|---|---|---|---|---|
-| **LangDriveCTRL** | 2025-12 | arXiv preprint | Language-controllable driving scene editing | Multimodal agents translate natural language into scene-graph edits for controllable driving video scenarios. | [Paper](https://arxiv.org/abs/2512.17445) · [Project](https://yunhe24.github.io/langdrivectrl/) |
 | **TheoremExplainAgent** | 2025-07 | ACL 2025 | Long-form theorem explanation video generation | Agentic planning generates multi-minute Manim explanation videos and exposes reasoning flaws that text-only explanations can hide. | [Paper](https://aclanthology.org/2025.acl-long.332/) · [PDF](https://aclanthology.org/2025.acl-long.332.pdf) |
 | **AutoMV-RealEstate** | 2025-04-11 | AAAI 2025 Demonstration Track | Real estate marketing video generation | An autonomous agent selects tools, writes story directives, and plans camera trajectories to turn property images into marketing videos. | [Paper](https://ojs.aaai.org/index.php/AAAI/article/view/35377) · [PDF](https://ojs.aaai.org/index.php/AAAI/article/download/35377/37532) |
+| **DreamStory** | 2024-07 / 2025-08 version | arXiv preprint | Story visualization | LLM-guided diffusion maintains multiple subjects across open-domain visual stories. | [Paper](https://arxiv.org/abs/2407.12899) · [Project](https://dream-xyz.github.io/dreamstory) |
 
 ### World Models and Embodied Video Agents
 
@@ -321,7 +316,6 @@ Please add new papers to [`data/papers.yaml`](./data/papers.yaml) and place each
 - `rl-policy-tuning`
 - `video-evaluation-self-improvement`
 - `cinematic-expression-domain-expertise`
-- `domain-specific-video-editing`
 - `video-world-model-embodied`
 
 For each paper, include title, year, task, links, and a one-line takeaway.

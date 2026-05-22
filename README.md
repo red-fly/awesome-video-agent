@@ -49,7 +49,7 @@ flowchart LR
 | **多智能体角色化协作** | 如何像影视工业管线一样拆解复杂视频任务？ | 导演、编剧、分镜、摄影、剪辑、审稿/验证 Agent |
 | **长视频分层解构与记忆管理** | 如何理解几十分钟到数小时的视频？ | 镜头/场景/事件记忆、时间定位、叙事图谱、角色档案 |
 | **强化学习与策略优化** | Agent 如何学会何时搜索、调用工具、修正或停止？ | GRPO、在线策略蒸馏、稠密反馈、工具调用奖励 |
-| **电影语言与领域专长建模** | Agent 如何掌握运镜、节奏、文化、音乐、引擎资产等专业知识？ | 电影语言注入、音乐结构、文化知识、可编辑时间线 |
+| **电影语言、领域专长与垂直视频编辑** | Agent 如何掌握运镜、节奏、文化、音乐、引擎资产和垂直行业规则？ | 电影语言注入、音乐结构、文化知识、可编辑时间线、场景图编辑 |
 | **评估与自我改进** | Agent 如何评价并迭代提升生成视频？ | VLM-as-judge、视觉问题、语义梯度、验证器循环 |
 | **世界模型与具身视频 Agent** | 视频 Agent 如何建模动态世界和具身控制？ | 多视角生成、场景图、导航控制、仿真器 |
 
@@ -134,23 +134,18 @@ flowchart LR
 | **VQQA** | 2026-03 | arXiv preprint | 视频生成评估与改进 | 视觉问题生成和 VLM 批评可作为“语义梯度”，引导视频迭代改进。 | [Paper](https://arxiv.org/abs/2603.12310) |
 | **VideoWebArena** | 2025-01-22 | ICLR 2025 | 基于视频的网页 Agent 评测 | 用视频教程驱动网页任务，评测 Agent 是否能从长上下文视频中保留技能和事实。 | [Paper](https://openreview.net/forum?id=unDQOUah0F) · [Project](https://videowebarena.github.io/) |
 
-### 电影语言与领域专长建模
+### 电影语言、领域专长与垂直视频编辑
 
 | 论文 / 系统 | 时间 | 来源 | 任务 | 核心思想 | 链接 |
 |---|---|---|---|---|---|
 | **MAVEN** | 2026-05 | arXiv preprint | 多文化文本到视频生成 | Agent 将文化相关性检查和领域知识注入文本到视频生成。 | [Paper](https://arxiv.org/abs/2605.16716) · [Code](https://github.com/AIM-SCU/CRAFT) |
 | **Camera Artist** | 2026-04 | arXiv preprint | 电影化叙事视频生成 | 通过递归镜头生成和电影语言注入，让分镜规划更接近专业影视表达。 | [Paper](https://arxiv.org/abs/2604.09195) |
+| **LangDriveCTRL** | 2025-12 | arXiv preprint | 自然语言可控驾驶场景编辑 | 多模态 Agent 将自然语言转化为场景图编辑，实现可控驾驶视频场景修改。 | [Paper](https://arxiv.org/abs/2512.17445) · [Project](https://yunhe24.github.io/langdrivectrl/) |
 | **AutoMV** | 2025-12 | arXiv preprint | 音乐视频生成 | 整合音乐结构、歌词、节拍对齐、角色一致性和验证 Agent，形成完整 MV 生成管线。 | [Paper](https://arxiv.org/abs/2512.12196) · [Code](https://github.com/multimodal-art-projection/AutoMV) · [Project](https://m-a-p.ai/AutoMV/) |
 | **MotionAgent** | 2025-10 | ICCV 2025 | 细粒度可控视频生成 | 运动场 Agent 将文本解析为对象轨迹和相机外参，用显式光流控制图生视频扩散模型。 | [Paper](https://openaccess.thecvf.com/content/ICCV2025/html/Liao_MotionAgent_Fine-grained_Controllable_Video_Generation_via_Motion_Field_Agent_ICCV_2025_paper.html) · [PDF](https://openaccess.thecvf.com/content/ICCV2025/papers/Liao_MotionAgent_Fine-grained_Controllable_Video_Generation_via_Motion_Field_Agent_ICCV_2025_paper.pdf) |
-| **DreamStory** | 2024-07 / 2025-08 version | arXiv preprint | 故事可视化 | 用 LLM 引导扩散模型，在开放域视觉故事中维持多主体一致性。 | [Paper](https://arxiv.org/abs/2407.12899) · [Project](https://dream-xyz.github.io/dreamstory) |
-
-### 垂直领域视频编辑
-
-| 论文 / 系统 | 时间 | 来源 | 任务 | 核心思想 | 链接 |
-|---|---|---|---|---|---|
-| **LangDriveCTRL** | 2025-12 | arXiv preprint | 自然语言可控驾驶场景编辑 | 多模态 Agent 将自然语言转化为场景图编辑，实现可控驾驶视频场景修改。 | [Paper](https://arxiv.org/abs/2512.17445) · [Project](https://yunhe24.github.io/langdrivectrl/) |
 | **TheoremExplainAgent** | 2025-07 | ACL 2025 | 长篇定理讲解视频生成 | Agent 规划并生成多分钟 Manim 讲解视频，暴露纯文本解释中不易发现的推理缺陷。 | [Paper](https://aclanthology.org/2025.acl-long.332/) · [PDF](https://aclanthology.org/2025.acl-long.332.pdf) |
 | **AutoMV-RealEstate** | 2025-04-11 | AAAI 2025 Demonstration Track | 房地产营销视频生成 | 自治 Agent 选择工具、编写故事指令并规划镜头轨迹，将房产图片转成营销视频。 | [Paper](https://ojs.aaai.org/index.php/AAAI/article/view/35377) · [PDF](https://ojs.aaai.org/index.php/AAAI/article/download/35377/37532) |
+| **DreamStory** | 2024-07 / 2025-08 version | arXiv preprint | 故事可视化 | 用 LLM 引导扩散模型，在开放域视觉故事中维持多主体一致性。 | [Paper](https://arxiv.org/abs/2407.12899) · [Project](https://dream-xyz.github.io/dreamstory) |
 
 ### 世界模型与具身视频 Agent
 

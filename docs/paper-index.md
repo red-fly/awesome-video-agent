@@ -69,24 +69,19 @@ Generated from `data/papers.yaml`. A paper may have multiple category tags, but 
 | **VQQA** | 2026-03 | arXiv preprint | Video generation evaluation and improvement | [Paper](https://arxiv.org/abs/2603.12310) |
 | **VideoWebArena** | 2025-01-22 | ICLR 2025 | Video-based web-agent evaluation | [Paper](https://openreview.net/forum?id=unDQOUah0F) · [Project](https://videowebarena.github.io/) |
 
-## Cinematic Expression and Domain Expertise
+## Cinematic Expression, Domain Expertise, and Vertical Video Editing
 
 | Paper | Date | Source | Task | Links |
 |---|---|---|---|---|
 | **MAVEN** | 2026-05 | arXiv preprint | Multicultural text-to-video generation | [Paper](https://arxiv.org/abs/2605.16716) · [Code](https://github.com/AIM-SCU/CRAFT) |
 | **Camera Artist** | 2026-04 | arXiv preprint | Cinematic storytelling video generation | [Paper](https://arxiv.org/abs/2604.09195) |
 | **Vibe AIGC** | 2026-02-06 | arXiv preprint | Agentic content generation orchestration | [Paper](https://arxiv.org/abs/2602.04575) |
+| **LangDriveCTRL** | 2025-12 | arXiv preprint | Language-controllable driving scene editing | [Paper](https://arxiv.org/abs/2512.17445) · [Project](https://yunhe24.github.io/langdrivectrl/) |
 | **AutoMV** | 2025-12 | arXiv preprint | Music video generation | [Paper](https://arxiv.org/abs/2512.12196) · [Code](https://github.com/multimodal-art-projection/AutoMV) · [Project](https://m-a-p.ai/AutoMV/) |
 | **MotionAgent** | 2025-10 | ICCV 2025 | Fine-grained controllable video generation | [Paper](https://openaccess.thecvf.com/content/ICCV2025/html/Liao_MotionAgent_Fine-grained_Controllable_Video_Generation_via_Motion_Field_Agent_ICCV_2025_paper.html) · [Pdf](https://openaccess.thecvf.com/content/ICCV2025/papers/Liao_MotionAgent_Fine-grained_Controllable_Video_Generation_via_Motion_Field_Agent_ICCV_2025_paper.pdf) |
-| **DreamStory** | 2024-07 / 2025-08 version | arXiv preprint | Story visualization | [Paper](https://arxiv.org/abs/2407.12899) · [Project](https://dream-xyz.github.io/dreamstory) |
-
-## Domain-Specific Video Editing
-
-| Paper | Date | Source | Task | Links |
-|---|---|---|---|---|
-| **LangDriveCTRL** | 2025-12 | arXiv preprint | Language-controllable driving scene editing | [Paper](https://arxiv.org/abs/2512.17445) · [Project](https://yunhe24.github.io/langdrivectrl/) |
 | **TheoremExplainAgent** | 2025-07 | ACL 2025 | Long-form theorem explanation video generation | [Paper](https://aclanthology.org/2025.acl-long.332/) · [Pdf](https://aclanthology.org/2025.acl-long.332.pdf) |
 | **AutoMV-RealEstate** | 2025-04-11 | AAAI 2025 Demonstration Track | Real estate marketing video generation | [Paper](https://ojs.aaai.org/index.php/AAAI/article/view/35377) · [Pdf](https://ojs.aaai.org/index.php/AAAI/article/download/35377/37532) |
+| **DreamStory** | 2024-07 / 2025-08 version | arXiv preprint | Story visualization | [Paper](https://arxiv.org/abs/2407.12899) · [Project](https://dream-xyz.github.io/dreamstory) |
 
 ## World Models and Embodied Video Agents
 

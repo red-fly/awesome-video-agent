@@ -555,7 +555,6 @@ papers:
     paper: https://arxiv.org/abs/2512.17445
     project: https://yunhe24.github.io/langdrivectrl/
   categories:
-  - domain-specific-video-editing
   - cinematic-expression-domain-expertise
   task: Language-controllable driving scene editing
   takeaway: Multimodal agents translate natural language into scene-graph edits for
@@ -807,7 +806,7 @@ papers:
     paper: https://aclanthology.org/2025.acl-long.332/
     pdf: https://aclanthology.org/2025.acl-long.332.pdf
   categories:
-  - domain-specific-video-editing
+  - cinematic-expression-domain-expertise
   - multi-agent-collaboration
   task: Long-form theorem explanation video generation
   takeaway: Agentic planning generates multi-minute Manim explanation videos and exposes
@@ -821,7 +820,6 @@ papers:
     paper: https://ojs.aaai.org/index.php/AAAI/article/view/35377
     pdf: https://ojs.aaai.org/index.php/AAAI/article/download/35377/37532
   categories:
-  - domain-specific-video-editing
   - cinematic-expression-domain-expertise
   task: Real estate marketing video generation
   takeaway: An autonomous agent selects tools, writes story directives, and plans

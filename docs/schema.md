@@ -34,7 +34,6 @@ Preferred category tags:
 - `rl-policy-tuning`
 - `video-evaluation-self-improvement`
 - `cinematic-expression-domain-expertise`
-- `domain-specific-video-editing`
 - `video-world-model-embodied`
 
 Example:

@@ -86,9 +86,9 @@ The field is moving from **sequence-level sparse rewards** to **token-level, ste
 
 The central issue is **credit assignment**: if a video is bad, did the failure come from the plan, the retrieved reference, the mask, the shot prompt, the generator, the edit, or the verifier?
 
-## 6. Cinematic Expression and Domain Expertise
+## 6. Cinematic Expression, Domain Expertise, and Vertical Video Editing
 
-**Design idea**: video agents need more than generic planning. They must understand film grammar, editing rhythm, music structure, cultural signals, game-engine assets, educational logic, and vertical production constraints.
+**Design idea**: video agents need more than generic planning. They must understand film grammar, editing rhythm, music structure, cultural signals, game-engine assets, educational logic, and vertical production constraints, then turn that expertise into controllable video generation or editing actions.
 
 **Representative systems**
 
@@ -96,6 +96,8 @@ The central issue is **credit assignment**: if a video is bad, did the failure c
 - **AutoMV**: music structure, lyrics, beat alignment, and visual rhythm.
 - **MAVEN**: multicultural T2V generation.
 - **LangDriveCTRL**: language-controllable driving scene editing.
+- **TheoremExplainAgent**: long-form theorem explanation video generation.
+- **AutoMV-RealEstate**: real estate marketing video generation.
 - **MoReGen**: motion reasoning with physics simulation and rendering.
 - **LASEV**: educational video generation.
 
@@ -138,5 +140,5 @@ flowchart LR
 3. **CutClaw**, **CineAgents**, **DIRECT**, and **Cutscene Agent** for editing, compilation, and production assets.
 4. **LongVideoAgent**, **OmniScript**, **VideoARM**, and **ProVCA** for long-video decomposition and memory.
 5. **Video-OPD**, **VQQA**, and **AgentFlow** for policy tuning, critique, and self-improvement.
-6. **MAVEN**, **LangDriveCTRL**, **MoReGen**, **ShareVerse**, **MultiWorld**, and **Action Agent** for domain expertise and world modeling.
+6. **MAVEN**, **LangDriveCTRL**, **TheoremExplainAgent**, **AutoMV-RealEstate**, **MoReGen**, **ShareVerse**, **MultiWorld**, and **Action Agent** for domain expertise, vertical editing, and world modeling.
 7. **Vibe AIGC**, **ToolRL**, **AgentKB**, and **Agent-World** for the broader agent infrastructure behind orchestration, memory, reward design, and executable environments.
