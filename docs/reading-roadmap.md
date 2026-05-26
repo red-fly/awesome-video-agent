@@ -1,60 +1,46 @@
 # Reading Roadmap
 
-This roadmap is for readers who want to understand video agents quickly without reading every paper in chronological order.
+This roadmap follows the five output-oriented routes used by the collection. Read a system by what it delivers first; then compare its use of agents, memory, cinematic controls, or domain knowledge.
 
-## Track A: Build the Basic Mental Model
+## Track A: Creative Generation and Production Orchestration
 
-1. **Mora**: early multi-agent view of generalist video generation.
-2. **FILMAGENT**: role-based film crew simulation.
-3. **MovieAgent**: hierarchical CoT planning from story to scenes and shots.
-4. **Vibe AIGC**: the broader orchestration paradigm behind creative systems.
+1. **FILMAGENT** and **MovieAgent**: role-based production and hierarchical planning.
+2. **Camera Artist** and **VideoDirectorGPT**: cinematic shot control and multi-scene planning.
+3. **AutoMV**, **TheoremExplainAgent**, and **AutoMV-RealEstate**: domain requirements inside creative workflows.
+4. **StoryMem**, **OneStory**, and **InfinityStory**: memory and world consistency used for generation.
 
-After this track, you should understand why video agents are different from single-prompt video generation.
+After this track, you should be able to distinguish creative-generation papers from systems that merely edit or understand video.
 
-## Track B: Long Story and Cinematic Generation
-
-1. **MAViS**: full pipeline from idea to script, keyframes, video, and audio.
-2. **Camera Artist**: cinematic language and recursive shot generation.
-3. **AutoMV**: music structure, rhythm, lyrics, and verifier agents.
-4. **Co-Director**: global and local optimization for video storytelling.
-
-After this track, you should be able to compare story planning, shot planning, and cinematic control mechanisms.
-
-## Track C: Editing, Compilation, and Editable Assets
+## Track B: Video Editing, Recomposition, and Editable Assets
 
 1. **CutClaw**: hours-long raw footage editing with music synchronization.
-2. **CineAgents**: narrative-memory-driven movie compilation.
-3. **DIRECT**: agentic mashup and trailer editing.
-4. **Cutscene Agent**: editable Unreal Engine assets.
-5. **Aurora**: tool-using video editing condition construction.
+2. **CineAgents** and **DIRECT**: narrative compilation, mashups, and trailers.
+3. **Aurora** and **LangDriveCTRL**: instruction-driven video/scene editing.
+4. **Cutscene Agent** and **ComfyUI-Copilot**: editable downstream production assets.
 
-After this track, you should understand the difference between producing a final rendered video and producing an editable production artifact.
+After this track, you should understand when the deliverable is a precise edit or editable artifact rather than newly authored video.
 
-## Track D: Long-Video Understanding and Memory
+## Track C: Long-Video Understanding, Retrieval, and Memory
 
-1. **LongVideoAgent**: master / grounding / vision agent structure.
-2. **OmniScript**: long cinematic video-to-script.
-3. **VideoARM**: hierarchical multimodal memory.
-4. **ProVCA**: progressive condensation for long-video context limits.
-5. **MMProLong**: infrastructure for long-context VLMs.
+1. **LongVideoAgent** and **VideoChat-A1**: active evidence collection for video QA.
+2. **VideoAgent-Memory**, **VideoARM**, and **UniVA**: persistent and hierarchical memory.
+3. **DrVideo**, **MAGNET**, and **PVChat**: retrieval, multi-video reasoning, and video chat.
 
-After this track, you should understand how video agents convert continuous video into structured memory.
+After this track, you should understand how agents convert video streams into retrievable evidence for reasoning.
 
-## Track E: Training, Critique, and Self-Improvement
+## Track D: Policy Learning, Evaluation, and Self-Improvement
 
-1. **Video-OPD**: on-policy distillation and dense teacher signals.
-2. **VQQA**: visual-question-based critique and improvement.
-3. **ToolRL / ToRL / ARTIST**: general tool-use policy learning.
-4. **AgentFlow**: planner optimization in multi-step systems.
+1. **Video-OPD** and **ReAgent-V**: video-specific policy or reward learning.
+2. **VQQA**, **VBench**, and **ViStoryBench**: critique and generation evaluation.
+3. **ToolRL**, **ToRL**, **ARTIST**, and **AgentFlow**: general agent training foundations transferable to video.
 
-After this track, you should understand why reward design, policy tuning, and critique loops are central to reliable video agents.
+After this track, you should understand how decisions and video outputs are trained, judged, and improved.
 
-## Track F: Domain-Specific and World-Model Video Agents
+## Track E: World Modeling, Interaction, and Embodied Control
 
-1. **MAVEN**: multicultural T2V prompt refinement.
-2. **LangDriveCTRL**: driving scene editing through multimodal agents.
-3. **MoReGen**: physical motion reasoning.
-4. **ShareVerse / MultiWorld**: shared-world and multi-view consistency.
-5. **Action Agent**: embodied navigation video generation.
+1. **ShareVerse** and **MultiWorld**: shared-world and multi-view consistency.
+2. **MoReGen** and **Action Agent**: physics and navigation-controlled generation.
+3. **Embodied VideoAgent** and **GROOT**: video as persistent memory or action specification.
+4. **LongLive**: real-time interactive long video generation.
 
-After this track, you should understand why domain knowledge and world consistency are becoming core video-agent capabilities.
+After this track, you should understand when video is being used as an actionable dynamic world rather than a passive media output.

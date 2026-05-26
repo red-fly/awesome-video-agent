@@ -32,23 +32,22 @@ Good entries usually satisfy at least one of these:
     code: "https://github.com/example/repo"
     project: "https://example.github.io/project"
   categories:
-    - multi-agent-collaboration
+    - creative-generation-orchestration
   task: "Short task name"
   takeaway: "One sentence explaining why this matters."
 ```
 
 ## Category Tags
 
-Preferred tags:
+Assign one primary tag based on the paper's main delivered capability:
 
-- `multi-agent-collaboration`
-- `video-editing-compilation`
-- `long-form-reasoning-memory`
-- `rl-policy-tuning`
-- `video-evaluation-self-improvement`
-- `cinematic-expression-domain-expertise`
-- `domain-specific-video-editing`
-- `video-world-model-embodied`
+- `creative-generation-orchestration`
+- `video-editing-assets`
+- `long-video-understanding-memory`
+- `policy-evaluation-improvement`
+- `world-model-embodied-interaction`
+
+Mechanisms such as multi-agent collaboration, cinematic language, or domain expertise belong in the description unless they change the system's principal output.
 
 ## Naming Notes
 

@@ -4,6 +4,7 @@
 
 - Added and classified the video-agent-related PDFs imported to Zotero on 2026-05-26, growing the structured collection to **77 papers**.
 - Added `docs/zotero-2026-05-26.md` to separate agent papers from related video foundation-model references.
+- Consolidated the taxonomy from overlapping mechanism/domain buckets into five output-oriented routes: creative generation, editing/assets, understanding/memory, policy/evaluation, and world/interaction.
 
 ## 2026-05-22
 

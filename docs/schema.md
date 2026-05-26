@@ -22,19 +22,19 @@ Each paper entry uses:
 | `venue` | Yes | Conference, journal, anthology, project page, or preprint source. |
 | `arxiv` | No | arXiv identifier without URL. |
 | `links` | Yes | Mapping of `paper`, `code`, `project`, or other useful links. |
-| `categories` | Yes | One or more category tags. The first tag is treated as the primary category. |
+| `categories` | Yes | Single-item list containing the paper's primary route. |
 | `task` | Yes | Short task phrase. |
 | `takeaway` | Yes | One-sentence reason this paper matters. |
 
-Preferred category tags:
+Preferred primary category tags:
 
-- `multi-agent-collaboration`
-- `video-editing-compilation`
-- `long-form-reasoning-memory`
-- `rl-policy-tuning`
-- `video-evaluation-self-improvement`
-- `cinematic-expression-domain-expertise`
-- `video-world-model-embodied`
+- `creative-generation-orchestration`
+- `video-editing-assets`
+- `long-video-understanding-memory`
+- `policy-evaluation-improvement`
+- `world-model-embodied-interaction`
+
+Assign the first tag by the paper's primary delivered capability. Multi-agent roles, cinematic language, memory used for generation consistency, and vertical-domain knowledge should be described in `task` or `takeaway`, rather than creating overlapping primary categories.
 
 Example:
 
@@ -50,8 +50,7 @@ Example:
     code: "https://github.com/showlab/MovieAgent"
     project: "https://weijiawu.github.io/MovieAgent/"
   categories:
-    - multi-agent-collaboration
-    - cinematic-expression-domain-expertise
+    - creative-generation-orchestration
   task: "Automated movie generation"
   takeaway: "Hierarchical CoT planning decomposes a synopsis into scenes, shots, subtitles, audio, and generated videos."
 ```

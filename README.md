@@ -43,18 +43,15 @@ flowchart LR
     V --> O["输出<br/>视频 · 脚本 · 时间线 · 可编辑资产"]
 ```
 
-本项目按照八条技术路线整理近期视频 Agent 相关论文：
+本项目以论文的**首要交付能力**划分为五条技术路线。多智能体协作、电影语言和垂直行业知识属于可横跨多条路线的方法或条件，不再单独作为互相重叠的主分类：
 
 | 技术路线 | 核心问题 | 常见机制 |
 |---|---|---|
-| **多智能体角色化协作** | 如何像影视工业管线一样拆解复杂视频任务？ | 导演、编剧、分镜、摄影、剪辑、审稿/验证 Agent |
-| **视频编辑、剪辑编排与生产资产** | 如何把生成结果转成可检索、可剪辑、可交付的生产资产？ | 长素材拆解、混剪、预告片、可编辑时间线、引擎资产 |
-| **长视频分层解构与记忆管理** | 如何理解几十分钟到数小时的视频？ | 镜头/场景/事件记忆、时间定位、叙事图谱、角色档案 |
-| **强化学习与策略优化** | Agent 如何学会何时搜索、调用工具、修正或停止？ | GRPO、在线策略蒸馏、稠密反馈、工具调用奖励 |
-| **电影语言与领域专长建模** | Agent 如何掌握运镜、节奏、文化、音乐、引擎资产等专业知识？ | 电影语言注入、音乐结构、文化知识、可编辑时间线 |
-| **垂直领域视频编辑** | Agent 如何适配科研教育、微短剧、房地产、驾驶等特定场景？ | 行业知识、用户反馈、场景图编辑、领域工具链 |
-| **评估与自我改进** | Agent 如何评价并迭代提升生成视频？ | VLM-as-judge、视觉问题、语义梯度、验证器循环 |
-| **世界模型与具身视频 Agent** | 视频 Agent 如何建模动态世界和具身控制？ | 多视角生成、场景图、导航控制、仿真器 |
+| **视频创作与生产编排** | 如何从创意、脚本或领域需求产出连贯视频？ | 导演/分镜 Agent、电影语言、音乐/教育/营销知识、多镜头一致性 |
+| **视频编辑、重组与可编辑资产** | 如何加工已有素材，或交付可继续编辑的工程资产？ | 素材拆解、混剪/预告片、条件编辑、时间线、引擎资产 |
+| **长视频理解、检索与记忆** | 如何从长视频中检索证据并持续推理？ | 镜头/事件索引、分层记忆、时间定位、视频问答与对话 |
+| **策略学习、评测与自我改进** | 如何训练、评估和修正 Agent 的决策与输出？ | RL/策略蒸馏、工具奖励、VLM 批评、生成与任务评测 |
+| **世界建模、交互与具身控制** | 如何利用视频维护动态世界并支撑行动交互？ | 多视角世界一致性、物理运动、第一视角记忆、导航/交互控制 |
 
 ## 收录范围
 
@@ -79,48 +76,63 @@ flowchart LR
 
 ## 核心视频 Agent 论文
 
-### 多智能体角色化协作
-
-| 论文 / 系统 | 时间 | 来源 | 任务 | 核心思想 | 链接 |
-|---|---|---|---|---|---|
-| **Co-Director** | 2026-04 | arXiv preprint | 智能体式生成视频叙事 | 通过全局叙事优化和局部多模态自优化，减少生成视频故事中的语义漂移。 | [Paper](https://arxiv.org/abs/2604.24842) · [Project](https://co-director-agent.github.io/) |
-| **GenMAC** | 2026-03-14 | AAAI 2026 | 组合式文本到视频生成 | 用设计、生成和再设计 Agent 迭代优化组合式提示词，提高文本到视频的可控性。 | [Paper](https://ojs.aaai.org/index.php/AAAI/article/view/37418) · [arXiv](https://arxiv.org/abs/2412.04440) |
-| **LASEV** | 2026-02 | arXiv preprint | 教育视频生成 | 结合语义、规则和工具反馈的批评循环，提高教育视频的可发布质量。 | [Paper](https://arxiv.org/abs/2602.11790) · [Project](https://robitsg.github.io/LASEV) |
-| **ScriptAgent** | 2026-01 | arXiv preprint | 对话到电影化视频生成 | 以脚本作为长时程对话驱动电影视频的控制接口，用 Agent 组织叙事、镜头和生成流程。 | [Paper](https://arxiv.org/abs/2601.17737) · [Code](https://github.com/Tencent/digitalhuman/tree/main/ScriptAgent) |
-| **VideoGen-of-Thought** | 2025-12 | NeurIPS 2025 Workshop | 逐步多镜头视频生成 | 用 thought-style 中间步骤拆解多镜头视频创作，以更少人工干预完成规划与生成。 | [Paper](https://arxiv.org/abs/2412.02259) · [Project](https://cheliosoops.github.io/VGoT/) |
-| **MAViS** | 2025-08 | arXiv preprint | 长序列视频叙事 | 把叙事规划与 T2I、I2V、LoRA 和音频生成串成多智能体故事生产流程。 | [Paper](https://arxiv.org/abs/2508.08487) |
-| **AniMaker** | 2025-06-12 | SIGGRAPH Asia 2025 | 多智能体动画叙事生成 | 导演、摄影、审稿和后期 Agent 通过 MCTS 候选片段选择生成连贯长篇动画。 | [Paper](https://arxiv.org/abs/2506.10540) · [Code](https://github.com/HITsz-TMG/Anim-Director/tree/main/AniMaker) · [Project](https://animaker-dev.github.io/) |
-| **MovieAgent** | 2025-03 | arXiv preprint | 自动电影生成 | 用层次化 CoT 规划把故事梗概拆解为场景、镜头、字幕、音频和视频生成任务。 | [Paper](https://arxiv.org/abs/2503.07314) · [Code](https://github.com/showlab/MovieAgent) · [Project](https://weijiawu.github.io/MovieAgent/) |
-| **FILMAGENT** | 2025-01 | arXiv preprint | 端到端虚拟电影自动化 | 将导演、编剧、演员、摄影等角色拆成专业 Agent，并通过批评、修正、验证、辩论和裁决降低生成错误。 | [Paper](https://arxiv.org/abs/2501.12909) |
-| **StoryAgent** | 2024-11 | arXiv preprint | 定制化故事视频生成 | 通过多智能体协作提升定制故事生成质量，并保持主角一致性。 | [Paper](https://arxiv.org/abs/2411.04925) |
-| **VideoDirectorGPT** | 2024-10 | COLM 2024 | LLM 引导的多场景视频规划 | LLM 将文本拆解为场景级计划和视频提示词，提升开放域多场景视频的一致性。 | [Paper](https://arxiv.org/abs/2309.15091) · [Project](https://videodirectorgpt.github.io/) |
-| **Mora** | 2024-03 | arXiv preprint | 通用视频生成 | 较早用多智能体框架探索 Sora 式通用视频生成能力。 | [Paper](https://arxiv.org/abs/2403.13248) · [Code](https://github.com/lichao-sun/Mora) |
-
-### 视频编辑、剪辑编排与生产资产
+### 视频创作与生产编排
 
 | 论文 / 系统 | 时间 | 来源 | 任务 | 核心思想 | 链接 |
 |---|---|---|---|---|---|
 | **One Sentence, One Drama** | 2026-05-22 | arXiv preprint | 个性化短剧生成 | 层级化多智能体工作流把一句短剧创意转为故事结构、分镜脚本、角色/场景资产、首帧约束、视频片段、转场和 BGM。 | [Paper](https://arxiv.org/abs/2605.22144) |
+| **MAVEN** | 2026-05 | arXiv preprint | 多文化文本到视频生成 | Agent 将文化相关性检查和领域知识注入文本到视频生成。 | [Paper](https://arxiv.org/abs/2605.16716) · [Code](https://github.com/AIM-SCU/CRAFT) |
+| **Audience in the Loop** | 2026-04-13 | CHI 2026 | 观众反馈驱动的微短剧生产 | 把观众反馈纳入微短剧生产循环，为短视频内容创作提供人类在环迭代范式。 | [Paper](https://arxiv.org/abs/2602.14045) · [DOI](https://doi.org/10.1145/3772318.3790592) |
+| **OmniScript** | 2026-04-13 | arXiv preprint | 音视频脚本生成 | 把长篇脚本作为叙事、场景结构、音频、字幕和电影化视频之间的桥梁。 | [Paper](https://arxiv.org/abs/2604.11102) · [Code](https://github.com/TencentARC/OmniScript) · [Project](https://arcomniscript.github.io) |
+| **Camera Artist** | 2026-04 | arXiv preprint | 电影化叙事视频生成 | 通过递归镜头生成和电影语言注入，让分镜规划更接近专业影视表达。 | [Paper](https://arxiv.org/abs/2604.09195) |
+| **Co-Director** | 2026-04 | arXiv preprint | 智能体式生成视频叙事 | 通过全局叙事优化和局部多模态自优化，减少生成视频故事中的语义漂移。 | [Paper](https://arxiv.org/abs/2604.24842) · [Project](https://co-director-agent.github.io/) |
+| **GenMAC** | 2026-03-14 | AAAI 2026 | 组合式文本到视频生成 | 用设计、生成和再设计 Agent 迭代优化组合式提示词，提高文本到视频的可控性。 | [Paper](https://ojs.aaai.org/index.php/AAAI/article/view/37418) · [arXiv](https://arxiv.org/abs/2412.04440) |
+| **InfinityStory** | 2026-03 | arXiv preprint | 无限故事视频生成 | 通过世界一致性和角色感知镜头转场，支持超过短片段范围的多镜头视频生成。 | [Paper](https://arxiv.org/abs/2603.03646) |
+| **LASEV** | 2026-02 | arXiv preprint | 教育视频生成 | 结合语义、规则和工具反馈的批评循环，提高教育视频的可发布质量。 | [Paper](https://arxiv.org/abs/2602.11790) · [Project](https://robitsg.github.io/LASEV) |
+| **ScriptAgent** | 2026-01 | arXiv preprint | 对话到电影化视频生成 | 以脚本作为长时程对话驱动电影视频的控制接口，用 Agent 组织叙事、镜头和生成流程。 | [Paper](https://arxiv.org/abs/2601.17737) · [Code](https://github.com/Tencent/digitalhuman/tree/main/ScriptAgent) |
+| **AutoMV** | 2025-12 | arXiv preprint | 音乐视频生成 | 整合音乐结构、歌词、节拍对齐、角色一致性和验证 Agent，形成完整 MV 生成管线。 | [Paper](https://arxiv.org/abs/2512.12196) · [Code](https://github.com/multimodal-art-projection/AutoMV) · [Project](https://m-a-p.ai/AutoMV/) |
+| **VideoGen-of-Thought** | 2025-12 | NeurIPS 2025 Workshop | 逐步多镜头视频生成 | 用 thought-style 中间步骤拆解多镜头视频创作，以更少人工干预完成规划与生成。 | [Paper](https://arxiv.org/abs/2412.02259) · [Project](https://cheliosoops.github.io/VGoT/) |
+| **OneStory** | 2025-12 | arXiv preprint | 自适应记忆多镜头视频生成 | 自适应记忆帮助在非连续但相关的镜头之间维持语义连贯和视觉身份一致。 | [Paper](https://arxiv.org/abs/2512.07802) · [Project](https://zhaochongan.github.io/projects/OneStory) |
+| **StoryMem** | 2025-12 | arXiv preprint | 基于记忆的多镜头视频叙事 | Memory-to-Video 设计维护紧凑动态记忆，在多镜头长视频中保持角色、风格和叙事流一致。 | [Paper](https://arxiv.org/abs/2512.19539) · [Project](https://kevin-thu.github.io/StoryMem) |
+| **SciEducator** | 2025-11 | arXiv preprint | 科学视频理解与教学 | Deming 循环式多智能体系统结合科学视频理解、工具调用和迭代反馈，生成教育内容。 | [Paper](https://arxiv.org/abs/2511.17943) |
+| **MotionAgent** | 2025-10 | ICCV 2025 | 细粒度可控视频生成 | 运动场 Agent 将文本解析为对象轨迹和相机外参，用显式光流控制图生视频扩散模型。 | [Paper](https://openaccess.thecvf.com/content/ICCV2025/html/Liao_MotionAgent_Fine-grained_Controllable_Video_Generation_via_Motion_Field_Agent_ICCV_2025_paper.html) · [PDF](https://openaccess.thecvf.com/content/ICCV2025/papers/Liao_MotionAgent_Fine-grained_Controllable_Video_Generation_via_Motion_Field_Agent_ICCV_2025_paper.pdf) |
+| **HoloCine** | 2025-10 | arXiv preprint | 电影化多镜头长视频叙事 | 整体式长视频叙事系统强调导演控制、镜头一致性和多镜头故事结构。 | [Paper](https://arxiv.org/abs/2510.20822) · [Project](https://holo-cine.github.io/) |
+| **MAViS** | 2025-08 | arXiv preprint | 长序列视频叙事 | 把叙事规划与 T2I、I2V、LoRA 和音频生成串成多智能体故事生产流程。 | [Paper](https://arxiv.org/abs/2508.08487) |
+| **TheoremExplainAgent** | 2025-07 | ACL 2025 | 长篇定理讲解视频生成 | Agent 规划并生成多分钟 Manim 讲解视频，暴露纯文本解释中不易发现的推理缺陷。 | [Paper](https://aclanthology.org/2025.acl-long.332/) · [PDF](https://aclanthology.org/2025.acl-long.332.pdf) |
+| **AniMaker** | 2025-06-12 | SIGGRAPH Asia 2025 | 多智能体动画叙事生成 | 导演、摄影、审稿和后期 Agent 通过 MCTS 候选片段选择生成连贯长篇动画。 | [Paper](https://arxiv.org/abs/2506.10540) · [Code](https://github.com/HITsz-TMG/Anim-Director/tree/main/AniMaker) · [Project](https://animaker-dev.github.io/) |
+| **AutoMV-RealEstate** | 2025-04-11 | AAAI 2025 Demonstration Track | 房地产营销视频生成 | 自治 Agent 选择工具、编写故事指令并规划镜头轨迹，将房产图片转成营销视频。 | [Paper](https://ojs.aaai.org/index.php/AAAI/article/view/35377) · [PDF](https://ojs.aaai.org/index.php/AAAI/article/download/35377/37532) |
+| **MovieAgent** | 2025-03 | arXiv preprint | 自动电影生成 | 用层次化 CoT 规划把故事梗概拆解为场景、镜头、字幕、音频和视频生成任务。 | [Paper](https://arxiv.org/abs/2503.07314) · [Code](https://github.com/showlab/MovieAgent) · [Project](https://weijiawu.github.io/MovieAgent/) |
+| **FILMAGENT** | 2025-01 | arXiv preprint | 端到端虚拟电影自动化 | 将导演、编剧、演员、摄影等角色拆成专业 Agent，并通过批评、修正、验证、辩论和裁决降低生成错误。 | [Paper](https://arxiv.org/abs/2501.12909) |
+| **StoryDiffusion** | 2024-12 | NeurIPS 2024 | 长程一致视觉故事生成 | 一致自注意力机制提升长程图像和视频生成中的身份与故事一致性。 | [Project](https://StoryDiffusion.github.io) |
+| **StoryAgent** | 2024-11 | arXiv preprint | 定制化故事视频生成 | 通过多智能体协作提升定制故事生成质量，并保持主角一致性。 | [Paper](https://arxiv.org/abs/2411.04925) |
+| **VideoDirectorGPT** | 2024-10 | COLM 2024 | LLM 引导的多场景视频规划 | LLM 将文本拆解为场景级计划和视频提示词，提升开放域多场景视频的一致性。 | [Paper](https://arxiv.org/abs/2309.15091) · [Project](https://videodirectorgpt.github.io/) |
+| **Anim-Director** | 2024-08-19 | SIGGRAPH Asia 2024 | 可控动画视频生成 | LMM 驱动的动画制作 Agent 将简短叙事转成脚本、场景图像、视频提示和候选动画片段。 | [Paper](https://arxiv.org/abs/2408.09787) · [Code](https://github.com/HITsz-TMG/Anim-Director) |
+| **DreamStory** | 2024-07 / 2025-08 version | arXiv preprint | 故事可视化 | 用 LLM 引导扩散模型，在开放域视觉故事中维持多主体一致性。 | [Paper](https://arxiv.org/abs/2407.12899) · [Project](https://dream-xyz.github.io/dreamstory) |
+| **Mora** | 2024-03 | arXiv preprint | 通用视频生成 | 较早用多智能体框架探索 Sora 式通用视频生成能力。 | [Paper](https://arxiv.org/abs/2403.13248) · [Code](https://github.com/lichao-sun/Mora) |
+| **VideoStudio** | 2024-01 | arXiv preprint | 一致内容多场景视频生成 | 多场景一致内容生成可作为智能体故事规划和场景规划流程的基础能力。 | [Paper](https://arxiv.org/abs/2401.01256) · [Code](https://github.com/FuchenUSTC/VideoStudio) |
+
+### 视频编辑、重组与可编辑资产
+
+| 论文 / 系统 | 时间 | 来源 | 任务 | 核心思想 | 链接 |
+|---|---|---|---|---|---|
 | **Aurora** | 2026-05-18 | arXiv preprint | 统一视频编辑 | VLM Agent 将模糊的用户编辑意图转化为结构化计划和参考条件。 | [Paper](https://arxiv.org/abs/2605.18748) · [Code](https://github.com/yeates/Aurora) · [Project](https://yeates.github.io/Aurora-Page) |
 | **Cutscene Agent** | 2026-04-28 | arXiv preprint / project page | 可编辑 3D 过场动画生成 | Agent 通过 MCP 工具控制 Unreal Engine，并输出可编辑的 Level Sequence 资产。 | [Project](https://kuaishou-gamemind.github.io/cutscene_agent/) |
 | **CineAgents** | 2026-04-12 | arXiv preprint | 指令驱动的电影化视频编排 | 用“设计再组合”的方式替代简单检索排序，面向电影和剧集片段做叙事化编排。 | [Paper](https://arxiv.org/abs/2604.10456) |
 | **Sima 1.0** | 2026-04 | arXiv preprint | 纪录片视频生产 | 面向纪录片生产设计协作式多智能体流程，而不只是生成短视频片段。 | [Paper](https://arxiv.org/abs/2604.07721) |
 | **DIRECT** | 2026-04 | arXiv preprint | 智能体式混剪与预告片剪辑 | 多智能体剪辑提升混剪和电影预告片在片段、节奏、音画层面的整体一致性。 | [Paper](https://arxiv.org/abs/2604.04875) · [Code](https://github.com/AK-DREAM/DIRECT) |
 | **CutClaw** | 2026-03-31 | arXiv preprint | 小时级长视频剪辑 | 用自底向上的多模态拆解，把原始素材和音乐转成可检索、可编排的剪辑单元。 | [Paper](https://arxiv.org/abs/2603.29664) · [Code](https://github.com/GVCLab/CutClaw) |
+| **LangDriveCTRL** | 2025-12 | arXiv preprint | 自然语言可控驾驶场景编辑 | 多模态 Agent 将自然语言转化为场景图编辑，实现可控驾驶视频场景修改。 | [Paper](https://arxiv.org/abs/2512.17445) · [Project](https://yunhe24.github.io/langdrivectrl/) |
 | **ComfyUI-Copilot** | 2025 | ACL 2025 System Demonstrations | AIGC 工作流自动化 | 用智能体式工作流开发和节点文档，把创作意图连接到可执行的媒体生产管线。 | [Paper](https://aclanthology.org/2025.acl-demos.63/) · [Code](https://github.com/AIDC-AI/ComfyUI-Copilot) |
 
-### 长视频理解与记忆
+### 长视频理解、检索与记忆
 
 | 论文 / 系统 | 时间 | 来源 | 任务 | 核心思想 | 链接 |
 |---|---|---|---|---|---|
 | **MMProLong** | 2026-05 | arXiv preprint | 长上下文 VLM 训练 | 长上下文 VLM 的训练方法是长视频 Agent 记忆与推理的重要基础设施。 | [Paper](https://arxiv.org/abs/2605.13831) |
-| **OmniScript** | 2026-04-13 | arXiv preprint | 音视频脚本生成 | 把长篇脚本作为叙事、场景结构、音频、字幕和电影化视频之间的桥梁。 | [Paper](https://arxiv.org/abs/2604.11102) · [Code](https://github.com/TencentARC/OmniScript) · [Project](https://arcomniscript.github.io) |
 | **ProVCA** | 2026-04 | arXiv preprint | 高效长视频理解 | 渐进式视频压缩帮助 Agent 在有限上下文预算下理解长视频。 | [Paper](https://arxiv.org/abs/2604.02891) |
 | **VideoChat-A1** | 2026-03-14 | AAAI 2026 | 链式镜头长视频推理 | MLLM Agent 逐步选择相关镜头、拆成子镜头，并在长视频上进行由粗到细的推理。 | [Paper](https://ojs.aaai.org/index.php/AAAI/article/view/38018) · [PDF](https://ojs.aaai.org/index.php/AAAI/article/download/38018/41980) · [arXiv](https://arxiv.org/abs/2506.06097) |
 | **LongVideoAgent** | 2025-12-23 | ACL 2026 | 长视频问答 | 主 Agent 通过定位和视觉 Agent 分步收集证据，而不是一次性压缩整段视频。 | [Paper](https://arxiv.org/abs/2512.20618) · [Code](https://github.com/longvideoagent/LongVideoAgent) · [Project](https://longvideoagent.github.io/) |
-| **StoryMem** | 2025-12 | arXiv preprint | 基于记忆的多镜头视频叙事 | Memory-to-Video 设计维护紧凑动态记忆，在多镜头长视频中保持角色、风格和叙事流一致。 | [Paper](https://arxiv.org/abs/2512.19539) · [Project](https://kevin-thu.github.io/StoryMem) |
 | **VideoARM** | 2025-12 | arXiv preprint | 基于分层记忆的长视频理解 | 用“观察-思考-行动-记忆”循环在分层多模态记忆上进行长视频推理。 | [Paper](https://arxiv.org/abs/2512.12360) |
-| **OneStory** | 2025-12 | arXiv preprint | 自适应记忆多镜头视频生成 | 自适应记忆帮助在非连续但相关的镜头之间维持语义连贯和视觉身份一致。 | [Paper](https://arxiv.org/abs/2512.07802) · [Project](https://zhaochongan.github.io/projects/OneStory) |
 | **UniVA** | 2025-11 | arXiv preprint | 交互式视频 Agent 记忆 | 全局、任务和用户三层记忆支持持续视频交互中的一致性。 | [Paper](https://arxiv.org/abs/2511.08521) · [Code](https://github.com/univa-agent/univa) · [Project](https://univa.online/) |
 | **LVAgent** | 2025-10 | ICCV 2025 | 协作式长视频理解 | 多个 MLLM Agent 动态分工，检索关键片段、辩论答案并多轮反思。 | [Paper](https://openaccess.thecvf.com/content/ICCV2025/html/Chen_LVAgent_Long_Video_Understanding_by_Multi-Round_Dynamical_Collaboration_of_MLLM_ICCV_2025_paper.html) · [PDF](https://openaccess.thecvf.com/content/ICCV2025/papers/Chen_LVAgent_Long_Video_Understanding_by_Multi-Round_Dynamical_Collaboration_of_MLLM_ICCV_2025_paper.pdf) · [Code](https://github.com/64327069/LVAgent) |
 | **VCA** | 2025-10 | ICCV 2025 | 好奇心驱动的长视频理解 | VLM Agent 通过树搜索和自生成内在奖励探索视频片段，选择最有价值的帧。 | [Paper](https://openaccess.thecvf.com/content/ICCV2025/html/Yang_VCA_Video_Curious_Agent_for_Long_Video_Understanding_ICCV_2025_paper.html) · [PDF](https://openaccess.thecvf.com/content/ICCV2025/papers/Yang_VCA_Video_Curious_Agent_for_Long_Video_Understanding_ICCV_2025_paper.pdf) |
@@ -131,47 +143,18 @@ flowchart LR
 | **VideoAgent-Memory** | 2024-09 | ECCV 2024 | 记忆增强视频理解 | 用时间记忆和对象记忆组织长视频信息，让 LLM Agent 调用定位和对象工具完成长时程推理。 | [Paper](https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/3241_ECCV_2024_paper.php) · [PDF](https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/03241.pdf) · [Project](https://videoagent.github.io) |
 | **VideoAgent-ECCV2024** | 2024-09 | ECCV 2024 | 长视频问答 | LLM Agent 迭代识别并收集关键视觉证据，借助 VLM 工具减少对全帧扫描的依赖。 | [Paper](https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/10325_ECCV_2024_paper.php) · [PDF](https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/10325.pdf) · [Project](https://wxh1996.github.io/VideoAgent-Website/) |
 
-### 强化学习与策略优化
-
-| 论文 / 系统 | 时间 | 来源 | 任务 | 核心思想 | 链接 |
-|---|---|---|---|---|---|
-| **Video-OPD** | 2026-02 | arXiv preprint | 视频时序定位 | 在线策略蒸馏提供 token 级稠密反馈，降低 GRPO 类训练在长时序视频任务中的稀疏奖励成本。 | [Paper](https://arxiv.org/abs/2602.02994) |
-| **ReAgent-V** | 2025-09-18 | NeurIPS 2025 | 奖励驱动的视频理解 | 实时奖励生成引导选帧、多视角反思和偏好/RL 式视频推理训练。 | [Paper](https://openreview.net/forum?id=D1Iw4Unvfc) · [arXiv](https://arxiv.org/abs/2506.01300) |
-
-### 评估与自我改进
+### 策略学习、评测与自我改进
 
 | 论文 / 系统 | 时间 | 来源 | 任务 | 核心思想 | 链接 |
 |---|---|---|---|---|---|
 | **VQQA** | 2026-03 | arXiv preprint | 视频生成评估与改进 | 视觉问题生成和 VLM 批评可作为“语义梯度”，引导视频迭代改进。 | [Paper](https://arxiv.org/abs/2603.12310) |
+| **Video-OPD** | 2026-02 | arXiv preprint | 视频时序定位 | 在线策略蒸馏提供 token 级稠密反馈，降低 GRPO 类训练在长时序视频任务中的稀疏奖励成本。 | [Paper](https://arxiv.org/abs/2602.02994) |
+| **ReAgent-V** | 2025-09-18 | NeurIPS 2025 | 奖励驱动的视频理解 | 实时奖励生成引导选帧、多视角反思和偏好/RL 式视频推理训练。 | [Paper](https://openreview.net/forum?id=D1Iw4Unvfc) · [arXiv](https://arxiv.org/abs/2506.01300) |
 | **ViStoryBench** | 2025-05 | arXiv preprint | 故事可视化评测基准 | 面向多镜头叙事一致性和视觉故事质量，评估故事可视化系统。 | [Paper](https://arxiv.org/abs/2505.24862) |
 | **VideoWebArena** | 2025-01-22 | ICLR 2025 | 基于视频的网页 Agent 评测 | 用视频教程驱动网页任务，评测 Agent 是否能从长上下文视频中保留技能和事实。 | [Paper](https://openreview.net/forum?id=unDQOUah0F) · [Project](https://videowebarena.github.io/) |
 | **VBench** | 2024-06 | CVPR 2024 | 视频生成评测基准 | 用层次化指标拆解视频生成质量，可用于评估 Agent 生成视频的视觉、运动和一致性。 | [Paper](https://arxiv.org/abs/2311.17982) · [Project](https://vchitect.github.io/VBench-project/) |
 
-### 电影语言与领域专长建模
-
-| 论文 / 系统 | 时间 | 来源 | 任务 | 核心思想 | 链接 |
-|---|---|---|---|---|---|
-| **MAVEN** | 2026-05 | arXiv preprint | 多文化文本到视频生成 | Agent 将文化相关性检查和领域知识注入文本到视频生成。 | [Paper](https://arxiv.org/abs/2605.16716) · [Code](https://github.com/AIM-SCU/CRAFT) |
-| **Camera Artist** | 2026-04 | arXiv preprint | 电影化叙事视频生成 | 通过递归镜头生成和电影语言注入，让分镜规划更接近专业影视表达。 | [Paper](https://arxiv.org/abs/2604.09195) |
-| **AutoMV** | 2025-12 | arXiv preprint | 音乐视频生成 | 整合音乐结构、歌词、节拍对齐、角色一致性和验证 Agent，形成完整 MV 生成管线。 | [Paper](https://arxiv.org/abs/2512.12196) · [Code](https://github.com/multimodal-art-projection/AutoMV) · [Project](https://m-a-p.ai/AutoMV/) |
-| **LangDriveCTRL** | 2025-12 | arXiv preprint | 自然语言可控驾驶场景编辑 | 多模态 Agent 将自然语言转化为场景图编辑，实现可控驾驶视频场景修改。 | [Paper](https://arxiv.org/abs/2512.17445) · [Project](https://yunhe24.github.io/langdrivectrl/) |
-| **HoloCine** | 2025-10 | arXiv preprint | 电影化多镜头长视频叙事 | 整体式长视频叙事系统强调导演控制、镜头一致性和多镜头故事结构。 | [Paper](https://arxiv.org/abs/2510.20822) · [Project](https://holo-cine.github.io/) |
-| **MotionAgent** | 2025-10 | ICCV 2025 | 细粒度可控视频生成 | 运动场 Agent 将文本解析为对象轨迹和相机外参，用显式光流控制图生视频扩散模型。 | [Paper](https://openaccess.thecvf.com/content/ICCV2025/html/Liao_MotionAgent_Fine-grained_Controllable_Video_Generation_via_Motion_Field_Agent_ICCV_2025_paper.html) · [PDF](https://openaccess.thecvf.com/content/ICCV2025/papers/Liao_MotionAgent_Fine-grained_Controllable_Video_Generation_via_Motion_Field_Agent_ICCV_2025_paper.pdf) |
-| **StoryDiffusion** | 2024-12 | NeurIPS 2024 | 长程一致视觉故事生成 | 一致自注意力机制提升长程图像和视频生成中的身份与故事一致性。 | [Project](https://StoryDiffusion.github.io) |
-| **Anim-Director** | 2024-08-19 | SIGGRAPH Asia 2024 | 可控动画视频生成 | LMM 驱动的动画制作 Agent 将简短叙事转成脚本、场景图像、视频提示和候选动画片段。 | [Paper](https://arxiv.org/abs/2408.09787) · [Code](https://github.com/HITsz-TMG/Anim-Director) |
-| **DreamStory** | 2024-07 / 2025-08 version | arXiv preprint | 故事可视化 | 用 LLM 引导扩散模型，在开放域视觉故事中维持多主体一致性。 | [Paper](https://arxiv.org/abs/2407.12899) · [Project](https://dream-xyz.github.io/dreamstory) |
-| **VideoStudio** | 2024-01 | arXiv preprint | 一致内容多场景视频生成 | 多场景一致内容生成可作为智能体故事规划和场景规划流程的基础能力。 | [Paper](https://arxiv.org/abs/2401.01256) · [Code](https://github.com/FuchenUSTC/VideoStudio) |
-
-### 垂直领域视频编辑
-
-| 论文 / 系统 | 时间 | 来源 | 任务 | 核心思想 | 链接 |
-|---|---|---|---|---|---|
-| **Audience in the Loop** | 2026-04-13 | CHI 2026 | 观众反馈驱动的微短剧生产 | 把观众反馈纳入微短剧生产循环，为短视频内容创作提供人类在环迭代范式。 | [Paper](https://arxiv.org/abs/2602.14045) · [DOI](https://doi.org/10.1145/3772318.3790592) |
-| **SciEducator** | 2025-11 | arXiv preprint | 科学视频理解与教学 | Deming 循环式多智能体系统结合科学视频理解、工具调用和迭代反馈，生成教育内容。 | [Paper](https://arxiv.org/abs/2511.17943) |
-| **TheoremExplainAgent** | 2025-07 | ACL 2025 | 长篇定理讲解视频生成 | Agent 规划并生成多分钟 Manim 讲解视频，暴露纯文本解释中不易发现的推理缺陷。 | [Paper](https://aclanthology.org/2025.acl-long.332/) · [PDF](https://aclanthology.org/2025.acl-long.332.pdf) |
-| **AutoMV-RealEstate** | 2025-04-11 | AAAI 2025 Demonstration Track | 房地产营销视频生成 | 自治 Agent 选择工具、编写故事指令并规划镜头轨迹，将房产图片转成营销视频。 | [Paper](https://ojs.aaai.org/index.php/AAAI/article/view/35377) · [PDF](https://ojs.aaai.org/index.php/AAAI/article/download/35377/37532) |
-
-### 世界模型与具身视频 Agent
+### 世界建模、交互与具身控制
 
 | 论文 / 系统 | 时间 | 来源 | 任务 | 核心思想 | 链接 |
 |---|---|---|---|---|---|
@@ -179,7 +162,6 @@ flowchart LR
 | **MultiWorld** | 2026-04 | arXiv preprint | 多智能体多视角视频世界建模 | 多智能体、多视角视频生成有助于构建一致的视觉世界模型。 | [Paper](https://arxiv.org/abs/2604.18564) · [Project](https://multi-world.github.io/) |
 | **FantasyHSI** | 2026-03-14 | AAAI 2026 | 4D 人-场景交互合成 | 图结构多智能体系统协调场景导航和动作规划，生成长时程人-场景交互视频。 | [Paper](https://ojs.aaai.org/index.php/AAAI/article/view/37758) |
 | **ShareVerse** | 2026-03-03 | arXiv preprint | 共享世界一致性视频生成 | 通过多智能体协作维护共享视频世界中的角色、场景和叙事一致性。 | [Paper](https://arxiv.org/abs/2603.02697) |
-| **InfinityStory** | 2026-03 | arXiv preprint | 无限故事视频生成 | 通过世界一致性和角色感知镜头转场，支持超过短片段范围的多镜头视频生成。 | [Paper](https://arxiv.org/abs/2603.03646) |
 | **MoReGen** | 2025-12 | arXiv preprint | 物理感知文本到视频合成 | 用多智能体推理、物理仿真和渲染增强文本到视频中的物理合理运动。 | [Paper](https://arxiv.org/abs/2512.04221) |
 | **Embodied VideoAgent** | 2025-10 | ICCV 2025 | 具身动态场景理解 | 把第一视角视频、深度和位姿融合为持久场景记忆，支持具身推理、规划和操作。 | [Paper](https://openaccess.thecvf.com/content/ICCV2025/html/Fan_Embodied_VideoAgent_Persistent_Memory_from_Egocentric_Videos_and_Embodied_Sensors_ICCV_2025_paper.html) · [PDF](https://openaccess.thecvf.com/content/ICCV2025/papers/Fan_Embodied_VideoAgent_Persistent_Memory_from_Egocentric_Videos_and_Embodied_Sensors_ICCV_2025_paper.pdf) |
 | **LongLive** | 2025-09 | arXiv preprint | 实时交互式长视频生成 | 面向交互式提示切换和长时程生成，追求平滑转场、可控长视频和低延迟。 | [Paper](https://arxiv.org/abs/2509.22622) · [Code](https://github.com/NVlabs/LongLive) |

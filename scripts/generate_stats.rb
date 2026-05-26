@@ -8,14 +8,11 @@ tools = YAML.load_file(File.join(root, "data", "tools.yaml")).fetch("tools")
 out_path = File.join(root, "docs", "stats.md")
 
 category_labels = {
-  "multi-agent-collaboration" => "Multi-Agent Collaboration",
-  "video-editing-compilation" => "Video Editing and Compilation",
-  "long-form-reasoning-memory" => "Long-Form Reasoning and Memory",
-  "rl-policy-tuning" => "RL and Policy Tuning",
-  "video-evaluation-self-improvement" => "Evaluation and Self-Improvement",
-  "cinematic-expression-domain-expertise" => "Cinematic Expression and Domain Expertise",
-  "domain-specific-video-editing" => "Domain-Specific Video Editing",
-  "video-world-model-embodied" => "World Models and Embodied Video Agents"
+  "creative-generation-orchestration" => "Creative Generation and Production Orchestration",
+  "video-editing-assets" => "Video Editing, Recomposition, and Editable Assets",
+  "long-video-understanding-memory" => "Long-Video Understanding, Retrieval, and Memory",
+  "policy-evaluation-improvement" => "Policy Learning, Evaluation, and Self-Improvement",
+  "world-model-embodied-interaction" => "World Modeling, Interaction, and Embodied Control"
 }
 
 lines = []

@@ -1,144 +1,102 @@
 # Video Agent Taxonomy
 
-This document expands the taxonomy used in the main README. The field is moving quickly, so the taxonomy is intentionally practical: each route corresponds to a kind of system you might build.
+This repository uses five primary routes. A paper is placed according to its **main delivered capability**, not every technique it uses. Multi-agent roles, cinematic vocabulary, domain knowledge, memory, and verifier loops may appear across several routes.
 
-## 1. Multi-Agent Collaboration
+## Classification Rules
 
-**Design idea**: imitate human film and media production. A difficult video task is decomposed into specialized roles such as director, writer, storyboard artist, cinematographer, editor, actor, verifier, and reviewer.
+| If the system primarily... | Place it under... |
+|---|---|
+| turns an idea, script, music track, or domain brief into new narrative video | Creative Generation and Production Orchestration |
+| transforms existing footage or returns an editable production artifact | Video Editing, Recomposition, and Editable Assets |
+| inspects video to answer, retrieve, ground, summarize, or sustain dialogue | Long-Video Understanding, Retrieval, and Memory |
+| trains policies or benchmarks/critiques agent and video quality | Policy Learning, Evaluation, and Self-Improvement |
+| models an actionable dynamic world or embodied interaction through video | World Modeling, Interaction, and Embodied Control |
 
-**Representative systems**
+For ambiguous work, the output decides the primary category. For example, `StoryMem` uses memory but generates multi-shot stories, so it is a creative generation paper; `CutClaw` understands footage as an intermediate step but delivers edits, so it is an editing paper.
 
-- **FILMAGENT**: multi-agent end-to-end film automation in virtual 3D spaces.
-- **Mora**: early generalist video generation through multiple visual agents.
-- **MovieAgent**: hierarchical CoT planning from synopsis to scenes and shots.
-- **MAViS**: script, shot design, character modeling, keyframe, video, and audio pipeline.
-- **Camera Artist**: recursive shot generation and cinematic language injection.
-- **AutoMV**: music-aware multi-agent MV generation.
-- **Co-Director**: agentic generative video storytelling with global and local optimization.
-- **Sima 1.0**: collaborative documentary video production workflow.
+## 1. Creative Generation and Production Orchestration
 
-**Key bottleneck**
+**Scope**: systems whose central product is newly generated video or a complete creative production workflow, from concept or script through shots, sound, and delivery.
 
-The central challenge is the **intent-to-execution gap**: the user gives an abstract creative goal, while the system must execute concrete assets, timelines, prompts, camera plans, subtitles, audio, and edits.
-
-## 2. Video Editing, Compilation, and Production Assets
-
-**Design idea**: video agents are not only generators. Many useful systems retrieve, edit, compile, or produce assets that remain editable in downstream tools.
+This route absorbs the former top-level buckets for multi-agent film crews, cinematic expression, and vertical creative applications. Those ideas remain important, but they describe *how* creative generation works rather than a distinct output type.
 
 **Representative systems**
 
-- **CutClaw**: hours-long video editing via multimodal decomposition and music synchronization.
-- **CineAgents**: instruction-driven cinematic compilation using hierarchical narrative memory.
-- **DIRECT**: agentic video mashup and trailer editing.
-- **Cutscene Agent**: Unreal Engine Level Sequence generation through MCP tools.
-- **Aurora**: unified video editing through tool-using condition construction.
-- **ComfyUI-Copilot**: agentic workflow generation for ComfyUI.
+- **FILMAGENT**, **MovieAgent**, **AniMaker**, and **ScriptAgent**: director-like planning and production pipelines.
+- **Camera Artist**, **HoloCine**, and **VideoDirectorGPT**: shot planning and cinematic control.
+- **AutoMV**, **TheoremExplainAgent**, **AutoMV-RealEstate**, and **SciEducator**: music, education, and marketing requirements inside generation workflows.
+- **StoryMem**, **OneStory**, and **InfinityStory**: memory or world consistency used to generate multi-shot stories.
 
-**Key bottleneck**
+**Key bottleneck**: converting high-level intent into consistent scripts, shots, characters, audio, and controlled generation over many scenes.
 
-The problem is **editable generation**: professional workflows need timelines, tracks, scene graphs, masks, engine assets, and workflow graphs, not just opaque rendered videos.
+## 2. Video Editing, Recomposition, and Editable Assets
 
-## 3. Long-Form Reasoning and Memory
-
-**Design idea**: long videos cannot be treated as short clips. Systems must reverse-engineer video into searchable structure: shots, scenes, events, dialogue, characters, story arcs, and user/task/global memories.
+**Scope**: systems that operate on source footage or generate editable downstream artifacts such as timelines, masks, workflow graphs, or game-engine sequences.
 
 **Representative systems**
 
-- **LongVideoAgent**: master agent gathers evidence by calling grounding and vision agents.
-- **LVAgent**: multi-round collaboration among MLLM agents for long-video understanding.
-- **MAGNET**: multi-agent audio-visual retrieval and reasoning across multiple videos.
-- **VideoAgent-ECCV2024 / VideoAgent-Memory**: LLM-agent and memory-augmented approaches to long-video understanding.
-- **OmniScript**: video-to-script for long cinematic video.
-- **VideoARM**: hierarchical multimodal memory with an observe-think-act-memorize loop.
-- **ProVCA**: progressive condensation for efficient long-video understanding.
-- **MMProLong**: long-context VLM training recipe.
-- **UniVA**: universal video agent with memory and MCP tools.
+- **CutClaw**: editing hours-long raw material through multimodal decomposition.
+- **CineAgents** and **DIRECT**: compilation, mashup, and trailer editing.
+- **Aurora** and **LangDriveCTRL**: instruction-driven editing or scene modification.
+- **Cutscene Agent** and **ComfyUI-Copilot**: editable engine or workflow assets.
 
-**Key bottleneck**
+**Key bottleneck**: preserving user intent while producing precise, inspectable edits rather than only a rendered video.
 
-The problem is **video semantic reverse engineering**: converting continuous pixel/audio streams into structured narrative memory that agents can retrieve, revise, and reason over.
+## 3. Long-Video Understanding, Retrieval, and Memory
 
-## 4. RL, Policy Tuning, and Tool Use
-
-**Design idea**: once video agents use tools and multi-step plans, the hard question becomes policy learning: when to search, where to look, which tool to call, when to stop, and how much evidence is enough.
+**Scope**: systems whose output is understanding: evidence retrieval, temporal grounding, question answering, summarization, or persistent conversation over video.
 
 **Representative systems**
 
-- **Video-OPD**: on-policy distillation for temporal video grounding.
-- **LongVideoAgent**: RL improves tool-call efficiency and reasoning discipline.
-- **ToolRL / ToRL / OpenClaw-RL / ARTIST / AgentFlow**: general agentic tool-use training methods that transfer to video orchestration.
+- **LongVideoAgent**, **LVAgent**, **VideoChat-A1**, and **VCA**: agentic evidence search for long-video reasoning.
+- **VideoAgent-Memory**, **VideoARM**, and **UniVA**: temporal or hierarchical memories.
+- **DrVideo**, **MAGNET**, and **PVChat**: document-like retrieval, multi-video reasoning, and personalized video chat.
 
-**Key bottleneck**
+**Key bottleneck**: turning continuous video and audio streams into compact, retrievable evidence without losing temporal context.
 
-The field is moving from **sequence-level sparse rewards** to **token-level, step-level, and tool-level dense signals**. This is especially important for video, where final quality evaluation is expensive and subjective.
+## 4. Policy Learning, Evaluation, and Self-Improvement
 
-## 5. Evaluation and Self-Improvement
-
-**Design idea**: video agents should not only produce output, but also judge whether the output satisfies narrative, visual, temporal, and instruction-level constraints.
+**Scope**: training signals, policy optimization, tool-use behavior, critique loops, and evaluation suites. Training and evaluation are grouped because both answer how an agent becomes reliable rather than what media product it delivers.
 
 **Representative systems**
 
-- **VQQA**: visual-question-based critique and improvement for generated videos.
-- **AutoMV**: verifier agents and human/LLM evaluation for music videos.
-- **Aurora**: separates planning/tool failures from video synthesis failures.
+- **Video-OPD** and **ReAgent-V**: video-specific dense feedback and reward-driven reasoning.
+- **VQQA**, **VBench**, and **ViStoryBench**: critique or benchmarks for generated video and narrative quality.
+- **ToolRL**, **ToRL**, **ARTIST**, and **AgentFlow**: general tool-use and planner optimization applicable to video agents.
 
-**Key bottleneck**
+**Key bottleneck**: assigning credit to planning, retrieval, tool calls, synthesis, edits, and verification when final video quality is expensive and subjective.
 
-The central issue is **credit assignment**: if a video is bad, did the failure come from the plan, the retrieved reference, the mask, the shot prompt, the generator, the edit, or the verifier?
+## 5. World Modeling, Interaction, and Embodied Control
 
-## 6. Cinematic Expression, Domain Expertise, and Vertical Video Editing
-
-**Design idea**: video agents need more than generic planning. They must understand film grammar, editing rhythm, music structure, cultural signals, game-engine assets, educational logic, and vertical production constraints, then turn that expertise into controllable video generation or editing actions.
+**Scope**: systems for actionable dynamic environments: spatial consistency, physics, multi-view worlds, egocentric memory, interactive generation, navigation, or control.
 
 **Representative systems**
 
-- **Camera Artist**: cinematic language injection.
-- **AutoMV**: music structure, lyrics, beat alignment, and visual rhythm.
-- **MAVEN**: multicultural T2V generation.
-- **LangDriveCTRL**: language-controllable driving scene editing.
-- **TheoremExplainAgent**: long-form theorem explanation video generation.
-- **AutoMV-RealEstate**: real estate marketing video generation.
-- **MoReGen**: motion reasoning with physics simulation and rendering.
-- **LASEV**: educational video generation.
+- **ShareVerse** and **MultiWorld**: consistent multi-agent or multi-view video worlds.
+- **Embodied VideoAgent** and **GROOT**: video memory or demonstrations used for embodied action.
+- **Action Agent**, **FantasyHSI**, **MoReGen**, and **LongLive**: navigation, interaction, physical motion, and real-time controllable worlds.
 
-**Key bottleneck**
+**Key bottleneck**: maintaining spatial and causal consistency while video changes in response to actions.
 
-The core problem is **domain-specific controllability**: letting agents communicate with generators and production tools through professional concepts rather than vague prompts.
+## Cross-Cutting Mechanisms
 
-## 7. World Models and Embodied Video Agents
+These are intentionally not primary categories:
 
-**Design idea**: some video-agent work treats video generation as a world modeling problem. The agent must preserve multi-agent, multi-view, or embodied consistency over time.
+- **Role-based multi-agent collaboration**: can organize generation, editing, understanding, or embodied control.
+- **Cinematic language and domain expertise**: specialize a creative or editing system for music, education, marketing, culture, or driving.
+- **Memory**: is a primary outcome only for understanding systems; in creative systems it is a consistency mechanism.
+- **Critique and verification**: belong in the policy/evaluation route only when training or evaluation is the main contribution.
 
-**Representative systems**
-
-- **ShareVerse**: shared-world consistent video generation.
-- **MultiWorld**: multi-agent multi-view video world modeling.
-- **MoReGen**: motion reasoning with physics simulation and rendering.
-- **Action Agent**: embodied navigation video generation with flow-constrained diffusion control.
-
-**Key bottleneck**
-
-The hard part is **consistent dynamics**: generated video should respect viewpoint, trajectory, object permanence, motion constraints, and multi-agent spatial relations.
-
-## A Compact Mental Model
+## Compact View
 
 ```mermaid
 flowchart LR
-    U["User intent"] --> P["Planner / Director"]
-    P --> M["Memory: shots, scenes, scripts, characters"]
-    M --> S["Specialist agents"]
-    S --> T["Tools: T2V, I2V, VLM, engine, editor"]
-    T --> V["Verifier / Reviewer"]
-    V -->|revise| P
-    V --> O["Video, timeline, script, or editable assets"]
+    I["Intent / footage / observation"] --> C["Creative generation"]
+    I --> E["Editing & assets"]
+    I --> U["Understanding & memory"]
+    I --> W["World & interaction"]
+    P["Policy & evaluation"] -. "train / judge / revise" .-> C
+    P -. "train / judge / revise" .-> E
+    P -. "train / judge / revise" .-> U
+    P -. "train / judge / revise" .-> W
 ```
-
-## Suggested Reading Order
-
-1. **Mora**, **FILMAGENT**, and **MovieAgent** for the basic film-crew paradigm.
-2. **MAViS**, **Camera Artist**, **AutoMV**, and **Co-Director** for long-form creative generation.
-3. **CutClaw**, **CineAgents**, **DIRECT**, and **Cutscene Agent** for editing, compilation, and production assets.
-4. **LongVideoAgent**, **OmniScript**, **VideoARM**, and **ProVCA** for long-video decomposition and memory.
-5. **Video-OPD**, **VQQA**, and **AgentFlow** for policy tuning, critique, and self-improvement.
-6. **MAVEN**, **LangDriveCTRL**, **TheoremExplainAgent**, **AutoMV-RealEstate**, **MoReGen**, **ShareVerse**, **MultiWorld**, and **Action Agent** for domain expertise, vertical editing, and world modeling.
-7. **Vibe AIGC**, **ToolRL**, **AgentKB**, and **Agent-World** for the broader agent infrastructure behind orchestration, memory, reward design, and executable environments.

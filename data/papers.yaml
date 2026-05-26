@@ -8,8 +8,7 @@ papers:
   links:
     paper: https://arxiv.org/abs/2501.12909
   categories:
-  - multi-agent-collaboration
-  - cinematic-expression-domain-expertise
+  - creative-generation-orchestration
   task: End-to-end virtual film automation
   takeaway: Specialized film-crew agents collaborate through critique, correction,
     verification, debate, and judging.
@@ -24,8 +23,7 @@ papers:
     code: https://github.com/showlab/MovieAgent
     project: https://weijiawu.github.io/MovieAgent/
   categories:
-  - multi-agent-collaboration
-  - cinematic-expression-domain-expertise
+  - creative-generation-orchestration
   task: Automated movie generation
   takeaway: Hierarchical CoT planning decomposes a synopsis into scenes, shots, subtitles,
     audio, and generated videos.
@@ -39,10 +37,7 @@ papers:
     paper: https://arxiv.org/abs/2603.29664
     code: https://github.com/GVCLab/CutClaw
   categories:
-  - video-editing-compilation
-  - long-form-reasoning-memory
-  - multi-agent-collaboration
-  - cinematic-expression-domain-expertise
+  - video-editing-assets
   task: Hours-long video editing
   takeaway: Bottom-up multimodal decomposition turns raw footage and music into searchable
     editing units.
@@ -57,8 +52,7 @@ papers:
     project: https://longvideoagent.github.io/
     code: https://github.com/longvideoagent/LongVideoAgent
   categories:
-  - long-form-reasoning-memory
-  - rl-policy-tuning
+  - long-video-understanding-memory
   task: Long-video question answering
   takeaway: A master agent gathers evidence through grounding and vision agents instead
     of compressing the whole video at once.
@@ -72,8 +66,7 @@ papers:
   links:
     paper: https://arxiv.org/abs/2602.02994
   categories:
-  - rl-policy-tuning
-  - long-form-reasoning-memory
+  - policy-evaluation-improvement
   task: Temporal video grounding
   takeaway: On-policy distillation provides dense token-level feedback and reduces
     the sparse-reward cost of GRPO-style training.
@@ -87,8 +80,7 @@ papers:
   links:
     paper: https://arxiv.org/abs/2604.09195
   categories:
-  - domain-specific-video-editing
-  - multi-agent-collaboration
+  - creative-generation-orchestration
   task: Cinematic storytelling video generation
   takeaway: Recursive shot generation and cinematic language injection make shot planning
     more film-like.
@@ -103,9 +95,7 @@ papers:
     code: https://github.com/multimodal-art-projection/AutoMV
     project: https://m-a-p.ai/AutoMV/
   categories:
-  - domain-specific-video-editing
-  - cinematic-expression-domain-expertise
-  - multi-agent-collaboration
+  - creative-generation-orchestration
   task: Music video generation
   takeaway: Music structure, lyrics, beat alignment, character consistency, and verifier
     agents are combined into a full MV pipeline.
@@ -119,10 +109,7 @@ papers:
   links:
     paper: https://arxiv.org/abs/2604.10456
   categories:
-  - video-editing-compilation
-  - long-form-reasoning-memory
-  - multi-agent-collaboration
-  - cinematic-expression-domain-expertise
+  - video-editing-assets
   task: Instruction-driven cinematic video compilation
   takeaway: Design-and-compose replaces retrieve-and-rank for movie and series compilation.
   date: '2026-04-12'
@@ -134,9 +121,7 @@ papers:
   links:
     project: https://kuaishou-gamemind.github.io/cutscene_agent/
   categories:
-  - video-editing-compilation
-  - multi-agent-collaboration
-  - cinematic-expression-domain-expertise
+  - video-editing-assets
   task: Editable 3D cutscene generation
   takeaway: Agents control Unreal Engine through MCP tools and output editable Level
     Sequence assets.
@@ -152,8 +137,7 @@ papers:
     code: https://github.com/TencentARC/OmniScript
     project: https://arcomniscript.github.io
   categories:
-  - long-form-reasoning-memory
-  - cinematic-expression-domain-expertise
+  - creative-generation-orchestration
   task: Audio-visual script generation
   takeaway: Long-form scripts become a bridge between narrative, scene structure,
     audio, subtitles, and cinematic video.
@@ -168,9 +152,7 @@ papers:
     code: https://github.com/yeates/Aurora
     project: https://yeates.github.io/Aurora-Page
   categories:
-  - video-editing-compilation
-  - cinematic-expression-domain-expertise
-  - multi-agent-collaboration
+  - video-editing-assets
   task: Unified video editing
   takeaway: A VLM agent translates underspecified user edits into structured plans
     and reference conditions.
@@ -183,8 +165,7 @@ papers:
   links:
     paper: https://arxiv.org/abs/2508.08487
   categories:
-  - multi-agent-collaboration
-  - cinematic-expression-domain-expertise
+  - creative-generation-orchestration
   task: Long-sequence video storytelling
   takeaway: Multi-agent storytelling connects narrative planning with T2I, I2V, LoRA,
     and audio generation.
@@ -200,9 +181,7 @@ papers:
     project: https://animaker-dev.github.io/
     code: https://github.com/HITsz-TMG/Anim-Director/tree/main/AniMaker
   categories:
-  - multi-agent-collaboration
-  - cinematic-expression-domain-expertise
-  - video-editing-compilation
+  - creative-generation-orchestration
   task: Multi-agent animated storytelling
   takeaway: Director, photography, reviewer, and post-production agents use MCTS-guided
     clip selection to build coherent long-form animations.
@@ -216,8 +195,7 @@ papers:
     paper: https://arxiv.org/abs/2605.16716
     code: https://github.com/AIM-SCU/CRAFT
   categories:
-  - cinematic-expression-domain-expertise
-  - multi-agent-collaboration
+  - creative-generation-orchestration
   task: Multicultural text-to-video generation
   takeaway: Agents add cultural relevance checks and domain knowledge to text-to-video
     generation.
@@ -230,9 +208,7 @@ papers:
   links:
     paper: https://arxiv.org/abs/2603.02697
   categories:
-  - video-world-model-embodied
-  - cinematic-expression-domain-expertise
-  - multi-agent-collaboration
+  - world-model-embodied-interaction
   task: Shared-world consistent video generation
   takeaway: Multi-agent coordination targets consistency across a shared video world.
   date: '2026-03-03'
@@ -246,7 +222,7 @@ papers:
     paper: https://arxiv.org/abs/2407.12899
     project: https://dream-xyz.github.io/dreamstory
   categories:
-  - cinematic-expression-domain-expertise
+  - creative-generation-orchestration
   task: Story visualization
   takeaway: LLM-guided diffusion maintains multiple subjects across open-domain visual
     stories.
@@ -261,8 +237,7 @@ papers:
     paper: https://arxiv.org/abs/2408.09787
     code: https://github.com/HITsz-TMG/Anim-Director
   categories:
-  - cinematic-expression-domain-expertise
-  - multi-agent-collaboration
+  - creative-generation-orchestration
   task: Controllable animation video generation
   takeaway: An LMM-powered animation-making agent turns concise narratives into scripts,
     consistent scene images, video prompts, and selected animated clips.
@@ -277,8 +252,7 @@ papers:
     paper: https://arxiv.org/abs/2602.11790
     project: https://robitsg.github.io/LASEV
   categories:
-  - multi-agent-collaboration
-  - cinematic-expression-domain-expertise
+  - creative-generation-orchestration
   task: Educational video generation
   takeaway: Semantic, rule-based, and tool-based critique loops make educational videos
     more publishable.
@@ -291,8 +265,7 @@ papers:
     paper: https://aclanthology.org/2025.acl-demos.63/
     code: https://github.com/AIDC-AI/ComfyUI-Copilot
   categories:
-  - video-editing-compilation
-  - cinematic-expression-domain-expertise
+  - video-editing-assets
   task: AIGC workflow automation
   takeaway: Agentic workflow development and node documentation help bridge creative
     intent and executable media pipelines.
@@ -306,7 +279,7 @@ papers:
   links:
     paper: https://arxiv.org/abs/2605.13831
   categories:
-  - long-form-reasoning-memory
+  - long-video-understanding-memory
   task: Long-context VLM training
   takeaway: Long-context VLM recipes are infrastructure for long-video agent memory
     and reasoning.
@@ -321,7 +294,7 @@ papers:
     code: https://github.com/univa-agent/univa
     project: https://univa.online/
   categories:
-  - long-form-reasoning-memory
+  - long-video-understanding-memory
   task: Interactive video agent memory
   takeaway: Global, task, and user memories support consistency across sustained video
     interactions.
@@ -334,8 +307,7 @@ papers:
   links:
     paper: https://arxiv.org/abs/2602.04575
   categories:
-  - cinematic-expression-domain-expertise
-  - multi-agent-collaboration
+  - creative-generation-orchestration
   task: Agentic content generation orchestration
   takeaway: Complex media generation should be orchestrated by a meta-planner, specialist
     agents, tools, and human feedback.
@@ -350,7 +322,7 @@ papers:
     arxiv: https://arxiv.org/abs/2504.13958
     code: https://github.com/qiancheng0/ToolRL
   categories:
-  - rl-policy-tuning
+  - policy-evaluation-improvement
   task: Tool-use policy learning
   takeaway: Fine-grained rewards can teach reliable tool-use behavior beyond pure
     SFT imitation.
@@ -363,7 +335,7 @@ papers:
   links:
     paper: https://arxiv.org/abs/2503.23383
   categories:
-  - rl-policy-tuning
+  - policy-evaluation-improvement
   task: Tool-integrated reasoning
   takeaway: Agents need to learn when to reason internally and when to call external
     tools.
@@ -376,7 +348,7 @@ papers:
   links:
     paper: https://arxiv.org/abs/2603.10165
   categories:
-  - rl-policy-tuning
+  - policy-evaluation-improvement
   task: General agent RL from interactions
   takeaway: Real interaction processes can become training signals for agentic tool-use
     and planning.
@@ -389,7 +361,7 @@ papers:
   links:
     paper: https://arxiv.org/abs/2505.01441
   categories:
-  - rl-policy-tuning
+  - policy-evaluation-improvement
   task: Reasoning and function calling
   takeaway: RL can train agents to choose between internal reasoning and external
     function calls.
@@ -402,7 +374,7 @@ papers:
   links:
     paper: https://arxiv.org/abs/2507.06229
   categories:
-  - long-form-reasoning-memory
+  - long-video-understanding-memory
   task: Cross-domain agent experience memory
   takeaway: Reusable experience banks can help agents plan and revise across tasks
     and domains.
@@ -416,7 +388,7 @@ papers:
   links:
     paper: https://arxiv.org/abs/2605.06716
   categories:
-  - long-form-reasoning-memory
+  - long-video-understanding-memory
   task: Agent memory survey
   takeaway: Memory mechanisms are evolving from passive storage toward reusable, experiential
     agent infrastructure.
@@ -430,8 +402,7 @@ papers:
   links:
     paper: https://arxiv.org/abs/2604.18292
   categories:
-  - rl-policy-tuning
-  - long-form-reasoning-memory
+  - policy-evaluation-improvement
   task: Environment synthesis and agent training
   takeaway: Executable environments and verifiable tasks can become scalable training
     grounds for agent evolution.
@@ -445,7 +416,7 @@ papers:
     paper: https://openreview.net/forum?id=Mf5AleTUVK
     arxiv: https://arxiv.org/abs/2510.05592
   categories:
-  - rl-policy-tuning
+  - policy-evaluation-improvement
   task: Planner optimization for multi-step agents
   takeaway: Optimizing planner behavior inside the execution flow is relevant to video
     agents that coordinate many tools.
@@ -460,7 +431,7 @@ papers:
     project: https://futuresim.github.io
     code: https://github.com/futuresim/futuresim
   categories:
-  - long-form-reasoning-memory
+  - policy-evaluation-improvement
   task: Long-horizon adaptive-agent evaluation
   takeaway: Long-horizon event replay is a useful evaluation idea for agents that
     must adapt over time.
@@ -474,8 +445,7 @@ papers:
     paper: https://arxiv.org/abs/2604.04875
     code: https://github.com/AK-DREAM/DIRECT
   categories:
-  - video-editing-compilation
-  - multi-agent-collaboration
+  - video-editing-assets
   task: Agentic video mashup and trailer editing
   takeaway: Multi-agent editing improves cross-level audio-visual consistency for
     video mashups and cinematic trailers.
@@ -489,8 +459,7 @@ papers:
     paper: https://arxiv.org/abs/2604.24842
     project: https://co-director-agent.github.io/
   categories:
-  - multi-agent-collaboration
-  - cinematic-expression-domain-expertise
+  - creative-generation-orchestration
   task: Agentic generative video storytelling
   takeaway: Global narrative optimization and local multimodal self-optimization reduce
     semantic drift in generative video stories.
@@ -503,7 +472,7 @@ papers:
   links:
     paper: https://arxiv.org/abs/2512.12360
   categories:
-  - long-form-reasoning-memory
+  - long-video-understanding-memory
   task: Long-video understanding with hierarchical memory
   takeaway: An observe-think-act-memorize loop reasons over hierarchical multimodal
     memories for long videos.
@@ -517,8 +486,7 @@ papers:
   links:
     paper: https://arxiv.org/abs/2603.12310
   categories:
-  - video-evaluation-self-improvement
-  - rl-policy-tuning
+  - policy-evaluation-improvement
   task: Video generation evaluation and improvement
   takeaway: Visual question generation and VLM critique can act as semantic gradients
     for iterative video improvement.
@@ -532,8 +500,7 @@ papers:
     paper: https://arxiv.org/abs/2403.13248
     code: https://github.com/lichao-sun/Mora
   categories:
-  - multi-agent-collaboration
-  - cinematic-expression-domain-expertise
+  - creative-generation-orchestration
   task: Generalist video generation
   takeaway: An early multi-agent visual generation framework for Sora-like generalist
     video capabilities.
@@ -546,8 +513,7 @@ papers:
   links:
     paper: https://arxiv.org/abs/2411.04925
   categories:
-  - multi-agent-collaboration
-  - cinematic-expression-domain-expertise
+  - creative-generation-orchestration
   task: Customized storytelling video generation
   takeaway: Multi-agent collaboration improves customized story generation and protagonist
     consistency.
@@ -561,8 +527,7 @@ papers:
     paper: https://ojs.aaai.org/index.php/AAAI/article/view/37418
     arxiv: https://arxiv.org/abs/2412.04440
   categories:
-  - multi-agent-collaboration
-  - cinematic-expression-domain-expertise
+  - creative-generation-orchestration
   task: Compositional text-to-video generation
   takeaway: Design, generation, and redesign agents refine compositional prompts for
     controllable T2V generation.
@@ -575,8 +540,7 @@ papers:
   links:
     paper: https://arxiv.org/abs/2604.07721
   categories:
-  - video-editing-compilation
-  - multi-agent-collaboration
+  - video-editing-assets
   task: Documentary video production
   takeaway: A collaborative multi-agent workflow targets documentary production rather
     than short clip generation.
@@ -591,7 +555,7 @@ papers:
     paper: https://arxiv.org/abs/2512.17445
     project: https://yunhe24.github.io/langdrivectrl/
   categories:
-  - cinematic-expression-domain-expertise
+  - video-editing-assets
   task: Language-controllable driving scene editing
   takeaway: Multimodal agents translate natural language into scene-graph edits for
     controllable driving video scenarios.
@@ -605,8 +569,7 @@ papers:
   links:
     paper: https://arxiv.org/abs/2605.01477
   categories:
-  - video-world-model-embodied
-  - cinematic-expression-domain-expertise
+  - world-model-embodied-interaction
   task: Embodied navigation video generation
   takeaway: Agentic navigation video generation is combined with flow-constrained
     diffusion control.
@@ -621,8 +584,7 @@ papers:
     paper: https://arxiv.org/abs/2604.18564
     project: https://multi-world.github.io/
   categories:
-  - video-world-model-embodied
-  - cinematic-expression-domain-expertise
+  - world-model-embodied-interaction
   task: Multi-agent multi-view video world modeling
   takeaway: Multi-agent, multi-view video generation supports consistent visual world
     modeling.
@@ -635,9 +597,7 @@ papers:
   links:
     paper: https://arxiv.org/abs/2512.04221
   categories:
-  - video-world-model-embodied
-  - cinematic-expression-domain-expertise
-  - multi-agent-collaboration
+  - world-model-embodied-interaction
   task: Physics-aware text-to-video synthesis
   takeaway: Multi-agent reasoning, physics simulation, and rendering help model physically
     plausible motion in T2V generation.
@@ -650,7 +610,7 @@ papers:
   links:
     paper: https://arxiv.org/abs/2604.02891
   categories:
-  - long-form-reasoning-memory
+  - long-video-understanding-memory
   task: Efficient long-video understanding
   takeaway: Progressive video condensation helps agents reason over long videos under
     limited context budgets.
@@ -666,7 +626,7 @@ papers:
     pdf: https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/10325.pdf
     project: https://wxh1996.github.io/VideoAgent-Website/
   categories:
-  - long-form-reasoning-memory
+  - long-video-understanding-memory
   task: Long-form video question answering
   takeaway: An LLM agent iteratively identifies and gathers key visual evidence with
     VLM tools, reducing the need to process every frame.
@@ -680,7 +640,7 @@ papers:
     pdf: https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/03241.pdf
     project: https://videoagent.github.io
   categories:
-  - long-form-reasoning-memory
+  - long-video-understanding-memory
   task: Memory-augmented video understanding
   takeaway: Structured temporal and object-centric memories let an LLM agent query
     localization and object tools for long-horizon video reasoning.
@@ -694,8 +654,7 @@ papers:
     paper: https://aclanthology.org/2024.emnlp-main.559/
     pdf: https://aclanthology.org/2024.emnlp-main.559.pdf
   categories:
-  - long-form-reasoning-memory
-  - multi-agent-collaboration
+  - long-video-understanding-memory
   task: Complex video understanding
   takeaway: A divide-and-conquer loop stores and retrieves relevant frames, then dynamically
     invokes APIs and tools for complex video queries.
@@ -708,7 +667,7 @@ papers:
     paper: https://openaccess.thecvf.com/content/CVPR2025/html/Ma_DrVideo_Document_Retrieval_Based_Long_Video_Understanding_CVPR_2025_paper.html
     pdf: https://openaccess.thecvf.com/content/CVPR2025/papers/Ma_DrVideo_Document_Retrieval_Based_Long_Video_Understanding_CVPR_2025_paper.pdf
   categories:
-  - long-form-reasoning-memory
+  - long-video-understanding-memory
   task: Document-retrieval long video understanding
   takeaway: Long videos are converted into coarse text documents and refined through
     an agent-based retrieval loop that searches for missing evidence.
@@ -721,8 +680,7 @@ papers:
     paper: https://openaccess.thecvf.com/content/ICCV2025/html/Yang_VCA_Video_Curious_Agent_for_Long_Video_Understanding_ICCV_2025_paper.html
     pdf: https://openaccess.thecvf.com/content/ICCV2025/papers/Yang_VCA_Video_Curious_Agent_for_Long_Video_Understanding_ICCV_2025_paper.pdf
   categories:
-  - long-form-reasoning-memory
-  - rl-policy-tuning
+  - long-video-understanding-memory
   task: Curiosity-driven long video understanding
   takeaway: A VLM-based agent explores video segments with tree search and self-generated
     intrinsic rewards to gather the most useful frames.
@@ -738,8 +696,7 @@ papers:
     pdf: https://openaccess.thecvf.com/content/ICCV2025/papers/Chen_LVAgent_Long_Video_Understanding_by_Multi-Round_Dynamical_Collaboration_of_MLLM_ICCV_2025_paper.pdf
     code: https://github.com/64327069/LVAgent
   categories:
-  - long-form-reasoning-memory
-  - multi-agent-collaboration
+  - long-video-understanding-memory
   task: Collaborative long video understanding
   takeaway: Multiple MLLM agents are dynamically selected, retrieve key segments,
     debate answers, and reflect across rounds for long-video QA.
@@ -753,8 +710,7 @@ papers:
     paper: https://openaccess.thecvf.com/content/ICCV2025/html/Fan_Embodied_VideoAgent_Persistent_Memory_from_Egocentric_Videos_and_Embodied_Sensors_ICCV_2025_paper.html
     pdf: https://openaccess.thecvf.com/content/ICCV2025/papers/Fan_Embodied_VideoAgent_Persistent_Memory_from_Egocentric_Videos_and_Embodied_Sensors_ICCV_2025_paper.pdf
   categories:
-  - video-world-model-embodied
-  - long-form-reasoning-memory
+  - world-model-embodied-interaction
   task: Embodied dynamic scene understanding
   takeaway: Egocentric videos, depth, and pose are fused into persistent scene memory
     for embodied reasoning, planning, and manipulation tasks.
@@ -768,7 +724,7 @@ papers:
     paper: https://openaccess.thecvf.com/content/ICCV2025/html/Liao_MotionAgent_Fine-grained_Controllable_Video_Generation_via_Motion_Field_Agent_ICCV_2025_paper.html
     pdf: https://openaccess.thecvf.com/content/ICCV2025/papers/Liao_MotionAgent_Fine-grained_Controllable_Video_Generation_via_Motion_Field_Agent_ICCV_2025_paper.pdf
   categories:
-  - cinematic-expression-domain-expertise
+  - creative-generation-orchestration
   task: Fine-grained controllable video generation
   takeaway: A motion field agent parses text into object trajectories and camera extrinsics,
     then controls image-to-video diffusion with explicit flow.
@@ -782,8 +738,7 @@ papers:
     paper: https://openreview.net/forum?id=unDQOUah0F
     project: https://videowebarena.github.io/
   categories:
-  - video-evaluation-self-improvement
-  - long-form-reasoning-memory
+  - policy-evaluation-improvement
   task: Video-based web-agent evaluation
   takeaway: A benchmark of web-agent tasks grounded in video tutorials tests whether
     agents can retain skills and facts from long-context video.
@@ -795,8 +750,7 @@ papers:
   links:
     paper: https://openreview.net/forum?id=uleDLeiaT3
   categories:
-  - video-world-model-embodied
-  - rl-policy-tuning
+  - world-model-embodied-interaction
   task: Learning agents from gameplay videos
   takeaway: Reference gameplay videos become goal specifications for an instruction-following
     agent in open-world environments.
@@ -810,8 +764,7 @@ papers:
     paper: https://openreview.net/forum?id=D1Iw4Unvfc
     arxiv: https://arxiv.org/abs/2506.01300
   categories:
-  - rl-policy-tuning
-  - long-form-reasoning-memory
+  - policy-evaluation-improvement
   task: Reward-driven video understanding
   takeaway: Real-time reward generation guides frame selection, multi-perspective
     reflection, and preference/RL-style tuning for video reasoning.
@@ -827,8 +780,7 @@ papers:
     project: https://schowdhury671.github.io/magnet_project/
     arxiv: https://arxiv.org/abs/2506.07016
   categories:
-  - long-form-reasoning-memory
-  - multi-agent-collaboration
+  - long-video-understanding-memory
   task: Multi-video audio-visual retrieval and reasoning
   takeaway: Specialized agents reason across multiple videos to retrieve, link, and
     ground relevant audio-visual segments for complex QA.
@@ -842,8 +794,7 @@ papers:
     paper: https://aclanthology.org/2025.acl-long.332/
     pdf: https://aclanthology.org/2025.acl-long.332.pdf
   categories:
-  - cinematic-expression-domain-expertise
-  - multi-agent-collaboration
+  - creative-generation-orchestration
   task: Long-form theorem explanation video generation
   takeaway: Agentic planning generates multi-minute Manim explanation videos and exposes
     reasoning flaws that text-only explanations can hide.
@@ -856,7 +807,7 @@ papers:
     paper: https://ojs.aaai.org/index.php/AAAI/article/view/35377
     pdf: https://ojs.aaai.org/index.php/AAAI/article/download/35377/37532
   categories:
-  - cinematic-expression-domain-expertise
+  - creative-generation-orchestration
   task: Real estate marketing video generation
   takeaway: An autonomous agent selects tools, writes story directives, and plans
     camera trajectories to turn property images into marketing videos.
@@ -869,8 +820,7 @@ papers:
   links:
     paper: https://ojs.aaai.org/index.php/AAAI/article/view/37758
   categories:
-  - video-world-model-embodied
-  - multi-agent-collaboration
+  - world-model-embodied-interaction
   task: 4D human-scene interaction synthesis
   takeaway: A graph-based multi-agent system coordinates scene navigation and action
     planning for long-horizon human-scene interaction video synthesis.
@@ -885,7 +835,7 @@ papers:
     pdf: https://ojs.aaai.org/index.php/AAAI/article/download/38018/41980
     arxiv: https://arxiv.org/abs/2506.06097
   categories:
-  - long-form-reasoning-memory
+  - long-video-understanding-memory
   task: Chain-of-shot long video reasoning
   takeaway: An MLLM agent progressively selects relevant shots, splits them into subshots,
     and reasons coarse-to-fine over long videos.
@@ -897,8 +847,7 @@ papers:
   links:
     paper: https://ojs.aaai.org/index.php/AAAI/article/view/32142
   categories:
-  - video-world-model-embodied
-  - long-form-reasoning-memory
+  - world-model-embodied-interaction
   task: Multimodal multi-agent theory-of-mind reasoning
   takeaway: Video and text descriptions of embodied multi-agent interactions support
     reasoning about goals, beliefs, and nested beliefs.
@@ -912,9 +861,7 @@ papers:
   links:
     paper: https://arxiv.org/abs/2605.22144
   categories:
-  - video-editing-compilation
-  - multi-agent-collaboration
-  - cinematic-expression-domain-expertise
+  - creative-generation-orchestration
   task: Personalized short-form drama generation
   takeaway: A hierarchical multi-agent workflow turns a one-sentence drama idea into
     story structure, storyboard scripts, assets, constrained first frames, video clips,
@@ -930,8 +877,7 @@ papers:
     paper: https://arxiv.org/abs/2601.17737
     code: https://github.com/Tencent/digitalhuman/tree/main/ScriptAgent
   categories:
-  - multi-agent-collaboration
-  - cinematic-expression-domain-expertise
+  - creative-generation-orchestration
   task: Dialogue-to-cinematic video generation
   takeaway: An agentic framework uses scripts as the control interface for long-horizon
     dialogue-driven cinematic video generation.
@@ -945,9 +891,7 @@ papers:
   links:
     paper: https://arxiv.org/abs/2511.17943
   categories:
-  - domain-specific-video-editing
-  - multi-agent-collaboration
-  - long-form-reasoning-memory
+  - creative-generation-orchestration
   task: Scientific video understanding and education
   takeaway: A Deming-cycle multi-agent system combines scientific video understanding,
     tool use, and iterative educational content refinement.
@@ -961,8 +905,7 @@ papers:
     paper: https://arxiv.org/abs/2512.19539
     project: https://kevin-thu.github.io/StoryMem
   categories:
-  - long-form-reasoning-memory
-  - cinematic-expression-domain-expertise
+  - creative-generation-orchestration
   task: Memory-based multi-shot video storytelling
   takeaway: A Memory-to-Video design maintains compact dynamic memory to preserve
     characters, style, and narrative flow across multi-shot long videos.
@@ -977,8 +920,7 @@ papers:
     paper: https://arxiv.org/abs/2309.15091
     project: https://videodirectorgpt.github.io/
   categories:
-  - multi-agent-collaboration
-  - cinematic-expression-domain-expertise
+  - creative-generation-orchestration
   task: LLM-guided multi-scene video planning
   takeaway: An LLM decomposes text into scene-level plans and video prompts to improve
     multi-scene consistency in text-to-video generation.
@@ -993,8 +935,7 @@ papers:
     paper: https://arxiv.org/abs/2412.02259
     project: https://cheliosoops.github.io/VGoT/
   categories:
-  - multi-agent-collaboration
-  - cinematic-expression-domain-expertise
+  - creative-generation-orchestration
   task: Step-by-step multi-shot video generation
   takeaway: A thought-style generation pipeline decomposes multi-shot video creation
     into intermediate planning and generation steps with minimal manual intervention.
@@ -1008,8 +949,7 @@ papers:
     paper: https://arxiv.org/abs/2510.20822
     project: https://holo-cine.github.io/
   categories:
-  - cinematic-expression-domain-expertise
-  - long-form-reasoning-memory
+  - creative-generation-orchestration
   task: Cinematic multi-shot long video narratives
   takeaway: A holistic long-video narrative system emphasizes directorial control,
     shot consistency, and cinematic structure across multi-shot stories.
@@ -1023,8 +963,7 @@ papers:
     paper: https://arxiv.org/abs/2512.07802
     project: https://zhaochongan.github.io/projects/OneStory
   categories:
-  - long-form-reasoning-memory
-  - cinematic-expression-domain-expertise
+  - creative-generation-orchestration
   task: Adaptive-memory multi-shot video generation
   takeaway: Adaptive memory helps maintain semantic coherence and visual identity
     across discontinuous but related video shots.
@@ -1038,9 +977,7 @@ papers:
   links:
     paper: https://arxiv.org/abs/2603.03646
   categories:
-  - video-world-model-embodied
-  - long-form-reasoning-memory
-  - cinematic-expression-domain-expertise
+  - creative-generation-orchestration
   task: Unlimited story video generation
   takeaway: World consistency and character-aware shot transitions support unlimited
     multi-shot video generation beyond short clip horizons.
@@ -1054,8 +991,7 @@ papers:
     paper: https://arxiv.org/abs/2509.22622
     code: https://github.com/NVlabs/LongLive
   categories:
-  - video-world-model-embodied
-  - cinematic-expression-domain-expertise
+  - world-model-embodied-interaction
   task: Real-time interactive long video generation
   takeaway: Interactive prompt switching and long-horizon generation target controllable
     long videos with smooth transitions and low latency.
@@ -1070,8 +1006,7 @@ papers:
     paper: https://arxiv.org/abs/2602.14045
     doi: https://doi.org/10.1145/3772318.3790592
   categories:
-  - domain-specific-video-editing
-  - video-evaluation-self-improvement
+  - creative-generation-orchestration
   task: Viewer-feedback micro-drama production
   takeaway: Audience feedback is brought into micro-drama production loops, offering
     a human-in-the-loop pattern for iterative short-form video creation.
@@ -1083,8 +1018,7 @@ papers:
   links:
     paper: https://openaccess.thecvf.com/content/ICCV2025/html/Shi_PVChat_Personalized_Video_Chat_with_One-Shot_Learning_ICCV_2025_paper.html
   categories:
-  - long-form-reasoning-memory
-  - domain-specific-video-editing
+  - long-video-understanding-memory
   task: Personalized video chat
   takeaway: One-shot personalization enables video chat systems to adapt to individual
     users or identities with minimal examples.
@@ -1098,7 +1032,7 @@ papers:
     paper: https://arxiv.org/abs/2311.17982
     project: https://vchitect.github.io/VBench-project/
   categories:
-  - video-evaluation-self-improvement
+  - policy-evaluation-improvement
   task: Video generation benchmark
   takeaway: A hierarchical benchmark decomposes video generation quality into objective
     dimensions that are useful for evaluating agent-produced videos.
@@ -1111,8 +1045,7 @@ papers:
   links:
     paper: https://arxiv.org/abs/2505.24862
   categories:
-  - video-evaluation-self-improvement
-  - cinematic-expression-domain-expertise
+  - policy-evaluation-improvement
   task: Story visualization benchmark
   takeaway: A benchmark suite evaluates story visualization systems on multi-shot
     narrative consistency and visual storytelling quality.
@@ -1126,8 +1059,7 @@ papers:
     paper: https://arxiv.org/abs/2401.01256
     code: https://github.com/FuchenUSTC/VideoStudio
   categories:
-  - cinematic-expression-domain-expertise
-  - long-form-reasoning-memory
+  - creative-generation-orchestration
   task: Consistent-content multi-scene video generation
   takeaway: Multi-scene generation with consistent content provides useful foundations
     for agentic story and scene planning pipelines.
@@ -1140,8 +1072,7 @@ papers:
   links:
     project: https://StoryDiffusion.github.io
   categories:
-  - cinematic-expression-domain-expertise
-  - long-form-reasoning-memory
+  - creative-generation-orchestration
   task: Long-range consistent visual story generation
   takeaway: Consistent self-attention improves identity and story consistency across
     long-range image and video generation.

@@ -32,17 +32,17 @@ tool_duplicates = tool_names.group_by(&:itself).select { |_name, values| values.
 abort "duplicate tool names: #{tool_duplicates.join(", ")}" unless tool_duplicates.empty?
 
 allowed_categories = Set.new(%w[
-  multi-agent-collaboration
-  video-editing-compilation
-  long-form-reasoning-memory
-  rl-policy-tuning
-  video-evaluation-self-improvement
-  cinematic-expression-domain-expertise
-  domain-specific-video-editing
-  video-world-model-embodied
+  creative-generation-orchestration
+  video-editing-assets
+  long-video-understanding-memory
+  policy-evaluation-improvement
+  world-model-embodied-interaction
 ])
 
 unknown_categories = papers.flat_map { |paper| paper["categories"] }.uniq.reject { |category| allowed_categories.include?(category) }
 abort "unknown categories: #{unknown_categories.join(", ")}" unless unknown_categories.empty?
+
+multiple_categories = papers.select { |paper| paper.fetch("categories").length != 1 }.map { |paper| paper.fetch("name") }
+abort "papers must have exactly one primary category: #{multiple_categories.join(", ")}" unless multiple_categories.empty?
 
 puts "OK: #{papers.length} papers, #{tools.length} tools"
