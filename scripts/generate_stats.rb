@@ -13,7 +13,8 @@ category_labels = {
   "long-form-reasoning-memory" => "Long-Form Reasoning and Memory",
   "rl-policy-tuning" => "RL and Policy Tuning",
   "video-evaluation-self-improvement" => "Evaluation and Self-Improvement",
-  "cinematic-expression-domain-expertise" => "Cinematic Expression, Domain Expertise, and Vertical Video Editing",
+  "cinematic-expression-domain-expertise" => "Cinematic Expression and Domain Expertise",
+  "domain-specific-video-editing" => "Domain-Specific Video Editing",
   "video-world-model-embodied" => "World Models and Embodied Video Agents"
 }
 

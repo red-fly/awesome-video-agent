@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-05-26
+
+- Added and classified the video-agent-related PDFs imported to Zotero on 2026-05-26, growing the structured collection to **77 papers**.
+- Added `docs/zotero-2026-05-26.md` to separate agent papers from related video foundation-model references.
+
 ## 2026-05-22
 
 - Expanded the structured collection from **42 papers** to **59 papers** with a proceedings-focused pass over recent top conferences.

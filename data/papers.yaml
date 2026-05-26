@@ -87,7 +87,7 @@ papers:
   links:
     paper: https://arxiv.org/abs/2604.09195
   categories:
-  - cinematic-expression-domain-expertise
+  - domain-specific-video-editing
   - multi-agent-collaboration
   task: Cinematic storytelling video generation
   takeaway: Recursive shot generation and cinematic language injection make shot planning
@@ -103,6 +103,7 @@ papers:
     code: https://github.com/multimodal-art-projection/AutoMV
     project: https://m-a-p.ai/AutoMV/
   categories:
+  - domain-specific-video-editing
   - cinematic-expression-domain-expertise
   - multi-agent-collaboration
   task: Music video generation
@@ -190,8 +191,8 @@ papers:
   date: 2025-08
   venue: arXiv preprint
 - name: AniMaker
-  title: 'AniMaker: Automated Multi-Agent Animated Storytelling with MCTS-Driven
-    Clip Generation'
+  title: 'AniMaker: Automated Multi-Agent Animated Storytelling with MCTS-Driven Clip
+    Generation'
   year: 2025
   arxiv: '2506.10540'
   links:
@@ -252,8 +253,8 @@ papers:
   date: 2024-07 / 2025-08 version
   venue: arXiv preprint
 - name: Anim-Director
-  title: 'Anim-Director: A Large Multimodal Model Powered Agent for Controllable
-    Animation Video Generation'
+  title: 'Anim-Director: A Large Multimodal Model Powered Agent for Controllable Animation
+    Video Generation'
   year: 2024
   arxiv: '2408.09787'
   links:
@@ -901,3 +902,246 @@ papers:
   task: Multimodal multi-agent theory-of-mind reasoning
   takeaway: Video and text descriptions of embodied multi-agent interactions support
     reasoning about goals, beliefs, and nested beliefs.
+- name: One Sentence, One Drama
+  title: 'One Sentence, One Drama: Personalized Short-Form Drama Generation via Multi-Agent
+    Systems'
+  year: 2026
+  date: '2026-05-22'
+  venue: arXiv preprint
+  arxiv: '2605.22144'
+  links:
+    paper: https://arxiv.org/abs/2605.22144
+  categories:
+  - video-editing-compilation
+  - multi-agent-collaboration
+  - cinematic-expression-domain-expertise
+  task: Personalized short-form drama generation
+  takeaway: A hierarchical multi-agent workflow turns a one-sentence drama idea into
+    story structure, storyboard scripts, assets, constrained first frames, video clips,
+    transitions, and BGM.
+- name: ScriptAgent
+  title: 'The Script is All You Need: An Agentic Framework for Long-Horizon Dialogue-to-Cinematic
+    Video Generation'
+  year: 2026
+  date: 2026-01
+  venue: arXiv preprint
+  arxiv: '2601.17737'
+  links:
+    paper: https://arxiv.org/abs/2601.17737
+    code: https://github.com/Tencent/digitalhuman/tree/main/ScriptAgent
+  categories:
+  - multi-agent-collaboration
+  - cinematic-expression-domain-expertise
+  task: Dialogue-to-cinematic video generation
+  takeaway: An agentic framework uses scripts as the control interface for long-horizon
+    dialogue-driven cinematic video generation.
+- name: SciEducator
+  title: 'SciEducator: Scientific Video Understanding and Educating via Deming-Cycle
+    Multi-Agent System'
+  year: 2025
+  date: 2025-11
+  venue: arXiv preprint
+  arxiv: '2511.17943'
+  links:
+    paper: https://arxiv.org/abs/2511.17943
+  categories:
+  - domain-specific-video-editing
+  - multi-agent-collaboration
+  - long-form-reasoning-memory
+  task: Scientific video understanding and education
+  takeaway: A Deming-cycle multi-agent system combines scientific video understanding,
+    tool use, and iterative educational content refinement.
+- name: StoryMem
+  title: 'StoryMem: Multi-shot Long Video Storytelling with Memory'
+  year: 2025
+  date: 2025-12
+  venue: arXiv preprint
+  arxiv: '2512.19539'
+  links:
+    paper: https://arxiv.org/abs/2512.19539
+    project: https://kevin-thu.github.io/StoryMem
+  categories:
+  - long-form-reasoning-memory
+  - cinematic-expression-domain-expertise
+  task: Memory-based multi-shot video storytelling
+  takeaway: A Memory-to-Video design maintains compact dynamic memory to preserve
+    characters, style, and narrative flow across multi-shot long videos.
+- name: VideoDirectorGPT
+  title: 'VideoDirectorGPT: Consistent Multi-scene Video Generation via LLM-Guided
+    Planning'
+  year: 2024
+  date: 2024-10
+  venue: COLM 2024
+  arxiv: '2309.15091'
+  links:
+    paper: https://arxiv.org/abs/2309.15091
+    project: https://videodirectorgpt.github.io/
+  categories:
+  - multi-agent-collaboration
+  - cinematic-expression-domain-expertise
+  task: LLM-guided multi-scene video planning
+  takeaway: An LLM decomposes text into scene-level plans and video prompts to improve
+    multi-scene consistency in text-to-video generation.
+- name: VideoGen-of-Thought
+  title: 'VideoGen-of-Thought: Step-by-step Generating Multi-shot Video with Minimal
+    Manual Intervention'
+  year: 2025
+  date: 2025-12
+  venue: NeurIPS 2025 Workshop
+  arxiv: '2412.02259'
+  links:
+    paper: https://arxiv.org/abs/2412.02259
+    project: https://cheliosoops.github.io/VGoT/
+  categories:
+  - multi-agent-collaboration
+  - cinematic-expression-domain-expertise
+  task: Step-by-step multi-shot video generation
+  takeaway: A thought-style generation pipeline decomposes multi-shot video creation
+    into intermediate planning and generation steps with minimal manual intervention.
+- name: HoloCine
+  title: 'HoloCine: Holistic Generation of Cinematic Multi-Shot Long Video Narratives'
+  year: 2025
+  date: 2025-10
+  venue: arXiv preprint
+  arxiv: '2510.20822'
+  links:
+    paper: https://arxiv.org/abs/2510.20822
+    project: https://holo-cine.github.io/
+  categories:
+  - cinematic-expression-domain-expertise
+  - long-form-reasoning-memory
+  task: Cinematic multi-shot long video narratives
+  takeaway: A holistic long-video narrative system emphasizes directorial control,
+    shot consistency, and cinematic structure across multi-shot stories.
+- name: OneStory
+  title: 'OneStory: Coherent Multi-Shot Video Generation with Adaptive Memory'
+  year: 2025
+  date: 2025-12
+  venue: arXiv preprint
+  arxiv: '2512.07802'
+  links:
+    paper: https://arxiv.org/abs/2512.07802
+    project: https://zhaochongan.github.io/projects/OneStory
+  categories:
+  - long-form-reasoning-memory
+  - cinematic-expression-domain-expertise
+  task: Adaptive-memory multi-shot video generation
+  takeaway: Adaptive memory helps maintain semantic coherence and visual identity
+    across discontinuous but related video shots.
+- name: InfinityStory
+  title: 'InfinityStory: Unlimited Video Generation with World Consistency and Character-Aware
+    Shot Transitions'
+  year: 2026
+  date: 2026-03
+  venue: arXiv preprint
+  arxiv: '2603.03646'
+  links:
+    paper: https://arxiv.org/abs/2603.03646
+  categories:
+  - video-world-model-embodied
+  - long-form-reasoning-memory
+  - cinematic-expression-domain-expertise
+  task: Unlimited story video generation
+  takeaway: World consistency and character-aware shot transitions support unlimited
+    multi-shot video generation beyond short clip horizons.
+- name: LongLive
+  title: 'LongLive: Real-time Interactive Long Video Generation'
+  year: 2025
+  date: 2025-09
+  venue: arXiv preprint
+  arxiv: '2509.22622'
+  links:
+    paper: https://arxiv.org/abs/2509.22622
+    code: https://github.com/NVlabs/LongLive
+  categories:
+  - video-world-model-embodied
+  - cinematic-expression-domain-expertise
+  task: Real-time interactive long video generation
+  takeaway: Interactive prompt switching and long-horizon generation target controllable
+    long videos with smooth transitions and low latency.
+- name: Audience in the Loop
+  title: 'Audience in the Loop: Viewer Feedback-Driven Content Creation in Micro-drama
+    Production on Social Media'
+  year: 2026
+  date: '2026-04-13'
+  venue: CHI 2026
+  arxiv: '2602.14045'
+  links:
+    paper: https://arxiv.org/abs/2602.14045
+    doi: https://doi.org/10.1145/3772318.3790592
+  categories:
+  - domain-specific-video-editing
+  - video-evaluation-self-improvement
+  task: Viewer-feedback micro-drama production
+  takeaway: Audience feedback is brought into micro-drama production loops, offering
+    a human-in-the-loop pattern for iterative short-form video creation.
+- name: PVChat
+  title: 'PVChat: Personalized Video Chat with One-Shot Learning'
+  year: 2025
+  date: 2025-10
+  venue: ICCV 2025
+  links:
+    paper: https://openaccess.thecvf.com/content/ICCV2025/html/Shi_PVChat_Personalized_Video_Chat_with_One-Shot_Learning_ICCV_2025_paper.html
+  categories:
+  - long-form-reasoning-memory
+  - domain-specific-video-editing
+  task: Personalized video chat
+  takeaway: One-shot personalization enables video chat systems to adapt to individual
+    users or identities with minimal examples.
+- name: VBench
+  title: 'VBench: Comprehensive Benchmark Suite for Video Generative Models'
+  year: 2024
+  date: 2024-06
+  venue: CVPR 2024
+  arxiv: '2311.17982'
+  links:
+    paper: https://arxiv.org/abs/2311.17982
+    project: https://vchitect.github.io/VBench-project/
+  categories:
+  - video-evaluation-self-improvement
+  task: Video generation benchmark
+  takeaway: A hierarchical benchmark decomposes video generation quality into objective
+    dimensions that are useful for evaluating agent-produced videos.
+- name: ViStoryBench
+  title: 'ViStoryBench: Comprehensive Benchmark Suite for Story Visualization'
+  year: 2025
+  date: 2025-05
+  venue: arXiv preprint
+  arxiv: '2505.24862'
+  links:
+    paper: https://arxiv.org/abs/2505.24862
+  categories:
+  - video-evaluation-self-improvement
+  - cinematic-expression-domain-expertise
+  task: Story visualization benchmark
+  takeaway: A benchmark suite evaluates story visualization systems on multi-shot
+    narrative consistency and visual storytelling quality.
+- name: VideoStudio
+  title: 'VideoStudio: Generating Consistent-Content and Multi-Scene Videos'
+  year: 2024
+  date: 2024-01
+  venue: arXiv preprint
+  arxiv: '2401.01256'
+  links:
+    paper: https://arxiv.org/abs/2401.01256
+    code: https://github.com/FuchenUSTC/VideoStudio
+  categories:
+  - cinematic-expression-domain-expertise
+  - long-form-reasoning-memory
+  task: Consistent-content multi-scene video generation
+  takeaway: Multi-scene generation with consistent content provides useful foundations
+    for agentic story and scene planning pipelines.
+- name: StoryDiffusion
+  title: 'StoryDiffusion: Consistent Self-Attention for Long-Range Image and Video
+    Generation'
+  year: 2024
+  date: 2024-12
+  venue: NeurIPS 2024
+  links:
+    project: https://StoryDiffusion.github.io
+  categories:
+  - cinematic-expression-domain-expertise
+  - long-form-reasoning-memory
+  task: Long-range consistent visual story generation
+  takeaway: Consistent self-attention improves identity and story consistency across
+    long-range image and video generation.

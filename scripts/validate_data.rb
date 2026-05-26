@@ -38,6 +38,7 @@ allowed_categories = Set.new(%w[
   rl-policy-tuning
   video-evaluation-self-improvement
   cinematic-expression-domain-expertise
+  domain-specific-video-editing
   video-world-model-embodied
 ])
 
